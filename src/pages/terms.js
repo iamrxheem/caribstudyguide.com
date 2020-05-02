@@ -17,8 +17,6 @@ import {
   InputGroupText,
   FormInput,
   Collapse,
-  Breadcrumb,
-  BreadcrumbItem,
   Row,
   Col,
   Container,
@@ -31,17 +29,7 @@ import SEO from "../components/seo"
 const Page = () => (
   <>
     <Layout>
-      <SEO title="Home" description="" />
-
-      <br />
-      <Container>
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <a href="/">Home</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem active></BreadcrumbItem>
-        </Breadcrumb>
-      </Container>
+      <SEO title="" description="" />
     </Layout>
   </>
 )

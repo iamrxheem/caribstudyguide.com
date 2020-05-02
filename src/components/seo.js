@@ -1,10 +1,3 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
@@ -30,59 +23,106 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:title`,
-          content: title,
+          content: title
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `website`
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary`
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.author
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: metaDescription
         },
+        { name: `copyright`, content: `Caribbean Study Guide` },
+        {
+          name: `author`,
+          content: `Caribbean Study Guide, info@caribbeanstudyguide.com`
+        },
+        { name: `distribution`, content: `Global` },
+        { name: `coverage`, content: `Worldwide` },
+        { name: `language`, content: `EN` },
+        { name: `reply-to`, content: `info@caribbeanstudyguide.com` },
+        { name: `rating`, content: `General` },
+        { name: `og:email`, content: `info@caribbeanstudyguide.com` },
+        { name: `og:country-name`, content: `JAM` },
+        { name: `apple-mobile-web-app-capable`, content: `yes` },
+        {
+          name: `robots`,
+          content: `archive,follow,imageindex,index,odp,snippet,translate`
+        },
+        { name: `target`, content: `all` },
+        { name: `audience`, content: `all` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` },
+        { name: ``, content: `` }
       ].concat(meta)}
-    />
+    >
+      <script
+        src="https://kit.fontawesome.com/3b83e0293b.js"
+        crossorigin="anonymous"
+      ></script>
+    </Helmet>
   )
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: ``
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 export default SEO

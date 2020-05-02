@@ -31,7 +31,7 @@ import SEO from "../components/seo"
 const Page = () => (
   <>
     <Layout>
-      <SEO title="Home" description="" />
+      <SEO title="" description="" />
 
       <br />
       <Container>
