@@ -19,6 +19,7 @@ import {
   FormInput,
   Collapse
 } from "shards-react"
+import Img from "react-image"
 
 class Header extends React.Component {
   constructor(props) {
@@ -90,25 +91,44 @@ class Header extends React.Component {
                     Study
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem> CSEC</DropdownItem>
-                    <DropdownItem> CAPE</DropdownItem>
-
-                    <hr />
-                    <DropdownItem>I'm studying something else</DropdownItem>
+                    <DropdownItem>
+                      <Img
+                        style={{ height: "50px", width: "50px" }}
+                        src={[
+                          "https://46i48l108maaxssg8uyuvr10-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/csec.png",
+                          "",
+                          ""
+                        ]}
+                        className="card-img mr-2"
+                      />{" "}
+                      <b>CSEC Examinations</b>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Img
+                        style={{ height: "50px", width: "50px" }}
+                        src={[
+                          "https://46i48l108maaxssg8uyuvr10-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/cape.png",
+                          "",
+                          ""
+                        ]}
+                        className="card-img mr-3"
+                      />
+                      <b>CAPE Examinations</b>
+                    </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
 
-                {/* For students */}
+                {/* Students */}
                 <Dropdown
                   open={this.state.dropdownOpen2}
                   toggle={this.toggleDropdown2}
                 >
                   <DropdownToggle style={{ color: "white" }} nav caret>
-                    For Students
+                    Students
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>Scholarships</DropdownItem>
-                    <DropdownItem>Local Summer Jobs</DropdownItem>
+                    <DropdownItem>Summer Jobs</DropdownItem>
                     <DropdownItem></DropdownItem>
                     <DropdownItem></DropdownItem>
                     <DropdownItem></DropdownItem>
@@ -117,12 +137,17 @@ class Header extends React.Component {
                     <DropdownItem>
                       <i
                         className="fas fa-map-pin mr-3"
-                        style={{ color: "red" }}
+                        style={{ color: "#394359" }}
                       ></i>
                       Find a local tutor
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
+                <NavItem>
+                  <NavLink active href="/high-schools/">
+                    High Schools
+                  </NavLink>
+                </NavItem>
               </Nav>
 
               <Nav navbar className="ml-auto">

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Carib Study Guide`,
+    title: `CXC Study Guide`,
     description: `Online study guide for Caribbean students including CSEC, CAPE, PEP and more.`,
     author: `iamrxheem`
   },

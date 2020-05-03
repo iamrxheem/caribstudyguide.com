@@ -31,7 +31,7 @@ import SEO from "../components/seo"
 const Page = () => (
   <>
     <Layout>
-      <SEO title="Join Us" description="" />
+      <SEO title="High Schools" description="" />
 
       <br />
       <Container>
@@ -39,7 +39,7 @@ const Page = () => (
           <BreadcrumbItem>
             <a href="/">Home</a>
           </BreadcrumbItem>
-          <BreadcrumbItem active>Join Us</BreadcrumbItem>
+          <BreadcrumbItem active>High Schools</BreadcrumbItem>
         </Breadcrumb>
       </Container>
     </Layout>
