@@ -59,10 +59,10 @@ const Page = () => (
         <br />
         <Row>
           <Col sm={12} md={8} lg={8}>
-            <Tabs defaultActiveKey="mathematics" id="home-tab">
+            <Tabs defaultActiveKey="chemistry" id="home-tab">
               <Tab eventKey="mathematics" title="Mathematics">
                 <br />
-
+                <p></p>
                 <>
                   <div class="bulma-tabs">
                     <ul>
@@ -90,7 +90,9 @@ const Page = () => (
                     </ul>
                   </div>
                   <br />
-                  <br />
+                  <Button href="/study/csec/mathematics/" theme="info">
+                    See full course
+                  </Button>
                 </>
               </Tab>
               <Tab eventKey="chemistry" title="Chemistry">
@@ -100,23 +102,32 @@ const Page = () => (
                 <div class="bulma-tabs">
                   <ul>
                     <li className="mr-3">
-                      <YouTube opts={opts} videoId={""} />
+                      <YouTube opts={opts} videoId={"j87n0OtxLCI"} />
                     </li>
                     <li className="mr-3">
-                      <YouTube opts={opts} videoId={""} />
+                      <YouTube opts={opts} videoId={"HRz-jH4CAy8"} />
                     </li>
                     <li className="mr-3">
-                      <YouTube opts={opts} videoId={""} />
+                      <YouTube opts={opts} videoId={"fN8kH9Vvqo0"} />
                     </li>
                     <li className="mr-3">
-                      <YouTube opts={opts} videoId={""} />
+                      <YouTube opts={opts} videoId={"DM38Ht1vo0o"} />
                     </li>
                     <li className="mr-3">
-                      <YouTube opts={opts} videoId={""} />
+                      <YouTube opts={opts} videoId={"7JZBUuaQlOA"} />
+                    </li>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={"FXDx8crE1bI"} />
+                    </li>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={"OnFbHaNjWeI"} />
                     </li>
                   </ul>
                 </div>
                 <br />
+                <Button href="/study/csec/chemistry/" theme="info">
+                  See full course
+                </Button>
               </Tab>
               <Tab eventKey="english-a" title="English A">
                 <br />
@@ -141,6 +152,10 @@ const Page = () => (
                       </li>
                     </ul>
                   </div>
+                  <br />
+                  <Button href="/study/csec/english-a/" theme="info">
+                    See full course
+                  </Button>
                 </>
               </Tab>
             </Tabs>
