@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import {
+  Alert,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -41,6 +42,12 @@ const Page = () => (
           </BreadcrumbItem>
           <BreadcrumbItem active></BreadcrumbItem>
         </Breadcrumb>
+
+        <Alert theme="" dismissible={false} open={true}></Alert>
+        <Alert theme="info" dismissible={false} open={true}></Alert>
+        <Alert theme="danger" dismissible={false} open={true}></Alert>
+        <Alert theme="success" dismissible={false} open={true}></Alert>
+        <Alert theme="warning" dismissible={false} open={true}></Alert>
       </Container>
     </Layout>
   </>

@@ -24,13 +24,14 @@ import {
   Container,
   Button
 } from "shards-react"
+import BlogLayout from "../layouts/blogLayout"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Page = () => (
   <>
-    <Layout>
+    <BlogLayout>
       <SEO title="Blog" description="" />
 
       <br />
@@ -42,7 +43,7 @@ const Page = () => (
           <BreadcrumbItem active>Blog</BreadcrumbItem>
         </Breadcrumb>
       </Container>
-    </Layout>
+    </BlogLayout>
   </>
 )
 

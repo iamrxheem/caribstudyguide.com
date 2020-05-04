@@ -18,6 +18,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   Row,
+  CardTitle,
   Col,
   Container,
   Button,
@@ -47,7 +48,7 @@ class MailingListSubscribe extends React.Component {
 
     var $form = $(this)
     $.post($form.attr("action"), $form.serialize()).then(function() {
-      Swal.fire("Thank you for subscribing")
+      Swal.fire("Thank you for subscribing!")
     })
   }
 
@@ -55,6 +56,7 @@ class MailingListSubscribe extends React.Component {
     return (
       <>
         <>
+          <h5>Mailing List</h5>
           <form
             id="footer-embed-mailing-list-subscribe"
             name="footer-embed-mailing-list-subscribe"
@@ -64,10 +66,8 @@ class MailingListSubscribe extends React.Component {
           >
             <FormGroup>
               <label htmlFor="email">
-                <p>
-                  <b>Join our mailing list</b> for weelkly study notes and
-                  exercises.
-                </p>
+                <b>Join our mailing list</b> for weelkly study notes and
+                exercises.
               </label>
               <FormInput
                 type="email"

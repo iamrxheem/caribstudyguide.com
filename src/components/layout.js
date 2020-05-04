@@ -14,8 +14,8 @@ import Header from "./header"
 import Footer from "./footer"
 
 // CSS stuff
-import "bootstrap/dist/css/bootstrap.min.css"
-import "shards-ui/dist/css/shards.min.css"
+import "bootstrap/dist/css/bootstrap.css"
+import "shards-ui/dist/css/shards.css"
 import "sweetalert2/src/sweetalert2.scss"
 import "./layout.css"
 

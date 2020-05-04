@@ -140,12 +140,10 @@ class Header extends React.Component {
                     Students
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem>Scholarships</DropdownItem>
+                    <DropdownItem>Scholarships and Financial Aid</DropdownItem>
                     <DropdownItem>Summer Jobs</DropdownItem>
-                    <DropdownItem></DropdownItem>
-                    <DropdownItem></DropdownItem>
-                    <DropdownItem></DropdownItem>
-                    <DropdownItem></DropdownItem>
+                    <DropdownItem>Coding Camps</DropdownItem>
+                    <DropdownItem>Language Camps</DropdownItem>
                     <hr />
                     <DropdownItem>
                       <i
@@ -164,6 +162,9 @@ class Header extends React.Component {
               </Nav>
 
               <Nav navbar className="ml-auto">
+                <NavLink active href="/blog/">
+                  Online Classes
+                </NavLink>
                 <NavLink active href="/blog/">
                   Blog
                 </NavLink>
