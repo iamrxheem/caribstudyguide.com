@@ -261,9 +261,13 @@ const Footer = props => {
           <br />
           <br />
         </div>
-        <div className="bg-light">
-          <br />
-          <Container></Container>
+        <div className="bg-light text-center">
+          <Container>
+            <br />
+            <br />
+            <p>&copy; 2020 CXC Study Guide. All rights reserved.</p>
+            <br />
+          </Container>
         </div>
       </footer>
     </>

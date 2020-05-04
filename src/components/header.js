@@ -81,7 +81,12 @@ class Header extends React.Component {
           <MobileView>
             <SocialMediaIcons />
           </MobileView>
-          <Navbar type="dark" theme="info" expand="md">
+          <Navbar
+            type="dark"
+            style={{ backgroundColor: "#01C8EF" }}
+            theme=""
+            expand="md"
+          >
             <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} />
 

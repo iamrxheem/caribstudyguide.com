@@ -29,6 +29,8 @@ import {
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { Tab, Tabs } from "react-bootstrap"
+
 const Page = () => (
   <>
     <Layout>
@@ -43,11 +45,39 @@ const Page = () => (
           <BreadcrumbItem active></BreadcrumbItem>
         </Breadcrumb>
 
-        <Alert theme="" dismissible={false} open={true}></Alert>
-        <Alert theme="info" dismissible={false} open={true}></Alert>
-        <Alert theme="danger" dismissible={false} open={true}></Alert>
-        <Alert theme="success" dismissible={false} open={true}></Alert>
-        <Alert theme="warning" dismissible={false} open={true}></Alert>
+        <br />
+        <Row>
+          <Col sm={12} md={8} lg={8}>
+            <Tabs defaultActiveKey="mathematics" id="home-tab">
+              <Tab eventKey="mathematics" title="Mathematics">
+                <br />
+                <>
+                  <>
+                    <p></p>
+                  </>
+                </>
+              </Tab>
+              <Tab eventKey="chemistry" title="Chemistry">
+                <br />
+                <>
+                  <>
+                    <p></p>
+                  </>
+                </>
+              </Tab>
+              <Tab eventKey="english-a" title="English A">
+                <br />
+                <>
+                  <>
+                    <p></p>
+                  </>
+                </>
+              </Tab>
+            </Tabs>
+          </Col>
+
+          <Col sm={12} md={4} lg={4}></Col>
+        </Row>
       </Container>
     </Layout>
   </>

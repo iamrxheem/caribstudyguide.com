@@ -31,15 +31,41 @@ import { useStaticQuery, graphql } from "gatsby"
 import SocialMediaIcons from "../components/socialMediaIcons"
 
 // CSS import
-import "../assets/css/bootswatch.css"
+import "bootstrap/dist/css/bootstrap.css"
+import "shards-ui/dist/css/shards.css"
 import "../components/layout.css"
 
 class BlogLayout extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.toggleDropdown = this.toggleDropdown.bind(this)
+    this.toggleNavbar = this.toggleNavbar.bind(this)
+
+    this.state = {
+      dropdownOpen: false,
+      collapseOpen: false
+    }
   }
+
+  toggleDropdown() {
+    this.setState({
+      ...this.state,
+      ...{
+        dropdownOpen: !this.state.dropdownOpen
+      }
+    })
+  }
+
+  toggleNavbar() {
+    this.setState({
+      ...this.state,
+      ...{
+        collapseOpen: !this.state.collapseOpen
+      }
+    })
+  }
+
   render() {
     return (
       <>
@@ -48,12 +74,83 @@ class BlogLayout extends React.Component {
             <SocialMediaIcons />
           </MobileView>
 
-          <Navbar type="dark" theme="primary" expand="md">
-            <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+          <Navbar
+            type="dark"
+            style={{ backgroundColor: "#01C8EF" }}
+            theme=""
+            expand="md"
+          >
+            <NavbarBrand href="/">
+              <MobileView>
+                <i className="fas fa-long-arrow-alt-left mr-2"></i>
+                Back to Online Study Guide
+              </MobileView>
+              <BrowserView>
+                <i className="fas fa-long-arrow-alt-left mr-2"></i>Back to Study
+                Guide
+              </BrowserView>
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggleNavbar} />
+
+            <Collapse open={this.state.collapseOpen} navbar>
+              <Nav navbar className="ml-auto">
+                <Dropdown
+                  open={this.state.dropdownOpen}
+                  toggle={this.toggleDropdown}
+                >
+                  <DropdownToggle
+                    style={{ color: "white" }}
+                    nav
+                    caret
+                  ></DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem></DropdownItem>
+                    <DropdownItem></DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+                <NavItem>
+                  <NavLink active href="/">
+                    ...
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink active href="/">
+                    ...
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink active href="/">
+                    ...
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink active href="/">
+                    ...
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink active href="/">
+                    Contact
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
           </Navbar>
         </header>
         <>{this.props.children}</>
-        <footer></footer>
+        <footer>
+          <div className="bg-dark">
+            <br />
+
+            <br />
+          </div>
+          <div className="bg-light text-center">
+            <br />
+            <br />
+            <p>&copy; 2020 CXC Study Guide. All rights reserved.</p>
+            <br />
+          </div>
+        </footer>
       </>
     )
   }

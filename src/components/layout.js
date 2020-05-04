@@ -17,6 +17,7 @@ import Footer from "./footer"
 import "bootstrap/dist/css/bootstrap.css"
 import "shards-ui/dist/css/shards.css"
 import "sweetalert2/src/sweetalert2.scss"
+import "../assets/css/bulma-tabs.css"
 import "./layout.css"
 
 const Layout = ({ children }) => {
