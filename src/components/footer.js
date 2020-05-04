@@ -22,6 +22,8 @@ import {
   Container,
   Button
 } from "shards-react"
+
+import MailingListSubscribe from "./mailingListSubscribe"
 import SocialMediaIcons from "./socialMediaIcons"
 
 const Footer = props => {
@@ -35,6 +37,7 @@ const Footer = props => {
               <Col sm={12} md={4} lg={4}>
                 <SocialMediaIcons />
                 <br />
+                <MailingListSubscribe />
               </Col>
               <Col sm={12} md={4} lg={4}>
                 <h5>Title</h5>
@@ -100,25 +103,59 @@ const Footer = props => {
                 <br />
                 <ul className="ul">
                   <li>
-                    <a className="link-dark" href="/"></a>
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      href="https://www.cxc.org/"
+                    >
+                      Caribbean Examinations Council
+                    </a>
                   </li>
                   <li>
-                    <a className="link-dark" href="/"></a>
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      href="https://cxc-store.com/"
+                    >
+                      CXC Store
+                    </a>
                   </li>
                   <li>
-                    <a className="link-dark" href="/"></a>
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      href="http://moe.gov.jm/"
+                    >
+                      Ministry of Education, Jamaica
+                    </a>
                   </li>
                   <li>
-                    <a className="link-dark" href="/"></a>
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      href="http://www.moe.gov.tt/"
+                    >
+                      Ministry of Education, Trinidad and Tobago
+                    </a>
                   </li>
                   <li>
-                    <a className="link-dark" href="/"></a>
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      href="http://www.mes.gov.bb/"
+                    >
+                      Ministry of Education, Barbados
+                    </a>
                   </li>
+
                   <li>
-                    <a className="link-dark" href="/"></a>
-                  </li>
-                  <li>
-                    <a className="link-dark" href="/"></a>
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      href="https://www.mona.uwi.edu/"
+                    >
+                      The University of the West Indies at Mona
+                    </a>
                   </li>
                 </ul>
               </Col>
