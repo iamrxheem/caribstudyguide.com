@@ -67,13 +67,13 @@ const Page = () => (
                   <div class="bulma-tabs">
                     <ul>
                       <li className="mr-3">
-                        <YouTube opts={opts} videoId={"oVvq81gf-sU"} />
+                        <YouTube opts={opts} videoId={"xYhX29gBybE"} />
                       </li>
                       <li className="mr-3">
                         <YouTube opts={opts} videoId={"STcPmKc7JaI"} />
                       </li>
                       <li className="mr-3">
-                        <YouTube opts={opts} videoId={"xYhX29gBybE"} />
+                        <YouTube opts={opts} videoId={"oVvq81gf-sU"} />
                       </li>
                       <li className="mr-3">
                         <YouTube opts={opts} videoId={"zTbg5fffPMc"} />
