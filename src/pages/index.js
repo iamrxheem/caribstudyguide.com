@@ -59,7 +59,7 @@ const Page = () => (
         <br />
         <Row>
           <Col sm={12} md={8} lg={8}>
-            <Tabs defaultActiveKey="chemistry" id="home-tab">
+            <Tabs defaultActiveKey="mathematics" id="home-tab">
               <Tab eventKey="mathematics" title="Mathematics">
                 <br />
                 <p></p>
