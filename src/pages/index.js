@@ -30,6 +30,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Tab, Tabs } from "react-bootstrap"
+import YouTube from "react-youtube"
+import uuid from "uuid"
+
+const opts = {
+  height: "170",
+  width: "300",
+  playerVars: {
+    // https://developers.google.com/youtube/player_parameters
+    autoplay: 0
+  }
+}
 
 const Page = () => (
   <>
@@ -51,26 +62,85 @@ const Page = () => (
             <Tabs defaultActiveKey="mathematics" id="home-tab">
               <Tab eventKey="mathematics" title="Mathematics">
                 <br />
+
                 <>
-                  <>
-                    <p></p>
-                  </>
+                  <div class="bulma-tabs">
+                    <ul>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"oVvq81gf-sU"} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"STcPmKc7JaI"} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"xYhX29gBybE"} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"zTbg5fffPMc"} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"uhn3IN-h44Y"} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"Ag_VqUvUrAU"} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={"yuzaHV2wXjI"} />
+                      </li>
+                    </ul>
+                  </div>
+                  <br />
+                  <br />
                 </>
               </Tab>
               <Tab eventKey="chemistry" title="Chemistry">
                 <br />
-                <>
-                  <>
-                    <p></p>
-                  </>
-                </>
+                <br />
+
+                <div class="bulma-tabs">
+                  <ul>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={""} />
+                    </li>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={""} />
+                    </li>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={""} />
+                    </li>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={""} />
+                    </li>
+                    <li className="mr-3">
+                      <YouTube opts={opts} videoId={""} />
+                    </li>
+                  </ul>
+                </div>
+                <br />
               </Tab>
               <Tab eventKey="english-a" title="English A">
                 <br />
+
                 <>
-                  <>
-                    <p></p>
-                  </>
+                  <div class="bulma-tabs">
+                    <ul>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={""} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={""} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={""} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={""} />
+                      </li>
+                      <li className="mr-3">
+                        <YouTube opts={opts} videoId={""} />
+                      </li>
+                    </ul>
+                  </div>
                 </>
               </Tab>
             </Tabs>
