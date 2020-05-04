@@ -25,6 +25,7 @@ import {
   FormGroup
 } from "shards-react"
 import $ from "jquery"
+import Swal from "sweetalert2/dist/sweetalert2.js"
 
 class MailingListSubscribe extends React.Component {
   constructor(props) {
@@ -45,7 +46,7 @@ class MailingListSubscribe extends React.Component {
 
     var $form = $(this)
     $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Thank you!")
+      Swal.fire("Thank you for subscribing")
     })
   }
 
@@ -54,10 +55,11 @@ class MailingListSubscribe extends React.Component {
       <>
         <>
           <form
-            if
+            id="footer-embed-mailing-list-subscribe"
             name="footer-embed-mailing-list-subscribe"
             method="POST"
-            data-netlify="true"
+            dataNetlify="true"
+            dataNetlifyRecaptcha="true"
           >
             <FormGroup>
               <label htmlFor="email">
@@ -79,7 +81,7 @@ class MailingListSubscribe extends React.Component {
               className="btn btn-primary"
               type="submit"
               value="Submit"
-              onChange={this.handleChange}
+              onClick={this.handleSubmit}
             />
           </form>
 
