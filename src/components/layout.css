@@ -11,6 +11,21 @@
   padding-bottom: 15px;
 }
 
+.link-dark {
+  color: grey;
+  text-decoration: none;
+}
+
+.link-dark:hover {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
 a {
   color: #3b5998;
 }

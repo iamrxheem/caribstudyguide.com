@@ -20,6 +20,17 @@ import {
   Collapse
 } from "shards-react"
 import Img from "react-image"
+import LazyLoad from "react-lazyload"
+
+import SocialMediaIcons from "./socialMediaIcons"
+
+// React device detect
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
 
 class Header extends React.Component {
   constructor(props) {
@@ -67,6 +78,9 @@ class Header extends React.Component {
     return (
       <>
         <>
+          <MobileView>
+            <SocialMediaIcons />
+          </MobileView>
           <Navbar type="dark" theme="info" expand="md">
             <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} />
@@ -78,11 +92,6 @@ class Header extends React.Component {
                     Home
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink active href="/">
-                    Disabled
-                  </NavLink>
-                </NavItem>
                 <Dropdown
                   open={this.state.dropdownOpen}
                   toggle={this.toggleDropdown}
@@ -92,28 +101,32 @@ class Header extends React.Component {
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>
-                      <Img
-                        style={{ height: "50px", width: "50px" }}
-                        src={[
-                          "https://46i48l108maaxssg8uyuvr10-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/csec.png",
-                          "",
-                          ""
-                        ]}
-                        className="card-img mr-2"
-                      />{" "}
-                      <b>CSEC Examinations</b>
+                      <LazyLoad>
+                        <Img
+                          style={{ height: "50px", width: "50px" }}
+                          src={[
+                            "https://46i48l108maaxssg8uyuvr10-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/csec.png",
+                            "",
+                            ""
+                          ]}
+                          className="card-img mr-2"
+                        />
+                      </LazyLoad>
+                      CSEC Examinations
                     </DropdownItem>
                     <DropdownItem>
-                      <Img
-                        style={{ height: "50px", width: "50px" }}
-                        src={[
-                          "https://46i48l108maaxssg8uyuvr10-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/cape.png",
-                          "",
-                          ""
-                        ]}
-                        className="card-img mr-3"
-                      />
-                      <b>CAPE Examinations</b>
+                      <LazyLoad>
+                        <Img
+                          style={{ height: "50px", width: "50px" }}
+                          src={[
+                            "https://46i48l108maaxssg8uyuvr10-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/cape.png",
+                            "",
+                            ""
+                          ]}
+                          className="card-img mr-3"
+                        />
+                      </LazyLoad>
+                      CAPE Examinations
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
@@ -144,13 +157,16 @@ class Header extends React.Component {
                   </DropdownMenu>
                 </Dropdown>
                 <NavItem>
-                  <NavLink active href="/high-schools/">
-                    High Schools
+                  <NavLink active href="/teachers/">
+                    Teachers
                   </NavLink>
                 </NavItem>
               </Nav>
 
               <Nav navbar className="ml-auto">
+                <NavLink active href="/blog/">
+                  Blog
+                </NavLink>
                 <NavLink active href="/join/">
                   Join
                 </NavLink>
