@@ -26,6 +26,7 @@ import {
 } from "shards-react"
 import $ from "jquery"
 import Swal from "sweetalert2/dist/sweetalert2.js"
+import { Link } from "gatsby"
 
 class MailingListSubscribe extends React.Component {
   constructor(props) {
@@ -77,12 +78,13 @@ class MailingListSubscribe extends React.Component {
               />
             </FormGroup>
 
-            <input
+            <Link
               className="btn btn-primary"
               type="submit"
-              value="Submit"
               onClick={this.handleSubmit}
-            />
+            >
+              Submit
+            </Link>
           </form>
 
           <br />

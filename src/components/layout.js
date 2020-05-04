@@ -16,6 +16,7 @@ import Footer from "./footer"
 // CSS stuff
 import "bootstrap/dist/css/bootstrap.min.css"
 import "shards-ui/dist/css/shards.min.css"
+import "sweetalert2/src/sweetalert2.scss"
 import "./layout.css"
 
 const Layout = ({ children }) => {

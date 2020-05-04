@@ -40,6 +40,7 @@ const Footer = props => {
                 <MailingListSubscribe />
               </Col>
               <Col sm={12} md={4} lg={4}>
+                <br className="d-sm-block" />
                 <h5>Title</h5>
                 <br />
                 <ul className="ul">
@@ -64,31 +65,75 @@ const Footer = props => {
                 </ul>
               </Col>
               <Col sm={12} md={4} lg={4}>
-                <h5>Title</h5>
+                <br className="d-sm-block" />
+                <h5>
+                  Recent
+                  <i
+                    className="fas fa-blog ml-2"
+                    style={{ color: "#FF8C42" }}
+                  ></i>{" "}
+                  Posts
+                </h5>
                 <br />
                 <ul className="ul">
                   <li>
-                    <a href="/">....</a>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                      Top 15 University Degrees
+                    </a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                      Student Life on Campus
+                    </a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                      10 Time Managemnt Techniques
+                    </a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                      Most Profitable Degrees and Requirements
+                    </a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                      Student Life Off Campus
+                    </a>
                   </li>
                 </ul>
               </Col>
             </Row>
           </Container>
+          <br />
         </div>
         <div className="bg-dark">
           <br />
@@ -212,8 +257,9 @@ const Footer = props => {
                 </ul>
               </Col>
             </Row>
-            <br />
           </Container>
+          <br />
+          <br />
         </div>
         <div className="bg-light">
           <br />
