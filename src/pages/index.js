@@ -29,7 +29,7 @@ import {
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Carousel from "react-bootstrap/Carousel"
-import HomeCarousel from "../components/HomeCarousel"
+import HomeCarousel from "../components/homeCarousel"
 
 import { Tab, Tabs } from "react-bootstrap"
 import YouTube from "react-youtube"
