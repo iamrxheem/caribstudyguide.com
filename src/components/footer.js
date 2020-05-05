@@ -37,6 +37,8 @@ import SocialMediaIcons from "./socialMediaIcons"
 const Footer = props => {
   return (
     <>
+      <br />
+      <br />
       <footer>
         <div className="bg-light">
           <Container>
@@ -220,6 +222,11 @@ const Footer = props => {
                   <li>
                     <a className="link-dark" style={{ color: "" }} href="/">
                       Frequently Asked Questions
+                    </a>
+                  </li>
+                  <li>
+                    <a className="link-dark" style={{ color: "" }} href="/">
+                      Press & Notices
                     </a>
                   </li>
                 </ul>

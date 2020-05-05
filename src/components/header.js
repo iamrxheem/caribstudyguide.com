@@ -78,9 +78,6 @@ class Header extends React.Component {
     return (
       <>
         <>
-          <MobileView>
-            <SocialMediaIcons />
-          </MobileView>
           <Navbar
             type="dark"
             style={{ backgroundColor: "#01C8EF" }}
@@ -185,6 +182,10 @@ class Header extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
+          <br />
+          <MobileView>
+            <SocialMediaIcons />
+          </MobileView>
         </>
       </>
     )
