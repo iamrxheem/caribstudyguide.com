@@ -247,7 +247,7 @@ const Page = () => (
               className="text-center"
               style={{ margin: "0 auto", width: "100%" }}
             >
-              <Flip>
+              <Zoom>
                 <Img
                   style={{ width: "60%" }}
                   src={[
@@ -267,7 +267,7 @@ const Page = () => (
 
                 <br class="d-lg-none" />
                 <Button>Sign Up</Button>
-              </Flip>
+              </Zoom>
             </div>
           </Col>
 
@@ -278,7 +278,7 @@ const Page = () => (
               className="text-center"
               style={{ margin: "0 auto", width: "100%" }}
             >
-              <Roll>
+              <Zoom>
                 <Img
                   className="card-img"
                   style={{ width: "80%", height: "170px" }}
@@ -302,7 +302,7 @@ const Page = () => (
 
                 <br class="d-lg-none" />
                 <Button>Find a tutor</Button>
-              </Roll>
+              </Zoom>
             </div>
           </Col>
         </Row>
