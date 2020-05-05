@@ -23,6 +23,14 @@ import {
   Button
 } from "shards-react"
 
+// React device detect
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
+
 import MailingListSubscribe from "./mailingListSubscribe"
 import SocialMediaIcons from "./socialMediaIcons"
 
@@ -39,9 +47,45 @@ const Footer = props => {
                 <br />
                 <MailingListSubscribe />
               </Col>
+              <MobileView>
+                <Col sm={12} md={4} lg={4}>
+                  <br className="d-sm-block" />
+                  <h5>Popular CSEC Subjects</h5>
+                  <br />
+                  <ul className="ul">
+                    <li>
+                      <a href="/study/csec/">Mathematics</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">English A</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">Information Technology</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">Chemistry</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">Spanish</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">Geography</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">Biology</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">Physics</a>
+                    </li>
+                    <li>
+                      <a href="/study/csec/">English B</a>
+                    </li>
+                  </ul>
+                </Col>
+              </MobileView>
               <Col sm={12} md={4} lg={4}>
                 <br className="d-sm-block" />
-                <h5>Top CAPE Subjects</h5>
+                <h5>Popular CAPE Subjects</h5>
                 <br />
                 <ul className="ul">
                   <li>
