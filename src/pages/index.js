@@ -227,7 +227,68 @@ const Page = () => (
               <br />
               <h5>Sign Up</h5>
 
-              <p>Sign up to track your progress, get daily updates</p>
+              <p>
+                Sign up to track your progress, get daily updates an be apart of
+                a community of aspiring Caribbean students and teachers.
+              </p>
+
+              <Button>Sign Up</Button>
+            </div>
+          </Col>
+          <Col sm={12} md={4} lg={4}>
+            <br className="d-md-none" />
+            <br className="d-md-none" />
+            <div
+              className="text-center"
+              style={{ margin: "0 auto", width: "100%" }}
+            >
+              <Zoom>
+                <Img
+                  style={{ width: "60%" }}
+                  src={[
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGSixrI1wMw6QojpM-hn7mnOa4C3rrjUPZIV2Db8gEvPcjSs0P&usqp=CAU",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_S9DUg_S9CHf-DxgcNbxYzZmibzud95wxTQslnreREOxA1ch1&usqp=CAU",
+                    "https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
+                  ]}
+                />
+              </Zoom>
+
+              <br />
+              <h5>Sign Up</h5>
+
+              <p>
+                Sign up to track your progress, get daily updates an be apart of
+                a community of aspiring Caribbean students and teachers.
+              </p>
+
+              <Button>Sign Up</Button>
+            </div>
+          </Col>
+          <Col sm={12} md={4} lg={4}>
+            <br className="d-md-none" />
+            <br className="d-md-none" />
+            <div
+              className="text-center"
+              style={{ margin: "0 auto", width: "100%" }}
+            >
+              <Zoom>
+                <Img
+                  style={{ width: "60%" }}
+                  src={[
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGSixrI1wMw6QojpM-hn7mnOa4C3rrjUPZIV2Db8gEvPcjSs0P&usqp=CAU",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_S9DUg_S9CHf-DxgcNbxYzZmibzud95wxTQslnreREOxA1ch1&usqp=CAU",
+                    "https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
+                  ]}
+                />
+              </Zoom>
+
+              <br />
+              <h5>Sign Up</h5>
+
+              <p>
+                Sign up to track your progress, get daily updates an be apart of
+                a community of aspiring Caribbean students and teachers.
+              </p>
 
               <Button>Sign Up</Button>
             </div>
