@@ -2,6 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+// React device detect
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
+
 import {
   Navbar,
   NavbarToggler,
@@ -23,14 +31,6 @@ import Img from "react-image"
 import LazyLoad from "react-lazyload"
 
 import SocialMediaIcons from "./socialMediaIcons"
-
-// React device detect
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile
-} from "react-device-detect"
 
 class Header extends React.Component {
   constructor(props) {
@@ -77,7 +77,7 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <>
+        <header>
           <Navbar
             type="dark"
             style={{ backgroundColor: "#01C8EF" }}
@@ -85,6 +85,11 @@ class Header extends React.Component {
             expand="md"
           >
             <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+
+            <NavLink className="ml-auto" active href="/sign-in/">
+              <i className="fas fa-user text-white d-md-none"></i>
+            </NavLink>
+
             <NavbarToggler onClick={this.toggleNavbar} />
 
             <Collapse open={this.state.collapseOpen} navbar>
@@ -164,21 +169,33 @@ class Header extends React.Component {
               </Nav>
 
               <Nav navbar className="ml-auto">
-                <NavLink active href="/blog/">
-                  Online Classes
-                </NavLink>
-                <NavLink active href="/blog/">
-                  Blog
-                </NavLink>
-                <NavLink active href="/join/">
-                  Join
-                </NavLink>
-                <NavLink active href="/FAQ/">
-                  FAQ
-                </NavLink>
-                <NavLink active href="/contact/">
-                  Contact
-                </NavLink>
+                <NavItem>
+                  <NavLink active href="/blog/">
+                    Online Classes
+                  </NavLink>
+                </NavItem>
+
+                <NavItem>
+                  <NavLink active href="/blog/">
+                    Blog
+                  </NavLink>
+                </NavItem>
+
+                <NavItem>
+                  <NavLink active href="/join/">
+                    Join
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink active href="/FAQ/">
+                    FAQ
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink active href="/contact/">
+                    Contact
+                  </NavLink>
+                </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
@@ -186,7 +203,7 @@ class Header extends React.Component {
           <MobileView>
             <SocialMediaIcons />
           </MobileView>
-        </>
+        </header>
       </>
     )
   }

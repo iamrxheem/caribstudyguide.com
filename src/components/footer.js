@@ -44,8 +44,10 @@ const Footer = props => {
             <br />
             <Row>
               <Col sm={12} md={4} lg={4}>
+                <br />
                 <SocialMediaIcons />
                 <br />
+
                 <MailingListSubscribe />
               </Col>
               <MobileView>
