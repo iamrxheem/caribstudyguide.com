@@ -19,6 +19,7 @@ import {
 } from "shards-react"
 import Img from "react-image"
 import LazyLoad from "react-lazyload"
+
 // React device detect
 import {
   BrowserView,
@@ -26,6 +27,7 @@ import {
   isBrowser,
   isMobile
 } from "react-device-detect"
+
 import { useStaticQuery, graphql } from "gatsby"
 
 import SocialMediaIcons from "../components/socialMediaIcons"
