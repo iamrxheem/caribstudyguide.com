@@ -101,8 +101,11 @@ const Page = () => (
 
                   <br />
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    <p>
+                      The CSEC Spanish syllabus is design to allow students to
+                      develop the competence to listen, speak, read and write in
+                      Spanish and interpret aspects of the culture
+                    </p>
                   </p>
                   <Button
                     href="/study/csec/english-a/"
@@ -140,8 +143,9 @@ const Page = () => (
                   </div>
                   <br />
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    The Mathematics syllabus explains general and unifying
+                    concepts that facilitate the study of Mathematics as a
+                    coherent subject rather than as a set of unrelated topics.
                   </p>
                   <Button
                     href="/study/csec/mathematics/"
@@ -178,8 +182,9 @@ const Page = () => (
                 </div>
                 <br />
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  The study of Chemistry involves an investigation into chemical
+                  reactions and processes. The discipline seeks to explain and
+                  predict events at the atomic and molecular level.
                 </p>
                 <Button
                   href="/study/csec/chemistry/"
