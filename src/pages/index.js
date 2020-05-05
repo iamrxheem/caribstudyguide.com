@@ -215,24 +215,29 @@ const Page = () => (
             >
               <Zoom>
                 <Img
-                  style={{ width: "60%" }}
+                  className="card-img"
+                  style={{ width: "70%", height: "180px" }}
                   src={[
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGSixrI1wMw6QojpM-hn7mnOa4C3rrjUPZIV2Db8gEvPcjSs0P&usqp=CAU",
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_S9DUg_S9CHf-DxgcNbxYzZmibzud95wxTQslnreREOxA1ch1&usqp=CAU",
-                    "https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
+                    "https://momentumacademy.net/wp-content/uploads/2019/08/study-hours-iit-jee.png",
+                    "",
+                    "https://www.simplilearn.com/ice9/free_resources_article_thumb/book-resources-to-read-for-cissp-certification-exam-article.jpg",
+                    "",
+                    ""
                   ]}
                 />
+
+                <br />
+                <br />
+                <h5>Online Study Notes</h5>
+
+                <p>
+                  Free online study notes, lesson plans, flash cards and
+                  exercises. Read detailed lesson notes on topics and take short
+                  quizzes after, or download PDF files and read on the go.
+                </p>
+
+                <Button>Start Studying</Button>
               </Zoom>
-
-              <br />
-              <h5>Sign Up</h5>
-
-              <p>
-                Sign up to track your progress, get daily updates an be apart of
-                a community of aspiring Caribbean students and teachers.
-              </p>
-
-              <Button>Sign Up</Button>
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
@@ -251,19 +256,21 @@ const Page = () => (
                     "https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
                   ]}
                 />
+
+                <br />
+                <h5>Sign Up</h5>
+
+                <p>
+                  Sign up to track your progress, get daily updates an be apart
+                  of a community of aspiring Caribbean students and teachers.
+                </p>
+
+                <br class="d-lg-none" />
+                <Button>Sign Up</Button>
               </Zoom>
-
-              <br />
-              <h5>Sign Up</h5>
-
-              <p>
-                Sign up to track your progress, get daily updates an be apart of
-                a community of aspiring Caribbean students and teachers.
-              </p>
-
-              <Button>Sign Up</Button>
             </div>
           </Col>
+
           <Col sm={12} md={4} lg={4}>
             <br className="d-md-none" />
             <br className="d-md-none" />
@@ -273,24 +280,29 @@ const Page = () => (
             >
               <Zoom>
                 <Img
-                  style={{ width: "60%" }}
+                  className="card-img"
+                  style={{ width: "80%", height: "170px" }}
                   src={[
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGSixrI1wMw6QojpM-hn7mnOa4C3rrjUPZIV2Db8gEvPcjSs0P&usqp=CAU",
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_S9DUg_S9CHf-DxgcNbxYzZmibzud95wxTQslnreREOxA1ch1&usqp=CAU",
-                    "https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
+                    "https://online.usm.edu/wp-content/uploads/2018/08/5ways_successful_in_online_classes_blog.jpg",
+                    "",
+                    ""
                   ]}
                 />
+
+                <br class="d-sm-block" />
+                <br />
+                <br />
+                <h5>Tutoring & Classes</h5>
+
+                <p>
+                  Join our online classes or find a local tutor in your area.
+                  We're made up of a network of teachers, tutors and students
+                  just like you
+                </p>
+
+                <br class="d-lg-none" />
+                <Button>Find a tutor</Button>
               </Zoom>
-
-              <br />
-              <h5>Sign Up</h5>
-
-              <p>
-                Sign up to track your progress, get daily updates an be apart of
-                a community of aspiring Caribbean students and teachers.
-              </p>
-
-              <Button>Sign Up</Button>
             </div>
           </Col>
         </Row>
