@@ -138,7 +138,16 @@ const Footer = props => {
                         className="fas fa-rss mr-2"
                         style={{ color: "#F75C03" }}
                       ></i>
-                      Student Life on Campus
+                      Top 10 Spanish Vocabulary
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/blog/">
+                      <i
+                        className="fas fa-rss mr-2"
+                        style={{ color: "#F75C03" }}
+                      ></i>
+                      French for Beginners
                     </a>
                   </li>
                   <li>
@@ -165,6 +174,7 @@ const Footer = props => {
                         className="fas fa-rss mr-2"
                         style={{ color: "#F75C03" }}
                       ></i>
+                      How to Pass Your Math Exam
                     </a>
                   </li>
                   <li>
@@ -187,7 +197,33 @@ const Footer = props => {
           <br />
           <Container>
             <Row>
-              <Col sm={12} md={4} lg={4}></Col>
+              <Col sm={12} md={4} lg={4}>
+                <br className="d-sm-none" />
+                <h5 style={{ color: "white" }}>React Out</h5>
+                <br />
+                <ul className="ul">
+                  <li>
+                    <a className="link-dark" style={{ color: "" }} href="/">
+                      Contact & Support
+                    </a>
+                  </li>
+                  <li>
+                    <a className="link-dark" style={{ color: "" }} href="/">
+                      Live Chat
+                    </a>
+                  </li>
+                  <li>
+                    <a className="link-dark" style={{ color: "" }} href="/">
+                      Knowledge Base
+                    </a>
+                  </li>
+                  <li>
+                    <a className="link-dark" style={{ color: "" }} href="/">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                </ul>
+              </Col>
               <Col sm={12} md={4} lg={4}>
                 <br className="d-sm-none" />
                 <h5 style={{ color: "white" }}>Related Links</h5>
