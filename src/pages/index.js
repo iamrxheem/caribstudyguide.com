@@ -70,8 +70,6 @@ const Page = () => (
         <HomeCarousel />
 
         {/* Quick Videos */}
-        <br />
-        <br />
         <h5>Quick Videos</h5>
 
         <br />
@@ -100,7 +98,12 @@ const Page = () => (
                       </li>
                     </ul>
                   </div>
+
                   <br />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
                   <Button href="/study/csec/english-a/" theme="info">
                     See full course
                   </Button>
@@ -108,7 +111,7 @@ const Page = () => (
               </Tab>
               <Tab eventKey="mathematics" title="Mathematics">
                 <br />
-                <p></p>
+
                 <>
                   <div class="bulma-tabs">
                     <ul>
@@ -130,13 +133,16 @@ const Page = () => (
                     </ul>
                   </div>
                   <br />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
                   <Button href="/study/csec/mathematics/" theme="info">
                     See full course
                   </Button>
                 </>
               </Tab>
               <Tab eventKey="chemistry" title="Chemistry">
-                <br />
                 <br />
 
                 <div class="bulma-tabs">
@@ -159,6 +165,10 @@ const Page = () => (
                   </ul>
                 </div>
                 <br />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
                 <Button href="/study/csec/chemistry/" theme="info">
                   See full course
                 </Button>

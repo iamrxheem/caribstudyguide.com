@@ -82,6 +82,8 @@ const HomeCarousel = props => {
               />
             </Carousel.Item>
           </Carousel>
+          <br />
+          <br />
         </MobileView>
       </>
     </>

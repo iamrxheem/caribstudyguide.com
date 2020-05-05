@@ -41,26 +41,29 @@ const Footer = props => {
               </Col>
               <Col sm={12} md={4} lg={4}>
                 <br className="d-sm-block" />
-                <h5>Title</h5>
+                <h5>Top CAPE Subjects</h5>
                 <br />
                 <ul className="ul">
                   <li>
-                    <a href="/">....</a>
+                    <a href="/study/cape/">Communication Studies</a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/study/cape/">Spanish</a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/study/cape/">Computer Science</a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/study/cape/">Caribbean History</a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/study/cape/">Information Technology</a>
                   </li>
                   <li>
-                    <a href="/">....</a>
+                    <a href="/study/cape/">Law</a>
+                  </li>
+                  <li>
+                    <a href="/study/cape/">French</a>
                   </li>
                 </ul>
               </Col>

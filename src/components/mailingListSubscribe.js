@@ -65,10 +65,11 @@ class MailingListSubscribe extends React.Component {
             dataNetlifyRecaptcha="true"
           >
             <FormGroup>
-              <label htmlFor="email">
+              <p htmlFor="email">
                 <b>Join our mailing list</b> for weelkly study notes and
                 exercises.
-              </label>
+              </p>
+
               <FormInput
                 type="email"
                 id="value"
@@ -78,13 +79,14 @@ class MailingListSubscribe extends React.Component {
               />
             </FormGroup>
 
-            <Link
-              className="btn btn-primary"
+            <Button
+              style={{ marginTop: "10px" }}
+              value="submit"
               type="submit"
               onClick={this.handleSubmit}
             >
               Submit
-            </Link>
+            </Button>
           </form>
 
           <br />
