@@ -32,6 +32,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Carousel from "react-bootstrap/Carousel"
 import HomeCarousel from "../components/homeCarousel"
+import PastPaperSlider from "../components/pastPaperSlider"
 
 import { Tab, Tabs } from "react-bootstrap"
 import YouTube from "react-youtube"
@@ -307,6 +308,8 @@ const Page = () => (
           </Col>
         </Row>
       </Container>
+
+      <PastPaperSlider />
     </Layout>
   </>
 )

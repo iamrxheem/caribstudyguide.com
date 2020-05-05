@@ -38,7 +38,6 @@ const Footer = props => {
   return (
     <>
       <br />
-      <br />
       <footer>
         <div className="bg-light">
           <Container>
