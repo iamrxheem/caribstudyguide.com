@@ -225,19 +225,19 @@ const Page = () => (
                     ""
                   ]}
                 />
-
-                <br />
-                <br />
-                <h5>Online Study Notes</h5>
-
-                <p>
-                  Free online study notes, lesson plans, flash cards and
-                  exercises. Read detailed lesson notes on topics and take short
-                  quizzes after, or download PDF files and read on the go.
-                </p>
-
-                <Button>Start Studying</Button>
               </Zoom>
+
+              <br />
+              <br />
+              <h5>Online Study Notes</h5>
+
+              <p>
+                Free online study notes, lesson plans, flash cards and
+                exercises. Read detailed lesson notes on topics and take short
+                quizzes after, or download PDF files and read on the go.
+              </p>
+
+              <Button>Start Studying</Button>
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
@@ -256,18 +256,18 @@ const Page = () => (
                     "https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
                   ]}
                 />
-
-                <br />
-                <h5>Sign Up</h5>
-
-                <p>
-                  Sign up to track your progress, get daily updates an be apart
-                  of a community of aspiring Caribbean students and teachers.
-                </p>
-
-                <br class="d-lg-none" />
-                <Button>Sign Up</Button>
               </Zoom>
+
+              <br />
+              <h5>Sign Up</h5>
+
+              <p>
+                Sign up to track your progress, get daily updates an be apart of
+                a community of aspiring Caribbean students and teachers.
+              </p>
+
+              <br class="d-lg-none" />
+              <Button>Sign Up</Button>
             </div>
           </Col>
 
@@ -288,21 +288,21 @@ const Page = () => (
                     ""
                   ]}
                 />
-
-                <br class="d-sm-block" />
-                <br />
-                <br />
-                <h5>Tutoring & Classes</h5>
-
-                <p>
-                  Join our online classes or find a local tutor in your area.
-                  We're made up of a network of teachers, tutors and students
-                  just like you
-                </p>
-
-                <br class="d-lg-none" />
-                <Button>Find a tutor</Button>
               </Zoom>
+
+              <br class="d-sm-block" />
+              <br />
+              <br />
+              <h5>Tutoring & Classes</h5>
+
+              <p>
+                Join our online classes or find a local tutor in your area.
+                We're made up of a network of teachers, tutors and students just
+                like you
+              </p>
+
+              <br class="d-lg-none" />
+              <Button>Find a tutor</Button>
             </div>
           </Col>
         </Row>
