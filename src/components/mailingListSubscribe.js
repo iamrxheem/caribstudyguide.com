@@ -80,8 +80,11 @@ class MailingListSubscribe extends React.Component {
             </FormGroup>
 
             <Button
-              style={{ marginTop: "10px" }}
-              value="submit"
+              style={{
+                marginTop: "10px",
+                backgroundColor: "#01C8EF",
+                borderColor: "#01C8EF"
+              }}
               type="submit"
               onClick={this.handleSubmit}
             >

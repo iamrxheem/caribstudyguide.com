@@ -104,7 +104,13 @@ const Page = () => (
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </p>
-                  <Button href="/study/csec/english-a/" theme="info">
+                  <Button
+                    href="/study/csec/english-a/"
+                    style={{
+                      backgroundColor: "#01C8EF",
+                      borderColor: "#01C8EF"
+                    }}
+                  >
                     See full course
                   </Button>
                 </>
@@ -137,7 +143,13 @@ const Page = () => (
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </p>
-                  <Button href="/study/csec/mathematics/" theme="info">
+                  <Button
+                    href="/study/csec/mathematics/"
+                    style={{
+                      backgroundColor: "#01C8EF",
+                      borderColor: "#01C8EF"
+                    }}
+                  >
                     See full course
                   </Button>
                 </>
@@ -169,7 +181,13 @@ const Page = () => (
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Button href="/study/csec/chemistry/" theme="info">
+                <Button
+                  href="/study/csec/chemistry/"
+                  style={{
+                    backgroundColor: "#01C8EF",
+                    borderColor: "#01C8EF"
+                  }}
+                >
                   See full course
                 </Button>
               </Tab>
