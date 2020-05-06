@@ -61,6 +61,15 @@ class Page extends React.Component {
       icon: "error",
       confirmButtonText: "Cool"
     })
+
+    if (this.state.email == 0 || this.state.password == 0) {
+      Swal.fire({
+        title: "Hmmm",
+        text: "Email or password cannot be blank",
+        icon: "error",
+        confirmButtonText: "Cool"
+      })
+    }
   }
 
   handleChange(event) {
@@ -99,6 +108,7 @@ class Page extends React.Component {
                       <FormGroup>
                         <label htmlFor="#email">Email</label>
                         <FormInput
+                          onChange={this.handleChange}
                           id="email"
                           name="email"
                           placeholder="Enter your email"
@@ -107,6 +117,7 @@ class Page extends React.Component {
                       <FormGroup>
                         <label htmlFor="#password">Password</label>
                         <FormInput
+                          onChange={this.handleChange}
                           type="password"
                           id="#password"
                           name="password"
