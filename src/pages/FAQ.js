@@ -75,26 +75,26 @@ class Page extends React.Component {
               <BreadcrumbItem active>Frequently Asked Questions</BreadcrumbItem>
             </Breadcrumb>
 
-            <br />
-            <MobileView>
-              <Img
-                className="card-img"
-                style={{ width: "100%" }}
-                src={[
-                  "https://nativemsg.com/wp-content/uploads/2018/07/nativeMsg-FAQ.jpg",
-                  "https://www.superoffice.com/blog/wp-content/uploads/2016/09/how-to-build-faq-section-750x400.jpg",
-                  "https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages.png",
-                  "https://cdn.pixabay.com/photo/2017/11/10/16/45/faq-2936798_960_720.png",
-                  "https://www.signify.com/b-dam/signify/en-us/brands/bodine/technical/faq/faq-thumbnail.jpg",
-                  ""
-                ]}
-                alt="faq image"
-              />
-            </MobileView>
-            <br />
-
             <Row>
               <Col sm={12} md={8} lg={8}>
+                <br />
+
+                <Img
+                  className="card-img"
+                  style={{ width: "100%" }}
+                  src={[
+                    "https://nativemsg.com/wp-content/uploads/2018/07/nativeMsg-FAQ.jpg",
+                    "https://www.superoffice.com/blog/wp-content/uploads/2016/09/how-to-build-faq-section-750x400.jpg",
+                    "https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages.png",
+                    "https://cdn.pixabay.com/photo/2017/11/10/16/45/faq-2936798_960_720.png",
+                    "https://www.signify.com/b-dam/signify/en-us/brands/bodine/technical/faq/faq-thumbnail.jpg",
+                    ""
+                  ]}
+                  alt="faq image"
+                />
+
+                <br />
+                <br />
                 <h5>Frequently Asked Questions</h5>
 
                 <p>
