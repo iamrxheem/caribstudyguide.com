@@ -29,6 +29,7 @@ import {
 } from "shards-react"
 import Img from "react-image"
 import LazyLoad from "react-lazyload"
+import UserDropdownMenu from "./userDropdownMenu"
 
 import SocialMediaIcons from "./socialMediaIcons"
 
@@ -86,8 +87,8 @@ class Header extends React.Component {
           >
             <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
 
-            <NavLink className="ml-auto" active href="/login/">
-              <i className="fas fa-user text-white d-md-none"></i>
+            <NavLink className="ml-auto d-md-none">
+              <UserDropdownMenu />
             </NavLink>
 
             <NavbarToggler onClick={this.toggleNavbar} />
