@@ -170,9 +170,6 @@ class Header extends React.Component {
               </Nav>
 
               <Nav navbar className="ml-auto">
-                <NavLink active href="/login/">
-                  <i className="fas fa-user text-white"></i>
-                </NavLink>
                 <NavItem>
                   <NavLink active href="/blog/">
                     Online Classes

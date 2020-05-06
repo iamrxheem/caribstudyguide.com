@@ -238,7 +238,7 @@ const Page = () => (
                 quizzes after, or download PDF files and read on the go.
               </p>
 
-              <Button>Start Studying</Button>
+              <Button href="/study/">Start Studying</Button>
             </div>
           </Col>
           <Col sm={12} md={4} lg={4}>
