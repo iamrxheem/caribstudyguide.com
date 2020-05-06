@@ -83,7 +83,7 @@ const Page = () => (
                   className="text-center"
                   style={{ margin: "0 auto", width: "100%" }}
                 >
-                  <Zoom>
+                  <Fade>
                     <Img
                       className="card-img"
                       style={{ width: "60%", height: "70%" }}
@@ -93,18 +93,15 @@ const Page = () => (
                         ""
                       ]}
                     />
-                  </Zoom>
+                  </Fade>
 
                   <br />
                   <br />
                   <h5>CSEC Examinations</h5>
 
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Get access to hundreds of study notes, downloadabe handouts
+                    and much more with our CSEC guides and quizzes.
                   </p>
 
                   <Button href="/study/csec/">Start Studying</Button>
@@ -119,7 +116,7 @@ const Page = () => (
                   className="text-center"
                   style={{ margin: "0 auto", width: "100%" }}
                 >
-                  <Zoom>
+                  <Fade>
                     <Img
                       className="card-img"
                       style={{ width: "60%", height: "70%" }}
@@ -129,18 +126,17 @@ const Page = () => (
                         ""
                       ]}
                     />
-                  </Zoom>
+                  </Fade>
 
                   <br />
                   <br />
                   <h5>CAPE Examinations</h5>
 
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Your CAPE examinations are important and we've done our best
+                    to bring together materials from teachers and students from
+                    accross the Caribbean. Get access to materials, quizzes and
+                    assistance with IA.
                   </p>
 
                   <Button href="/study/cape/">Start Studying</Button>
