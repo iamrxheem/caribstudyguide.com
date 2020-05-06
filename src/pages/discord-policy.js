@@ -47,6 +47,10 @@ import {
   isMobile
 } from "react-device-detect"
 
+const liStyle = {
+  paddingBottom: "15px"
+}
+
 const Page = () => (
   <>
     <Layout>
@@ -110,6 +114,65 @@ const Page = () => (
               </a>
               .
             </p>
+
+            <br />
+            <br />
+            <h6>No personal relationships</h6>
+            <p>
+              For the safety and security of the users of our Discord community,
+              we do not encourage personal relationships between our users. Do
+              not
+            </p>
+
+            <ul>
+              <li style={liStyle}>
+                Do not share your personally identifiable infomation including
+                your name, phone number, date of birth, address, high school etc
+              </li>
+              <li style={liStyle}>
+                Do not attempt to start a personal or ramantic relationship with
+                anyone
+              </li>
+            </ul>
+
+            <p>
+              If someone approaches you, let us know and then{" "}
+              <a
+                target="_blank"
+                href="https://support.discord.com/hc/en-us/articles/217916488-Blocking-Privacy-Settings-"
+              >
+                block them
+              </a>
+              .
+            </p>
+
+            <br />
+            <br />
+            <h6>Do no harass or bully anyone</h6>
+            <p>
+              In keeping with Discord's Terms of Service we strictly prohibit
+              harassing and/ or bullying anyone
+            </p>
+
+            <br />
+            <br />
+            <h6>Title</h6>
+            <p>Description</p>
+
+            <br />
+            <br />
+            <h6>Title</h6>
+            <p>Description</p>
+
+            <br />
+            <br />
+            <h6>Title</h6>
+            <p>Description</p>
+
+            <br />
+            <br />
+            <h6>Title</h6>
+            <p>Description</p>
           </Col>
           <Col sm={12} md={4} lg={4}></Col>
         </Row>

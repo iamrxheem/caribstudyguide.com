@@ -65,7 +65,7 @@ class Page extends React.Component {
     if (this.state.email == 0 || this.state.password == 0) {
       Swal.fire({
         title: "Hmmm",
-        text: "Email or password cannot be blank",
+        text: "Not allowed yet",
         icon: "error",
         confirmButtonText: "Cool"
       })

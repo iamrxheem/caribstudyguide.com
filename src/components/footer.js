@@ -221,7 +221,7 @@ const Footer = props => {
                     </a>
                   </li>
                   <li>
-                    <a className="link-dark" style={{ color: "" }} href="/">
+                    <a className="link-dark" style={{ color: "" }} href="/FAQ/">
                       Frequently Asked Questions
                     </a>
                   </li>
