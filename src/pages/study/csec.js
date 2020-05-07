@@ -40,6 +40,7 @@ import CSECLayout from "../../layouts/CSECLayout"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import SubjectPreview from "../../common/subjectPreview"
 
 import {
   BrowserView,
@@ -77,380 +78,188 @@ class Page extends React.Component {
             </Breadcrumb>
           </Container>
 
-          <br />
           <Container fluid>
             <CSECLayout>
               <Row>
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="English A"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br className="d-md-none" />
-
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
+                  title="Mathematics"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br className="d-md-none" />
-
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc="https://pregonesprtt.org/wp-content/uploads/2019/05/Tempest2019.jpg"
+                  title="English B"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Information Technology"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Biology"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Chemistry"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Physics"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Spanish"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
-
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
-
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="French"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
                 {/* Subject */}
-                <Col sm={12} md={4} lg={4}>
-                  <br />
-                  <>
-                    <Card>
-                      <CardImg
-                        style={{ width: "100%" }}
-                        src="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
-                        alt="card image"
-                      />
-                      <CardBody>
-                        <CardTitle>Title</CardTitle>
-                        <p>Description</p>
+                <SubjectPreview
+                  imgSrc=""
+                  title="Principles of Business"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
-                        <br />
-                        <Row>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            {/* View for browser */}
-                            <BrowserView>
-                              <a href="/study/csec/">Start </a>
-                            </BrowserView>
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Principles of Accounts"
+                  description=""
+                  start=""
+                  resources=""
+                />
 
-                            {/* View for mobile devices */}
-                            <MobileView>
-                              <a href="/study/csec/">Start learning</a>
-                            </MobileView>
-                          </Col>
-                          <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                            <a href="/study/csec/">Resources</a>
-                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </>
-                </Col>
-                {/* End subjects */}
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Social Studies"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Caribbean History"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Geography"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Human and Social Biology"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Integrated Science"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Office Admistration"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Additional Mathematics"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Physical Education"
+                  description=""
+                  start=""
+                  resources=""
+                />
+
+                {/* Subject */}
+                <SubjectPreview
+                  imgSrc=""
+                  title="Visual Arts"
+                  description=""
+                  start=""
+                  resources=""
+                />
               </Row>
             </CSECLayout>
           </Container>
