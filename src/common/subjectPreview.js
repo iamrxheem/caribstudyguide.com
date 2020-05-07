@@ -48,39 +48,45 @@ const SubjectPreview = props => {
 
         <>
           <Card>
-            <CardImg
-              style={{ width: "100%" }}
-              src={props.imgSrc}
-              alt="card image"
-              className="subject-image"
-            />
-            <CardBody>
-              {/* Mobile view */}
-              <MobileView>
-                <CardTitle>{props.title}</CardTitle>
-              </MobileView>
-
-              {/* Browser view */}
-              <BrowserView>
-                <h6>{props.title}</h6>
-              </BrowserView>
-              <p>{props.description}</p>
-
-              <br />
+            <CardBody className="alt-card-body">
               <Row>
-                <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                  {/* View for browser */}
+                <Col sm={12} md={4} lg={4}>
+                  <CardImg
+                    style={{ width: "100%" }}
+                    src={props.imgSrc}
+                    alt="card image"
+                    className="subject-image"
+                  />
+                </Col>
+                <Col sm={12} md={8} lg={8}>
                   <BrowserView>
-                    <a href={props.start}>Start</a>
+                    <h6>{props.title}</h6>
                   </BrowserView>
 
-                  {/* View for mobile devices */}
                   <MobileView>
-                    <a href={props.start}>Start learning</a>
+                    <br />
+                    <CardTitle>{props.title}</CardTitle>
+
+                    <p>{props.description}</p>
                   </MobileView>
-                </Col>
-                <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                  <a href={props.resources}>Resources</a>
+
+                  <br />
+                  <Row>
+                    <Col xs={6} sm={6} md={6} lg={6} xl={6}>
+                      {/* View for browser */}
+                      <BrowserView>
+                        <a href={props.start}>Start</a>
+                      </BrowserView>
+
+                      {/* View for mobile devices */}
+                      <MobileView>
+                        <a href={props.start}>Start learning</a>
+                      </MobileView>
+                    </Col>
+                    <Col xs={6} sm={6} md={6} lg={6} xl={6}>
+                      <a href={props.resources}>Resources</a>
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
             </CardBody>

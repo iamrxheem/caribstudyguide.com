@@ -25,6 +25,9 @@
   text-decoration: none;
 }
 
+.alt-card-body {
+  padding: 1em!important;
+}
 
 .clearfix {
   clear: both;
@@ -37,9 +40,7 @@
 
 /* For most laptop and some desktops devices */
 @media (min-width: 1025px) and (max-width: 1280px){
-  .subject-image {
-    height: 200px;
-  }
+
 }
 
 
@@ -51,7 +52,5 @@
 
 /* For mobile devices */
 @media (min-width: 320px) and (max-width: 180px) {
-  .subject-image {
-    height: 180px!important;
-  }
+
 }
