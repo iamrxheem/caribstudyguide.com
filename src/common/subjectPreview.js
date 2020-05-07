@@ -52,6 +52,7 @@ const SubjectPreview = props => {
               style={{ width: "100%" }}
               src={props.imgSrc}
               alt="card image"
+              className="subject-image"
             />
             <CardBody>
               {/* Mobile view */}
