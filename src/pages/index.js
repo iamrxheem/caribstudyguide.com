@@ -33,7 +33,7 @@ import SEO from "../components/seo"
 import Carousel from "react-bootstrap/Carousel"
 import HomeCarousel from "../components/homeCarousel"
 import PastPaperSlider from "../components/pastPaperSlider"
-
+import { Helmet } from "react-helmet"
 import { Tab, Tabs } from "react-bootstrap"
 import YouTube from "react-youtube"
 import uuid from "uuid"
@@ -57,6 +57,9 @@ const opts = {
 
 const Page = () => (
   <>
+    <Helmet>
+      <meta name="keywords" content="your, tags" />
+    </Helmet>
     <Layout>
       <SEO title="Home" description="" />
 

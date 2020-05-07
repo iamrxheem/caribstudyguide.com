@@ -58,6 +58,7 @@ const Page = () => (
             <br />
 
             <Img
+              className="card-img"
               style={{ width: "100%" }}
               src={[
                 "https://www.how-to-study.com/images/study-skills-assessments.jpg",
@@ -116,7 +117,7 @@ const Page = () => (
                   className="text-center"
                   style={{ margin: "0 auto", width: "100%" }}
                 >
-                  <Fade>
+                  <Bounce>
                     <Img
                       className="card-img"
                       style={{ width: "60%", height: "70%" }}
@@ -126,7 +127,7 @@ const Page = () => (
                         ""
                       ]}
                     />
-                  </Fade>
+                  </Bounce>
 
                   <br />
                   <br />

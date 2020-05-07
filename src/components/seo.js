@@ -60,7 +60,7 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription
         },
-        { name: `copyright`, content: `Caribbean Study Guide` },
+        { name: `copyright`, content: `CXC Study Guide` },
         {
           name: `author`,
           content: `Caribbean Study Guide, info@caribbeanstudyguide.com`
@@ -79,7 +79,7 @@ function SEO({ description, lang, meta, title }) {
         },
         { name: `target`, content: `all` },
         { name: `audience`, content: `all` },
-        { name: ``, content: `` },
+        { name: `designer`, content: `CXC Study Guide` },
         { name: ``, content: `` },
         { name: ``, content: `` },
         { name: ``, content: `` },

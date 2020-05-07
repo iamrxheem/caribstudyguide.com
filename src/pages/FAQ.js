@@ -35,6 +35,8 @@ import { Zoom, Bounce, Fade, Flip, Rotate, Roll } from "react-reveal"
 import Img from "react-image"
 import axios from "axios"
 import Swal from "sweetalert2"
+import Collapsible from "react-collapsible"
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react"
 
 // React device detect
 import {
@@ -95,6 +97,7 @@ class Page extends React.Component {
 
                 <br />
                 <br />
+                <br />
                 <h5>Frequently Asked Questions</h5>
 
                 <p>
@@ -102,6 +105,222 @@ class Page extends React.Component {
                   questions we get asked by our students. If your question is
                   not then let us know.
                 </p>
+
+                <ul className="ul">
+                  {/* Question */}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">
+                            Is this company affiliated with the Caribbean
+                            Examination Council?
+                          </a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        No, we are not affiliated nor a representative of CXC.
+                        We are a group of teachers and students.
+                      </p>
+                    </Collapsible>
+                  </li>
+
+                  {/* Question */}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">Whare are we based?</a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        We are a community of students and teachers from around
+                        the Caribbean. However, we mainly operate in Kingston,
+                        Jamaica.
+                      </p>
+
+                      <img
+                        style={{ width: "100%" }}
+                        src="https://jajamaica.org/wp-content/uploads/2018/08/map-jamaica-counties.png"
+                      />
+                      <br />
+                    </Collapsible>
+                  </li>
+
+                  {/* Question */}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">Is the website free to use?</a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        Yes, the website is completely free to use unless
+                        specified otherwise.
+                      </p>
+                    </Collapsible>
+                  </li>
+
+                  {/* Question */}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">Am I required to sign up?</a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        No, registering on our website is completely optional.
+                        However, if you sign up you will be able to{" "}
+                      </p>
+                      <ul>
+                        <li style={{ paddingBottom: "20px" }}>
+                          Access to hundreds of quizzes and downloadable
+                          handouts
+                        </li>
+                        <li style={{ paddingBottom: "20px" }}>
+                          Get access to our online Discord server, Google
+                          Classroom and Whatsapp study groups where you can get
+                          extra resources and assitance with your SBA or IA.
+                        </li>
+                        <li style={{ paddingBottom: "20px" }}>
+                          Get virtual awards for milestones and accomplishments
+                        </li>
+                        <li style={{ paddingBottom: "20px" }}>
+                          Customize the website to show the subjects that you're
+                          studying
+                        </li>
+                      </ul>
+                      And much more!
+                    </Collapsible>
+                  </li>
+
+                  {/* Question */}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">
+                            How do I get access to the materials to download?
+                          </a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        In order to download material you will be required to
+                        sign up on our website.
+                      </p>
+                    </Collapsible>
+                  </li>
+
+                  {/* Question*/}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">How do I join the online classes?</a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        {" "}
+                        At this time our online classes are only available to
+                        users who register or follow us on social media. We do
+                        this to better protect our users as we monitor and vet
+                        who we allow in our groups.
+                      </p>
+                    </Collapsible>
+                  </li>
+
+                  {/* Question*/}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">
+                            How do I join the Whatsapp study groups?
+                          </a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        At this time the Whatsapp groups are only available to
+                        users who register or follow us on social media. We do
+                        this to better protect our users as we monitor and vet
+                        who we allow in our groups.
+                      </p>
+                    </Collapsible>
+                  </li>
+
+                  {/* Question*/}
+                  <li>
+                    <Collapsible
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
+                          <a href="">
+                            Is there a YouTube channel with the classes?
+                          </a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        You can subscribe to our Youtube channe{" "}
+                        <a
+                          href="https://www.youtube.com/channel/UC0eO_ApReknTjj50B7_LQyw"
+                          target="_blank"
+                        >
+                          here
+                        </a>
+                        .
+                      </p>
+                    </Collapsible>
+                  </li>
+                </ul>
               </Col>
 
               <Col sm={12} md={4} lg={4}></Col>

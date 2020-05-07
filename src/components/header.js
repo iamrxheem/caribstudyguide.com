@@ -108,7 +108,7 @@ class Header extends React.Component {
                     Study
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem>
+                    <DropdownItem href="/study/csec/">
                       <LazyLoad>
                         <Img
                           style={{ height: "50px", width: "50px" }}
@@ -122,7 +122,7 @@ class Header extends React.Component {
                       </LazyLoad>
                       CSEC Examinations
                     </DropdownItem>
-                    <DropdownItem>
+                    <DropdownItem href="/study/cape/">
                       <LazyLoad>
                         <Img
                           style={{ height: "50px", width: "50px" }}
