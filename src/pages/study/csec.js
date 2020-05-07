@@ -78,7 +78,7 @@ class Page extends React.Component {
             </Breadcrumb>
           </Container>
 
-          <Container fluid>
+          <Container>
             <CSECLayout>
               <Row>
                 {/* English Language */}
@@ -162,7 +162,7 @@ class Page extends React.Component {
                   resources=""
                 />
 
-                {/* Subject */}
+                {/* Principles of Business */}
                 <SubjectPreview
                   imgSrc="https://d3q6qq2zt8nhwv.cloudfront.net/course/d9957ba6fb5e423eb2fce46b16f52452.jpg"
                   title="Principles of Business"
@@ -189,16 +189,16 @@ class Page extends React.Component {
                   resources=""
                 />
 
-                {/* Subject */}
+                {/* Caribbean History */}
                 <SubjectPreview
                   imgSrc="https://images.liverpoolmuseums.org.uk/styles/focal_point_2_1/public/2020-01/slavery-in-the-caribbean-banner.jpg"
                   title="Caribbean History"
-                  description=""
+                  description="Let's taka a trip back in history through fun lessons, engaging activities and through regular exercises."
                   start=""
                   resources=""
                 />
 
-                {/* Subject */}
+                {/* Geography */}
                 <SubjectPreview
                   imgSrc="https://study.com/cimages/videopreview/videopreview-full/p3c2j8y73a.jpg"
                   title="Geography"

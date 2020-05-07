@@ -43,7 +43,7 @@ const SubjectPreview = props => {
   return (
     <>
       {/* Subject */}
-      <Col sm={12} md={4} lg={4}>
+      <Col sm={12} md={6} lg={6}>
         <br />
 
         <>
