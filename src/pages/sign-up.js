@@ -116,8 +116,6 @@ class Page extends React.Component {
               </Breadcrumb>
 
               <br />
-              <div id="response"></div>
-              <br />
               <Row>
                 <Col sm={12} md={4} lg={4}>
                   <Card>

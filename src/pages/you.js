@@ -89,7 +89,7 @@ class Page extends React.Component {
   }
 
   async getUserLocation() {
-    await axios
+    axios
       .get(
         "https://api.ipdata.co/es?api-key=13880cb6f8a12a0a002b2f351472ffe7acf8311a123fcac5098b1f50"
       )
