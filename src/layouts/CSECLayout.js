@@ -47,43 +47,7 @@ class CSECLayout extends React.Component {
   render() {
     return (
       <>
-        <Sidebar
-          sidebar={
-            <>
-              <>
-                <Nav
-                  style={{ margin: "0 auto" }}
-                  className="flex-column text-center"
-                >
-                  <NavItem>
-                    <NavLink active href="#">
-                      Active
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="#">Another Link</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink disabled href="#">
-                      Disabled Link
-                    </NavLink>
-                  </NavItem>
-                </Nav>
-              </>
-            </>
-          }
-          open={this.state.sidebarOpen}
-          onSetOpen={this.onSetSidebarOpen}
-          styles={{
-            sidebar: { background: "white", width: "300px", margin: "0 auto" }
-          }}
-        >
-          <a onClick={() => this.onSetSidebarOpen(true)}>.</a>
-          <>{this.props.children}</>
-        </Sidebar>
+        <>{this.props.children}</>
       </>
     )
   }
