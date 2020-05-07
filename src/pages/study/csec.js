@@ -85,7 +85,7 @@ class Page extends React.Component {
                 <SubjectPreview
                   imgSrc="https://thewritelife.com/wp-content/uploads/2015/05/photodune-11477592-essay-concept-notepad-s.jpg"
                   title="English A"
-                  description=""
+                  description="English Language is essential -- and madatory too. Let's explore English through fun lessons and exercises."
                   start=""
                   resources=""
                 />
@@ -94,7 +94,7 @@ class Page extends React.Component {
                 <SubjectPreview
                   imgSrc="https://www.stem.org.uk/sites/default/files/blog-images/A%20level%20mathematics.jpg"
                   title="Mathematics"
-                  description=""
+                  description="Mathematics as a problem solving tool - and the syllabus is designed to teach students use it in their everyday life."
                   start=""
                   resources=""
                 />
@@ -103,7 +103,7 @@ class Page extends React.Component {
                 <SubjectPreview
                   imgSrc="https://pregonesprtt.org/wp-content/uploads/2019/05/Tempest2019.jpg"
                   title="English B"
-                  description=""
+                  description="'To be, or not to be: that is the question'. - William Shakespeare. In our lessons we take a look at poems and literaure in anticipation for your exam."
                   start=""
                   resources=""
                 />
@@ -112,7 +112,7 @@ class Page extends React.Component {
                 <SubjectPreview
                   imgSrc="https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg"
                   title="Information Technology"
-                  description=""
+                  description="We live in a technological age and now more than ever students need to be computer literate. Here we explore all the relevant concepts for your exam."
                   start=""
                   resources=""
                 />
