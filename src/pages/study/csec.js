@@ -35,6 +35,7 @@ import { Zoom, Bounce, Fade, Flip, Rotate, Roll } from "react-reveal"
 import Img from "react-image"
 import axios from "axios"
 import Swal from "sweetalert2"
+import CSECLayout from "../../layouts/CSECLayout"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -49,32 +50,34 @@ class Page extends React.Component {
   render() {
     return (
       <>
-        <Layout>
-          <SEO
-            title="Free CSEC Online Study Guides and Notes"
-            description=""
-            author="cxcstudyguide"
-          />
+        <CSECLayout>
+          <Layout>
+            <SEO
+              title="Free CSEC Online Study Guides and Notes"
+              description=""
+              author="cxcstudyguide"
+            />
 
-          <Container>
-            <Breadcrumb>
-              <BreadcrumbItem>
-                <a href="/">Home</a>
-              </BreadcrumbItem>
-              <BreadcrumbItem>
-                <a href="/study">Study</a>
-              </BreadcrumbItem>
-              <BreadcrumbItem active>CSEC</BreadcrumbItem>
-            </Breadcrumb>
+            <Container>
+              <Breadcrumb>
+                <BreadcrumbItem>
+                  <a href="/">Home</a>
+                </BreadcrumbItem>
+                <BreadcrumbItem>
+                  <a href="/study">Study</a>
+                </BreadcrumbItem>
+                <BreadcrumbItem active>CSEC</BreadcrumbItem>
+              </Breadcrumb>
 
-            <br />
-            <Row>
-              <Col sm={12} md={8} lg={8}></Col>
+              <br />
+              <Row>
+                <Col sm={12} md={8} lg={8}></Col>
 
-              <Col sm={12} md={4} lg={4}></Col>
-            </Row>
-          </Container>
-        </Layout>
+                <Col sm={12} md={4} lg={4}></Col>
+              </Row>
+            </Container>
+          </Layout>
+        </CSECLayout>
       </>
     )
   }
