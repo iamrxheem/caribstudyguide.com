@@ -271,7 +271,7 @@ const Page = () => (
               </p>
 
               <br class="d-lg-none" />
-              <Button>Sign Up</Button>
+              <Button href="/sign-up/">Sign Up</Button>
             </div>
           </Col>
 

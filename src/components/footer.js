@@ -354,6 +354,11 @@ const Footer = props => {
                       Discord Guidelines & Terms
                     </a>
                   </li>
+                  <li>
+                    <a className="link-dark" style={{ color: "" }} href="/you/">
+                      You and Your data
+                    </a>
+                  </li>
                 </ul>
               </Col>
             </Row>

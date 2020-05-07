@@ -87,7 +87,7 @@ class UserDropdownMenu extends React.Component {
               <DropdownItem href="/login/">Log in</DropdownItem>
 
               <hr />
-              <DropdownItem href="/register/">Create an account</DropdownItem>
+              <DropdownItem href="/sign-up/">Create an account</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </CustomView>
