@@ -47,16 +47,12 @@ class CSECLayout extends React.Component {
   render() {
     return (
       <>
-        <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
-          <Tab eventKey="home" title="Home">
-            <br />
+        <Row>
+          <Col sm={12} md={8} lg={8}>
             <>{this.props.children}</>
-          </Tab>
-          <Tab eventKey="profile" title="Profile">
-            <br />
-            <p>Welcome</p>
-          </Tab>
-        </Tabs>
+          </Col>
+          <Col sm={12} md={4} lg={4}></Col>
+        </Row>
       </>
     )
   }
