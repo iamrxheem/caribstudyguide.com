@@ -1,17 +1,15 @@
 import React from "react"
-import Sidebar from "react-sidebar"
+import SlideMenu from "react-slide-menu"
 import {
   Alert,
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  Nav,
   CardTitle,
   Card,
   CardBody,
   Form,
   FormGroup,
-  NavItem,
   NavLink,
   Dropdown,
   DropdownToggle,
@@ -30,24 +28,35 @@ import {
   CardFooter,
   Button
 } from "shards-react"
+import SideNav, {
+  Toggle,
+  Nav,
+  NavItem,
+  NavIcon,
+  NavText
+} from "@trendmicro/react-sidenav"
+import { Tab, Tabs } from "react-bootstrap"
 
 class CSECLayout extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = { sidebarOpen: false }
-
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this)
-  }
-
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open })
+    this.state = {}
   }
 
   render() {
     return (
       <>
-        <>{this.props.children}</>
+        <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
+          <Tab eventKey="home" title="Home">
+            <br />
+            <>{this.props.children}</>
+          </Tab>
+          <Tab eventKey="profile" title="Profile">
+            <br />
+            <p>Welcome</p>
+          </Tab>
+        </Tabs>
       </>
     )
   }

@@ -50,34 +50,33 @@ class Page extends React.Component {
   render() {
     return (
       <>
-        <CSECLayout>
-          <Layout>
-            <SEO
-              title="Free CSEC Online Study Guides and Notes"
-              description=""
-              author="cxcstudyguide"
-            />
+        <Layout>
+          <SEO
+            title="Free CSEC Online Study Guides and Notes"
+            description=""
+            author="cxcstudyguide"
+          />
 
-            <Container>
-              <Breadcrumb>
-                <BreadcrumbItem>
-                  <a href="/">Home</a>
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                  <a href="/study">Study</a>
-                </BreadcrumbItem>
-                <BreadcrumbItem active>CSEC</BreadcrumbItem>
-              </Breadcrumb>
+          <Container>
+            <Breadcrumb>
+              <BreadcrumbItem>
+                <a href="/">Home</a>
+              </BreadcrumbItem>
+              <BreadcrumbItem>
+                <a href="/study">Study</a>
+              </BreadcrumbItem>
+              <BreadcrumbItem active>CSEC</BreadcrumbItem>
+            </Breadcrumb>
 
-              <br />
+            <CSECLayout>
               <Row>
                 <Col sm={12} md={8} lg={8}></Col>
 
                 <Col sm={12} md={4} lg={4}></Col>
               </Row>
-            </Container>
-          </Layout>
-        </CSECLayout>
+            </CSECLayout>
+          </Container>
+        </Layout>
       </>
     )
   }
