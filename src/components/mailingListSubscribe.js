@@ -52,7 +52,7 @@ class MailingListSubscribe extends React.Component {
       <>
         <>
           <div className="form" id="mc_embed_signup">
-            <form
+            <Form
               action="https://cxcguide.us18.list-manage.com/subscribe/post?u=11c71b70324980ffe7d8500a6&amp;id=3c1d97be12"
               method="post"
               id="mc-embedded-subscribe-form"
@@ -62,49 +62,50 @@ class MailingListSubscribe extends React.Component {
               novalidate
             >
               <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                <FormGroup>
+                  <label for="mce-EMAIL">Subscribe to our mailing list</label>
 
-                <p>
-                  Join our mailing list to get weekly study notes, flash cards
-                  and past paper solution.
-                </p>
-                <input
-                  type="email"
-                  value=""
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                  name="EMAIL"
-                  className="email"
-                  id="mce-EMAIL"
-                  placeholder="Enter your email"
-                  required
-                />
-
-                <div
-                  style={{ position: "absolute", left: "-5000px" }}
-                  aria-hidden="true"
-                >
-                  <input
-                    type="text"
-                    name="b_11c71b70324980ffe7d8500a6_3c1d97be12"
-                    tabindex="-1"
+                  <p>
+                    Join our mailing list to get weekly study notes, flash cards
+                    and past paper solution.
+                  </p>
+                  <FormInput
+                    type="email"
                     value=""
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                    name="EMAIL"
+                    className=""
+                    id="mce-EMAIL"
+                    placeholder="Enter your email"
+                    required
                   />
-                </div>
 
+                  <div
+                    style={{ position: "absolute", left: "-5000px" }}
+                    aria-hidden="true"
+                  >
+                    <input
+                      type="text"
+                      name="b_11c71b70324980ffe7d8500a6_3c1d97be12"
+                      tabindex="-1"
+                      value=""
+                    />
+                  </div>
+                </FormGroup>
                 <div class="clear">
-                  <br />
-                  <input
+                  <Button
                     style={{ width: "100px" }}
                     type="submit"
                     value="Subscribe"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    className="button btn btn-primary primary"
-                  />
+                  >
+                    Sign up
+                  </Button>
                 </div>
               </div>
-            </form>
+            </Form>
           </div>
         </>
       </>
