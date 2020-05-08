@@ -80,11 +80,13 @@ const SubjectPreview = props => {
 
                       {/* View for mobile devices */}
                       <MobileView>
-                        <a href={props.start}>Start learning</a>
+                        <Button theme="light" href={props.start}>
+                          Start learning
+                        </Button>
                       </MobileView>
                     </Col>
                     <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                      <a href={props.resources}>Resources</a>
+                      <a href={props.resources}></a>
                     </Col>
                   </Row>
                 </Col>

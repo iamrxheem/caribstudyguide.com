@@ -57,31 +57,33 @@ const Footer = props => {
                   <br />
                   <ul className="ul">
                     <li>
-                      <a href="/study/csec/">Mathematics</a>
+                      <a href="/study/csec/mathematics/">Mathematics</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">English A</a>
+                      <a href="/study/csec/english-a/">English A</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">Information Technology</a>
+                      <a href="/study/csec/information-technology/">
+                        Information Technology
+                      </a>
                     </li>
                     <li>
-                      <a href="/study/csec/">Chemistry</a>
+                      <a href="/study/csec/chemistry/">Chemistry</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">Spanish</a>
+                      <a href="/study/csec/spanish/">Spanish</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">Geography</a>
+                      <a href="/study/csec/geography/">Geography</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">Biology</a>
+                      <a href="/study/csec/biology/">Biology</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">Physics</a>
+                      <a href="/study/csec/physics/">Physics</a>
                     </li>
                     <li>
-                      <a href="/study/csec/">English B</a>
+                      <a href="/study/csec/english-b/">English B</a>
                     </li>
                   </ul>
                 </Col>
