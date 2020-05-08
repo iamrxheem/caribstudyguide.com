@@ -118,10 +118,15 @@ function SEO({ description, lang, meta, title }) {
         src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
         async=""
       ></script>
-      <script src="https://hammerjs.github.io/dist/hammer.min.js" />
       <meta
         name="google-site-verification"
         content="5rLcTvmtCQjDdX7_SylgDyTTz6B5VLf86AW2rp_-g-A"
+      />
+      <script async src="//static.getclicky.com/js"></script>
+      <link
+        href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+        rel="stylesheet"
+        type="text/css"
       />
     </Helmet>
   )

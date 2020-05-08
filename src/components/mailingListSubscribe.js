@@ -33,66 +33,79 @@ class MailingListSubscribe extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = { value: "" }
+    this.state = { email: "" }
 
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value })
+    this.setState({ email: event.target.value })
   }
 
   handleSubmit(event) {
     event.preventDefault()
-
-    var $form = $(this)
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-      Swal.fire("Thank you for subscribing!")
-    })
   }
 
   render() {
     return (
       <>
         <>
-          <h5>Mailing List</h5>
-          <form
-            id="footer-embed-mailing-list-subscribe"
-            name="footer-embed-mailing-list-subscribe"
-            method="POST"
-            dataNetlify="true"
-            dataNetlifyRecaptcha="true"
-          >
-            <FormGroup>
-              <p htmlFor="email">
-                <b>Join our mailing list</b> for weelkly study notes and
-                exercises.
-              </p>
-
-              <FormInput
-                type="email"
-                id="value"
-                placeholder="Enter your email"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
-            </FormGroup>
-
-            <Button
-              style={{
-                marginTop: "10px",
-                backgroundColor: "#01C8EF",
-                borderColor: "#01C8EF"
-              }}
-              type="submit"
-              onClick={this.handleSubmit}
+          <div className="form" id="mc_embed_signup">
+            <form
+              action="https://cxcguide.us18.list-manage.com/subscribe/post?u=11c71b70324980ffe7d8500a6&amp;id=3c1d97be12"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              className="validate"
+              target="_blank"
+              novalidate
             >
-              Submit
-            </Button>
-          </form>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our mailing list</label>
 
-          <br />
+                <p>
+                  Join our mailing list to get weekly study notes, flash cards
+                  and past paper solution.
+                </p>
+                <input
+                  type="email"
+                  value=""
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  name="EMAIL"
+                  className="email"
+                  id="mce-EMAIL"
+                  placeholder="Enter your email"
+                  required
+                />
+
+                <div
+                  style={{ position: "absolute", left: "-5000px" }}
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_11c71b70324980ffe7d8500a6_3c1d97be12"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+
+                <div class="clear">
+                  <br />
+                  <input
+                    style={{ width: "100px" }}
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    className="button btn btn-primary primary"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
         </>
       </>
     )
