@@ -114,6 +114,10 @@ function SEO({ description, lang, meta, title }) {
         crossorigin="anonymous"
       ></script>
       <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+      <script
+        src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+        async=""
+      ></script>
     </Helmet>
   )
 }

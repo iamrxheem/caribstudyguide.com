@@ -80,9 +80,6 @@ class Page extends React.Component {
 
           <Container>
             <MobileView>
-              <h5>Let's get started</h5>
-
-              <br />
               <br />
               <Row>
                 <Col sm={12} md={6} lg={4}>

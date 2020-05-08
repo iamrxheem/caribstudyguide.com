@@ -16,6 +16,7 @@ import "../assets/css/bulma-menu.css"
 import "./layout.css"
 
 import "../assets/js/tawkto.js"
+import "../assets/js/onesignal.js"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
