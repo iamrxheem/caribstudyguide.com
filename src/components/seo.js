@@ -119,6 +119,10 @@ function SEO({ description, lang, meta, title }) {
         async=""
       ></script>
       <script src="https://hammerjs.github.io/dist/hammer.min.js" />
+      <meta
+        name="google-site-verification"
+        content="5rLcTvmtCQjDdX7_SylgDyTTz6B5VLf86AW2rp_-g-A"
+      />
     </Helmet>
   )
 }
