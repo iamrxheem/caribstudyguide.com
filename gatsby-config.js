@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.cxcstudyguide.com`,
     title: `CXC Study Guide`,
     description: `Online study guide for Caribbean students including CSEC, CAPE, PEP and more.`,
     author: `iamrxheem`
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
