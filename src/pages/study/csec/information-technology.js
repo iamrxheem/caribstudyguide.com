@@ -83,7 +83,7 @@ class Page extends React.Component {
               <BreadcrumbItem>
                 <a href="/study/csec/">CSEC</a>
               </BreadcrumbItem>
-              <BreadcrumbItem active>Information Technology</BreadcrumbItem>
+              <BreadcrumbItem active>Info Technology</BreadcrumbItem>
             </Breadcrumb>
           </Container>
 

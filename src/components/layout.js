@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <DeviceInfo />
+
       <div>{children}</div>
       <br />
       <Footer />
