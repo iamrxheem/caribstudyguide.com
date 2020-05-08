@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import DeviceInfo from "./deviceInfo"
 
 // All Components
 import Header from "./header"
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <DeviceInfo />
       <div>{children}</div>
       <br />
       <Footer />
