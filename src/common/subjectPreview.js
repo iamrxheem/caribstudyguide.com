@@ -48,49 +48,28 @@ const SubjectPreview = props => {
 
         <>
           <Card>
+            <CardImg
+              style={{ width: "100%" }}
+              src={props.imgSrc}
+              alt="card image"
+              className="subject-image"
+            />
             <CardBody className="alt-card-body">
-              <Row>
-                <Col sm={12} md={4} lg={4}>
-                  <CardImg
-                    style={{ width: "100%" }}
-                    src={props.imgSrc}
-                    alt="card image"
-                    className="subject-image"
-                  />
-                </Col>
-                <Col sm={12} md={8} lg={8}>
-                  <BrowserView>
-                    <h6>{props.title}</h6>
-                  </BrowserView>
+              <BrowserView>
+                <h6>{props.title}</h6>
+              </BrowserView>
 
-                  <MobileView>
-                    <br />
-                    <CardTitle>{props.title}</CardTitle>
+              <MobileView>
+                <br />
+                <CardTitle>{props.title}</CardTitle>
+              </MobileView>
 
-                    <p>{props.description}</p>
-                  </MobileView>
+              <p>{props.description}</p>
+              <br />
 
-                  <br />
-                  <Row>
-                    <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                      {/* View for browser */}
-                      <BrowserView>
-                        <a href={props.start}>Start</a>
-                      </BrowserView>
-
-                      {/* View for mobile devices */}
-                      <MobileView>
-                        <Button theme="light" href={props.start}>
-                          Start learning
-                        </Button>
-                      </MobileView>
-                    </Col>
-                    <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                      <a href={props.resources}></a>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
+              <Button theme="light" href={props.start}>
+                Start learning
+              </Button>
             </CardBody>
           </Card>
         </>

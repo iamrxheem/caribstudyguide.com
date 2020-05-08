@@ -110,7 +110,7 @@ class Page extends React.Component {
 
                 {/* Information Technology */}
                 <SubjectPreview
-                  imgSrc="https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg"
+                  imgSrc="https://www.cbronline.com/wp-content/uploads/2017/01/code-770x513.jpg"
                   title="Information Technology"
                   description="We live in a technological age and now more than ever students need to be computer literate. Here we explore all the relevant concepts for your exam."
                   start="/study/csec/information-technology/"
@@ -146,9 +146,9 @@ class Page extends React.Component {
 
                 {/* Spanish */}
                 <SubjectPreview
-                  imgSrc="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2017/12/HowSayHello_Illustration_SPA_FB1200.png?h=9999&quality=100&w=993"
+                  imgSrc="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png"
                   title="Spanish"
-                  description="Learn Spanish from scratch"
+                  description="Learn Spanish from scratch with our guide crafted by experts in Modern languages."
                   start="/study/csec/spanish/"
                   resources=""
                 />
