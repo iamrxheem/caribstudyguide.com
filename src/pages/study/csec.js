@@ -80,10 +80,25 @@ class Page extends React.Component {
 
           <Container>
             <MobileView>
+              <h5>Let's get started</h5>
+
+              <br />
+              <br />
               <Row>
                 <Col sm={12} md={6} lg={4}>
+                  {/* Biology */}
                   <SubjectPreview
-                    imgSrc="https://thewritelife.com/wp-content/uploads/2015/05/photodune-11477592-essay-concept-notepad-s.jpg"
+                    imgSrc="https://leverageedu.com/blog/wp-content/uploads/2019/09/Biology.png"
+                    title="Biology"
+                    description="Biology is the study of living organism. Our guides are designed to teach students Biology from scratch."
+                    start="/study/csec/biology/"
+                    resources=""
+                  />
+                </Col>
+
+                <Col sm={12} md={6} lg={4}>
+                  <SubjectPreview
+                    imgSrc="https://elearningindustry.com/wp-content/uploads/2017/04/elearning-writing-3-courses-to-help-you-improve-your-writing-skills.png"
                     title="English A"
                     description="English Language is essential -- and madatory too. Let's explore English through fun lessons and exercises."
                     start="/study/csec/english-a/"
@@ -120,17 +135,6 @@ class Page extends React.Component {
                     title="English B"
                     description="'To be, or not to be: that is the question'. - William Shakespeare. In our lessons we take a look at poems and literaure in anticipation for your exam."
                     start="/study/csec/english-b/"
-                    resources=""
-                  />
-                </Col>
-
-                <Col sm={12} md={6} lg={4}>
-                  {/* Biology */}
-                  <SubjectPreview
-                    imgSrc="https://leverageedu.com/blog/wp-content/uploads/2019/09/Biology.png"
-                    title="Biology"
-                    description="Biology is the study of living organism. Our guides are designed to teach students Biology from scratch."
-                    start="/study/csec/biology/"
                     resources=""
                   />
                 </Col>
@@ -308,7 +312,7 @@ class Page extends React.Component {
 
                 <li className="mr-4">
                   <SubjectPreview
-                    imgSrc="https://thewritelife.com/wp-content/uploads/2015/05/photodune-11477592-essay-concept-notepad-s.jpg"
+                    imgSrc="https://elearningindustry.com/wp-content/uploads/2017/04/elearning-writing-3-courses-to-help-you-improve-your-writing-skills.png"
                     title="English A"
                     description="English Language is essential -- and madatory too. Let's explore English through fun lessons and exercises."
                     start="/study/csec/english-a/"

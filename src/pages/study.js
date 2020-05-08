@@ -35,6 +35,12 @@ import { Zoom, Bounce, Fade, Flip, Rotate, Roll } from "react-reveal"
 import Img from "react-image"
 import axios from "axios"
 import Swal from "sweetalert2"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -55,22 +61,24 @@ const Page = () => (
 
         <Row>
           <Col sm={12} md={8} lg={8}>
-            <br />
+            <MobileView>
+              <br />
+              <Img
+                className="card-img"
+                style={{ width: "100%" }}
+                src={[
+                  "https://www.how-to-study.com/images/study-skills-assessments.jpg",
+                  "",
+                  "",
+                  ""
+                ]}
+              />
 
-            <Img
-              className="card-img"
-              style={{ width: "100%" }}
-              src={[
-                "https://www.how-to-study.com/images/study-skills-assessments.jpg",
-                "",
-                "",
-                ""
-              ]}
-            />
+              <br />
+              <br />
+              <br />
+            </MobileView>
 
-            <br />
-            <br />
-            <br />
             <h5>Start Studying</h5>
 
             <p>
@@ -134,10 +142,9 @@ const Page = () => (
                   <h5>CAPE Examinations</h5>
 
                   <p>
-                    Your CAPE examinations are important and we've done our best
-                    to bring together materials from teachers and students from
-                    accross the Caribbean. Get access to materials, quizzes and
-                    assistance with IA.
+                    Your CAPE examinations are important and we've brought
+                    together materials from teachers and students from across
+                    the Caribbean.
                   </p>
 
                   <Button href="/study/cape/">Start Studying</Button>
