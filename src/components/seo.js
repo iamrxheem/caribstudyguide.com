@@ -118,6 +118,7 @@ function SEO({ description, lang, meta, title }) {
         src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
         async=""
       ></script>
+      <script src="https://hammerjs.github.io/dist/hammer.min.js" />
     </Helmet>
   )
 }
