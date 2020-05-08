@@ -42,6 +42,7 @@
 @media (min-width: 1025px) and (max-width: 1280px){
   .subject-image {
     height: 190px;
+    width: 300px!important;
   }
 }
 

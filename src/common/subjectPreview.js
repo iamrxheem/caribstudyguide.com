@@ -43,37 +43,41 @@ const SubjectPreview = props => {
   return (
     <>
       {/* Subject */}
-      <Col sm={12} md={6} lg={6}>
-        <br />
 
-        <>
-          <Card>
-            <CardImg
-              style={{ width: "100%" }}
-              src={props.imgSrc}
-              alt="card image"
-              className="subject-image"
-            />
-            <CardBody className="alt-card-body">
-              <BrowserView>
-                <h6>{props.title}</h6>
-              </BrowserView>
+      <br />
 
-              <MobileView>
-                <br />
-                <CardTitle>{props.title}</CardTitle>
-              </MobileView>
+      <>
+        <Card>
+          <CardImg
+            style={{ width: "100%" }}
+            src={props.imgSrc}
+            alt="card image"
+            className="subject-image"
+          />
+          <CardBody className="alt-card-body">
+            <BrowserView>
+              <h6>{props.title}</h6>
+            </BrowserView>
+
+            <MobileView>
+              <br />
+              <CardTitle>{props.title}</CardTitle>
 
               <p>{props.description}</p>
-              <br />
+            </MobileView>
 
-              <Button theme="light" href={props.start}>
-                Start learning
-              </Button>
-            </CardBody>
-          </Card>
-        </>
-      </Col>
+            <br />
+
+            <Button theme="light" href={props.start}>
+              Start learning
+            </Button>
+          </CardBody>
+        </Card>
+      </>
+
+      <BrowserView>
+        <br />
+      </BrowserView>
       {/* End subjects */}
     </>
   )
