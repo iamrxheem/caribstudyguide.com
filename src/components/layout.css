@@ -26,6 +26,7 @@
 }
 
 .alt-card-body {
+  width: auto!important;
   padding: 1em!important;
 }
 

@@ -28,14 +28,10 @@ import {
   CardFooter,
   Button
 } from "shards-react"
-import SideNav, {
-  Toggle,
-  Nav,
-  NavItem,
-  NavIcon,
-  NavText
-} from "@trendmicro/react-sidenav"
 import { Tab, Tabs } from "react-bootstrap"
+
+// Ads
+import Ads from "../components/ads"
 
 class CSECLayout extends React.Component {
   constructor(props) {
@@ -48,10 +44,12 @@ class CSECLayout extends React.Component {
     return (
       <>
         <Row>
-          <Col sm={12} md={8} lg={8}>
+          <Col sm={12} md={9} lg={9}>
             <>{this.props.children}</>
           </Col>
-          <Col sm={12} md={4} lg={4}></Col>
+          <Col sm={12} md={3} lg={3}>
+            <Ads />
+          </Col>
         </Row>
       </>
     )

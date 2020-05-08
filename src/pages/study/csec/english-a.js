@@ -40,6 +40,7 @@ import { Helmet } from "react-helmet"
 
 import CSECLayout from "../../../layouts/CSECLayout"
 import Layout from "../../../components/layout"
+import EnglishALayout from "../../../layouts/csec/englishALayout"
 import SEO from "../../../components/seo"
 
 import {
@@ -87,9 +88,9 @@ class Page extends React.Component {
             </Breadcrumb>
           </Container>
 
-          <Container>
-            <CSECLayout></CSECLayout>
-          </Container>
+          <EnglishALayout>
+            <p></p>
+          </EnglishALayout>
         </Layout>
       </>
     )

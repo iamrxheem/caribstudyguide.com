@@ -105,6 +105,11 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <script
+        data-ad-client="ca-pub-7216279079459124"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+      <script
         src="https://kit.fontawesome.com/3b83e0293b.js"
         crossorigin="anonymous"
       ></script>

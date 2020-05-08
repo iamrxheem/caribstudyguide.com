@@ -36,7 +36,10 @@ const SocialMediaIcons = props => {
     <>
       <Nav fill={isMobile}>
         <NavItem>
-          <NavLink target="_blank" href="/">
+          <NavLink
+            target="_blank"
+            href="https://www.instagram.com/cxcstudyguide/"
+          >
             <i
               style={{ color: "#8a3ab9" }}
               className="fab fa-instagram fa-lg"
@@ -44,7 +47,10 @@ const SocialMediaIcons = props => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink target="_blank" href="/">
+          <NavLink
+            target="_blank"
+            href="https://www.youtube.com/channel/UC0eO_ApReknTjj50B7_LQyw"
+          >
             <i style={{ color: "red" }} className="fab fa-youtube fa-lg"></i>
           </NavLink>
         </NavItem>
@@ -65,7 +71,7 @@ const SocialMediaIcons = props => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink target="_blank" href="/">
+          <NavLink target="_blank" href="mailto:contact@cxcguide.com">
             <i style={{ color: "grey" }} className="fas fa-envelope fa-lg"></i>
           </NavLink>
         </NavItem>
