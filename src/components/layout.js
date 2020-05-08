@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import DeviceInfo from "./deviceInfo"
+import ReactGA from "react-ga"
 
 // All Components
 import Header from "./header"
@@ -18,6 +19,12 @@ import "./layout.css"
 import "../assets/js/tawkto.js"
 import "../assets/js/matomo.js"
 import "../assets/js/onesignal.js"
+
+ReactGA.initialize("UA-165932729-1")
+
+if (process.browser) {
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
