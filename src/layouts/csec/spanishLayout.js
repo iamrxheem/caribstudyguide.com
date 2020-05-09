@@ -211,7 +211,9 @@ class SpanishLayout extends React.Component {
                         <li>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "present-tense-regular"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/regular-verbs/"
                           >
@@ -219,7 +221,9 @@ class SpanishLayout extends React.Component {
                           </a>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "present-tense-irregular"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/irregular-verbs/"
                           >
@@ -227,7 +231,9 @@ class SpanishLayout extends React.Component {
                           </a>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "present-tense-exercises"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/exercises/"
                           >
@@ -238,7 +244,11 @@ class SpanishLayout extends React.Component {
 
                       {/* Imperfect Tense */}
                       <a
-                        className={this.props.active === "" ? "is-active" : ""}
+                        className={
+                          this.props.active === "imperfect-tense"
+                            ? "is-active"
+                            : ""
+                        }
                         href="/study/csec/spanish/tenses/imperfect/"
                       >
                         Imperfect Tense
@@ -246,7 +256,11 @@ class SpanishLayout extends React.Component {
 
                       {/* Conditional Tense */}
                       <a
-                        className={this.props.active === "" ? "is-active" : ""}
+                        className={
+                          this.props.active === "conditional-tense"
+                            ? "is-active"
+                            : ""
+                        }
                         href="/study/csec/spanish/tenses/conditional/"
                       >
                         Conditional Tense
@@ -255,7 +269,9 @@ class SpanishLayout extends React.Component {
                         <li>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "conditional-tense-regular"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/regular-verbs/"
                           >
@@ -263,7 +279,10 @@ class SpanishLayout extends React.Component {
                           </a>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active ===
+                              "conditional-tense-irregular"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/irregular-verbs/"
                           >
@@ -271,7 +290,10 @@ class SpanishLayout extends React.Component {
                           </a>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active ===
+                              "conditional-tense-exercises"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/exercises/"
                           >
@@ -281,14 +303,23 @@ class SpanishLayout extends React.Component {
                       </ul>
 
                       {/* Future Tense */}
-                      <a href="/study/csec/spanish/tenses/future/">
+                      <a
+                        className={
+                          this.props.active === "future-tense"
+                            ? "is-active"
+                            : ""
+                        }
+                        href="/study/csec/spanish/tenses/future/"
+                      >
                         Future Tense
                       </a>
                       <ul>
                         <li>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "future-tense-regular"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/regular-verbs/"
                           >
@@ -296,7 +327,9 @@ class SpanishLayout extends React.Component {
                           </a>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "future-tense-irregular"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/irregular-verbs/"
                           >
@@ -304,7 +337,9 @@ class SpanishLayout extends React.Component {
                           </a>
                           <a
                             className={
-                              this.props.active === "" ? "is-active" : ""
+                              this.props.active === "future-tense-exercises"
+                                ? "is-active"
+                                : ""
                             }
                             href="/study/csec/spanish/tenses/present/exercises/"
                           >
@@ -315,7 +350,11 @@ class SpanishLayout extends React.Component {
 
                       {/* Prefect Tense */}
                       <a
-                        className={this.props.active === "" ? "is-active" : ""}
+                        className={
+                          this.props.active === "perfect-tense"
+                            ? "is-active"
+                            : ""
+                        }
                         href="/study/csec/spanish/tenses/perfect/"
                       >
                         Perfect Tense
@@ -323,7 +362,11 @@ class SpanishLayout extends React.Component {
 
                       {/* Past Perfect Tense */}
                       <a
-                        className={this.props.active === "" ? "is-active" : ""}
+                        className={
+                          this.props.active === "past-perfect-tense"
+                            ? "is-active"
+                            : ""
+                        }
                         href="/study/csec/spanish/tenses/past-perfect/"
                       >
                         Past Perfect Tense
@@ -342,7 +385,24 @@ class SpanishLayout extends React.Component {
 
                 <Modal size="sm" open={this.state.open} toggle={this.toggle}>
                   <ModalHeader>Menu</ModalHeader>
-                  <ModalBody>Hello there!</ModalBody>
+                  <ModalBody>
+                    <p>Select an option from the list below:</p>
+
+                    <aside className="menu">
+                      <p class="menu-label">Overview</p>
+
+                      <ul className="menu-list">
+                        <li>
+                          <a className="my-blue" href="/">
+                            Overview
+                          </a>
+                          <a className="my-blue" href="/">
+                            Exam Structure
+                          </a>
+                        </li>
+                      </ul>
+                    </aside>
+                  </ModalBody>
                 </Modal>
               </MobileView>
             </Col>
