@@ -105,6 +105,11 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <script
+        type="text/javascript"
+        src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+        data-dojo-config="usePlainJson: true, isDebug: false"
+      ></script>
+      <script
         data-ad-client="ca-pub-7216279079459124"
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"

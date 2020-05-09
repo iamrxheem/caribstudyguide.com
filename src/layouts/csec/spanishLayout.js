@@ -396,7 +396,10 @@ class SpanishLayout extends React.Component {
                           <a className="my-blue" href="/">
                             Overview
                           </a>
-                          <a className="my-blue" href="/">
+                          <a
+                            className="my-blue"
+                            href="/study/csec/spanish/exam-structure/directed-situations/"
+                          >
                             Exam Structure
                           </a>
                         </li>

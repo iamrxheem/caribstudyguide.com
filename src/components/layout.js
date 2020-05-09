@@ -16,6 +16,7 @@ import "../assets/css/bulma-tabs.css"
 import "../assets/css/bulma-menu.css"
 import "./layout.css"
 
+import "../assets/js/mailchimp.js"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
 import "../assets/js/onesignal.js"
