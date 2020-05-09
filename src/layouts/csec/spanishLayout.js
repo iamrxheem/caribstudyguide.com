@@ -31,169 +31,329 @@ import {
   Container,
   CardFooter,
   Button,
-  CardImg
+  CardImg,
+  Modal,
+  ModalHeader,
+  ModalBody
 } from "shards-react"
 import { Zoom, Bounce, Fade, Flip, Rotate, Roll } from "react-reveal"
 import CSECLayout from "../CSECLayout"
 
-const SpanishLayout = props => {
-  return (
-    <>
-      <CSECLayout>
-        <Row>
-          <Col sm={12} md={4} lg={4}>
-            <aside class="menu box">
-              <p class="menu-label">Overview</p>
-              <ul class="menu-list">
-                <li>
-                  <a
-                    className={props.active == "overview" ? "is-active" : ""}
-                    href="/study/csec/spanish/"
-                  >
-                    Overview
-                  </a>
-                </li>
-                <li>
-                  <a href="/study/csec/spanish/exam-structure/">
-                    Exam Structure
-                  </a>
-                  <ul>
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
+
+class SpanishLayout extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = { open: false }
+    this.toggle = this.toggle.bind(this)
+  }
+
+  toggle() {
+    this.setState({
+      open: !this.state.open
+    })
+  }
+
+  render() {
+    return (
+      <>
+        <CSECLayout>
+          <Row>
+            <Col sm={12} md={4} lg={4}>
+              <BrowserView>
+                <aside class="menu box">
+                  <p class="menu-label">Overview</p>
+                  <ul class="menu-list">
                     <li>
-                      <a href="/study/csec/spanish/exam-structure/directed-situations/">
-                        Directed Situations
+                      <a
+                        className={
+                          this.props.active === "overview" ? "is-active" : ""
+                        }
+                        href="/study/csec/spanish/"
+                      >
+                        Overview
                       </a>
-                      <a href="/study/csec/spanish/exam-structure/letter-writing/">
-                        Letter Writing
+                    </li>
+                    <li>
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/exam-structure/"
+                      >
+                        Exam Structure
                       </a>
-                      <a href="/study/csec/spanish/exam-structure/composition/">
-                        Composition
+                      <ul>
+                        <li>
+                          <a
+                            className={
+                              this.props.active === "directed-situations"
+                                ? "is-active"
+                                : ""
+                            }
+                            href="/study/csec/spanish/exam-structure/directed-situations/"
+                          >
+                            Directed Situations
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "letter-writing"
+                                ? "is-active"
+                                : ""
+                            }
+                            href="/study/csec/spanish/exam-structure/letter-writing/"
+                          >
+                            Letter Writing
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "composition"
+                                ? "is-active"
+                                : ""
+                            }
+                            href="/study/csec/spanish/exam-structure/composition/"
+                          >
+                            Composition
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "contextual-announcement"
+                                ? "is-active"
+                                : ""
+                            }
+                            href="/study/csec/spanish/exam-structure/contextual-announcement/"
+                          >
+                            Contextual Announcement
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "contextual-dialogue"
+                                ? "is-active"
+                                : ""
+                            }
+                            href="/study/csec/spanish/exam-structure/contextual-dialogue/"
+                          >
+                            Contextual Dialogue
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "reading-comprehension"
+                                ? "is-active"
+                                : ""
+                            }
+                            href="/study/csec/spanish/exam-structure/reading-comprehension/"
+                          >
+                            Reading Comprehension
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p class="menu-label">Tenses</p>
+                  <ul class="menu-list">
+                    {/* Present Tense */}
+                    <li>
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/present/"
+                      >
+                        Present Tense
                       </a>
-                      <a href="/study/csec/spanish/exam-structure/contextual-announcement/">
-                        Contextual Announcement
+                      <ul>
+                        <li>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/regular-verbs/"
+                          >
+                            Regular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/irregular-verbs/"
+                          >
+                            Irregular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/exercises/"
+                          >
+                            Exercises
+                          </a>
+                        </li>
+                      </ul>
+
+                      {/* Present Progressive */}
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/present-progressive/"
+                      >
+                        Present Progressive
                       </a>
-                      <a href="/study/csec/spanish/exam-structure/contextual-dialogue/">
-                        Contextual Dialogue
+
+                      {/* Preterite Tense */}
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/preterite/"
+                      >
+                        Preterite Tense
                       </a>
-                      <a href="/study/csec/spanish/exam-structure/reading-comprehension/">
-                        Reading Comprehension
+                      <ul>
+                        <li>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/regular-verbs/"
+                          >
+                            Regular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/irregular-verbs/"
+                          >
+                            Irregular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/exercises/"
+                          >
+                            Exercises
+                          </a>
+                        </li>
+                      </ul>
+
+                      {/* Imperfect Tense */}
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/imperfect/"
+                      >
+                        Imperfect Tense
+                      </a>
+
+                      {/* Conditional Tense */}
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/conditional/"
+                      >
+                        Conditional Tense
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/regular-verbs/"
+                          >
+                            Regular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/irregular-verbs/"
+                          >
+                            Irregular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/exercises/"
+                          >
+                            Exercises
+                          </a>
+                        </li>
+                      </ul>
+
+                      {/* Future Tense */}
+                      <a href="/study/csec/spanish/tenses/future/">
+                        Future Tense
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/regular-verbs/"
+                          >
+                            Regular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/irregular-verbs/"
+                          >
+                            Irregular Verbs
+                          </a>
+                          <a
+                            className={
+                              this.props.active === "" ? "is-active" : ""
+                            }
+                            href="/study/csec/spanish/tenses/present/exercises/"
+                          >
+                            Exercises
+                          </a>
+                        </li>
+                      </ul>
+
+                      {/* Prefect Tense */}
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/perfect/"
+                      >
+                        Perfect Tense
+                      </a>
+
+                      {/* Past Perfect Tense */}
+                      <a
+                        className={this.props.active === "" ? "is-active" : ""}
+                        href="/study/csec/spanish/tenses/past-perfect/"
+                      >
+                        Past Perfect Tense
                       </a>
                     </li>
                   </ul>
-                </li>
-              </ul>
-              <p class="menu-label">Tenses</p>
-              <ul class="menu-list">
-                {/* Present Tense */}
-                <li>
-                  <a href="/study/csec/spanish/tenses/present/">
-                    Present Tense
+                </aside>
+              </BrowserView>
+
+              <MobileView>
+                <Container>
+                  <a href="#menu" onClick={this.toggle}>
+                    Menu
                   </a>
-                  <ul>
-                    <li>
-                      <a href="/study/csec/spanish/tenses/present/regular-verbs/">
-                        Regular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/irregular-verbs/">
-                        Irregular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/exercises/">
-                        Exercises
-                      </a>
-                    </li>
-                  </ul>
+                </Container>
 
-                  {/* Present Progressive */}
-                  <a href="/study/csec/spanish/tenses/present-progressive/">
-                    Present Progressive
-                  </a>
-
-                  {/* Preterite Tense */}
-                  <a href="/study/csec/spanish/tenses/preterite/">
-                    Preterite Tense
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="/study/csec/spanish/tenses/present/regular-verbs/">
-                        Regular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/irregular-verbs/">
-                        Irregular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/exercises/">
-                        Exercises
-                      </a>
-                    </li>
-                  </ul>
-
-                  {/* Imperfect Tense */}
-                  <a href="/study/csec/spanish/tenses/imperfect/">
-                    Imperfect Tense
-                  </a>
-
-                  {/* Conditional Tense */}
-                  <a href="/study/csec/spanish/tenses/conditional/">
-                    Conditional Tense
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="/study/csec/spanish/tenses/present/regular-verbs/">
-                        Regular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/irregular-verbs/">
-                        Irregular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/exercises/">
-                        Exercises
-                      </a>
-                    </li>
-                  </ul>
-
-                  {/* Future Tense */}
-                  <a href="/study/csec/spanish/tenses/future/">Future Tense</a>
-                  <ul>
-                    <li>
-                      <a href="/study/csec/spanish/tenses/present/regular-verbs/">
-                        Regular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/irregular-verbs/">
-                        Irregular Verbs
-                      </a>
-                      <a href="/study/csec/spanish/tenses/present/exercises/">
-                        Exercises
-                      </a>
-                    </li>
-                  </ul>
-
-                  {/* Prefect Tense */}
-                  <a href="/study/csec/spanish/tenses/perfect/">
-                    Perfect Tense
-                  </a>
-
-                  {/* Past Perfect Tense */}
-                  <a href="/study/csec/spanish/tenses/past-perfect/">
-                    Past Perfect Tense
-                  </a>
-                </li>
-
-                <li>
-                  <a></a>
-                </li>
-              </ul>
-              <p class="menu-label">Transactions</p>
-              <ul class="menu-list">
-                <li>
-                  <a></a>
-                </li>
-              </ul>
-            </aside>
-          </Col>
-          <Col sm={12} md={8} lg={8}>
-            <>{props.children}</>
-          </Col>
-        </Row>
-      </CSECLayout>
-    </>
-  )
+                <Modal size="sm" open={this.state.open} toggle={this.toggle}>
+                  <ModalHeader>Menu</ModalHeader>
+                  <ModalBody>Hello there!</ModalBody>
+                </Modal>
+              </MobileView>
+            </Col>
+            <Col sm={12} md={8} lg={8}>
+              <>{this.props.children}</>
+            </Col>
+          </Row>
+        </CSECLayout>
+      </>
+    )
+  }
 }
 
 export default SpanishLayout

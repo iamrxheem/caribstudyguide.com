@@ -87,6 +87,8 @@ class Page extends React.Component {
               </BreadcrumbItem>
               <BreadcrumbItem active>Spanish</BreadcrumbItem>
             </Breadcrumb>
+
+            <Container>Ya ya ya</Container>
           </SpanishLayout>
         </Layout>
       </>
