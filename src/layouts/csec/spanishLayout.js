@@ -379,7 +379,7 @@ class SpanishLayout extends React.Component {
               <MobileView>
                 <Container>
                   <a href="#menu" onClick={this.toggle}>
-                    Menu
+                    View Menu
                   </a>
                 </Container>
 
