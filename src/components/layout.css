@@ -1,3 +1,6 @@
+.menu ul {
+    list-style-type: none;
+}
 
 .my-blue {
   color: #01C8EF!important;

@@ -37,6 +37,7 @@ import Img from "react-image"
 import axios from "axios"
 import Swal from "sweetalert2"
 import { Helmet } from "react-helmet"
+import YouTube from "react-youtube"
 
 import CSECLayout from "../../../layouts/CSECLayout"
 import Layout from "../../../components/layout"
@@ -73,7 +74,7 @@ class Page extends React.Component {
             />
           </Helmet>
 
-          <Container>
+          <EnglishALayout>
             <Breadcrumb>
               <BreadcrumbItem>
                 <a href="/">Home</a>
@@ -86,10 +87,12 @@ class Page extends React.Component {
               </BreadcrumbItem>
               <BreadcrumbItem active>English A</BreadcrumbItem>
             </Breadcrumb>
-          </Container>
 
-          <EnglishALayout>
-            <p></p>
+            <br />
+
+            <Row>
+              <Col></Col>
+            </Row>
           </EnglishALayout>
         </Layout>
       </>

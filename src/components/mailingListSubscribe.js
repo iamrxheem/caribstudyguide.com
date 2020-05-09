@@ -107,6 +107,7 @@ class MailingListSubscribe extends React.Component {
               </div>
             </Form>
           </div>
+          <br />
         </>
       </>
     )

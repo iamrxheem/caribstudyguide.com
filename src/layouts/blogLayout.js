@@ -19,6 +19,7 @@ import {
 } from "shards-react"
 import Img from "react-image"
 import LazyLoad from "react-lazyload"
+import ReactGA from "react-ga"
 
 // React device detect
 import {
@@ -36,6 +37,12 @@ import SocialMediaIcons from "../components/socialMediaIcons"
 import "bootstrap/dist/css/bootstrap.css"
 import "shards-ui/dist/css/shards.css"
 import "../components/layout.css"
+
+ReactGA.initialize("UA-165932729-1")
+
+if (process.browser) {
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 class BlogLayout extends React.Component {
   constructor(props) {
