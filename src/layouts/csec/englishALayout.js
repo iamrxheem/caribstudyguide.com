@@ -57,37 +57,22 @@ const EnglishALayout = props => {
               <p class="menu-label">Topics</p>
               <ul class="menu-list">
                 <li>
-                  <a href="/study/csec/english-a/topics/summary-writing/">
-                    Summary Writing
-                  </a>
-                  <a href="/study/csec/english-a/topics//"></a>
-                  <a href="/study/csec/english-a/topics//"></a>
+                  <a href="/study/csec/english-a/topics/grammar/">Grammar</a>
                   <a href="/study/csec/english-a/topics/letter-writing/">
                     Letter Writing
                   </a>
+                  <a href="/study/csec/english-a/topics/summary-writing/">
+                    Summary Writing
+                  </a>
+                  <a href="/study/csec/english-a/topics/short-story-writing/">
+                    Short Story Writing
+                  </a>
                 </li>
                 <li>
-                  <a>Manage Your Team</a>
-                  <ul>
-                    <li>
-                      <a>Members</a>
-                    </li>
-                    <li>
-                      <a>Plugins</a>
-                    </li>
-                    <li>
-                      <a>Add a member</a>
-                    </li>
-                  </ul>
+                  <a></a>
                 </li>
                 <li>
-                  <a>Invitations</a>
-                </li>
-                <li>
-                  <a>Cloud Storage Environment Settings</a>
-                </li>
-                <li>
-                  <a>Authentication</a>
+                  <a></a>
                 </li>
               </ul>
               <p class="menu-label">Transactions</p>

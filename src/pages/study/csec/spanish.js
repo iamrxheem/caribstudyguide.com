@@ -41,6 +41,7 @@ import { Helmet } from "react-helmet"
 import CSECLayout from "../../../layouts/CSECLayout"
 import Layout from "../../../components/layout"
 import SEO from "../../../components/seo"
+import SpanishLayout from "../../../layouts/csec/spanishLayout"
 
 import {
   BrowserView,
@@ -72,7 +73,8 @@ class Page extends React.Component {
             />
           </Helmet>
 
-          <Container>
+          <br />
+          <SpanishLayout active="overview">
             <Breadcrumb>
               <BreadcrumbItem>
                 <a href="/">Home</a>
@@ -85,11 +87,7 @@ class Page extends React.Component {
               </BreadcrumbItem>
               <BreadcrumbItem active>Spanish</BreadcrumbItem>
             </Breadcrumb>
-          </Container>
-
-          <Container>
-            <CSECLayout></CSECLayout>
-          </Container>
+          </SpanishLayout>
         </Layout>
       </>
     )
