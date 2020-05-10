@@ -15,6 +15,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
+  Alert,
   NavItem,
   NavLink,
   Dropdown,
@@ -200,8 +201,12 @@ class Header extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-          <br />
+
           <MobileView>
+            <Alert theme="danger" className="text-center">
+              This website is still under developemnt
+            </Alert>
+            <br />
             <SocialMediaIcons />
           </MobileView>
         </header>
