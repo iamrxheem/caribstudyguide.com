@@ -204,7 +204,7 @@ class Header extends React.Component {
 
           <MobileView>
             <Alert theme="danger" className="text-center">
-              This website is still under developemnt
+              This website is still under development
             </Alert>
             <br />
             <SocialMediaIcons />
