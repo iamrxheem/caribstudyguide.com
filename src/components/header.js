@@ -201,11 +201,11 @@ class Header extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
+          <Alert theme="danger" className="text-center">
+            Our site is still under development
+          </Alert>
 
           <MobileView>
-            <Alert theme="danger" className="text-center">
-              This website is still under development
-            </Alert>
             <br />
             <SocialMediaIcons />
           </MobileView>

@@ -20,7 +20,6 @@ import "../assets/js/mailchimp.js"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
 import "../assets/js/onesignal.js"
-import "../assets/js/clicky.js"
 
 ReactGA.initialize("UA-165932729-1")
 

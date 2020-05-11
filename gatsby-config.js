@@ -6,6 +6,7 @@ module.exports = {
     author: `cxcstudyguide`
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -29,9 +30,19 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo.png` // This path is relative to the root of the site.
       }
+    },
+    {
+      resolve: `gatsby-plugin-clicky`,
+      options: {
+        siteId: "101253680"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.cxcguide.com`,
+        stripQueryString: true
+      }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }
