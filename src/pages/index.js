@@ -61,7 +61,10 @@ const Page = () => (
       <meta name="keywords" content="your, tags" />
     </Helmet>
     <Layout>
-      <SEO title="Home" description="" />
+      <SEO
+        title="Home"
+        description="CXC Study Guide is the perfect free online study guide for all CSEC and CAPE subjects with study notes and qiizzes."
+      />
 
       <br />
       <Container>

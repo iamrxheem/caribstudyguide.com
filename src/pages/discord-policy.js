@@ -117,11 +117,10 @@ const Page = () => (
 
             <br />
             <br />
-            <h6>No personal relationships</h6>
+            <h6>DO NOT share your personal information </h6>
             <p>
-              For the safety and security of the users of our Discord community,
-              we do not encourage personal relationships between our users. Do
-              not
+              We strictly prohibit sharing your personal and personally
+              identifiable information on our Discord .
             </p>
 
             <ul>
@@ -148,10 +147,13 @@ const Page = () => (
 
             <br />
             <br />
-            <h6>Do no harass or bully anyone</h6>
+            <h6>DO NOT harass or bully anyone</h6>
             <p>
-              In keeping with Discord's Terms of Service we strictly prohibit
-              harassing and/ or bullying anyone
+              Targeting, harassing or bulling on our Discord servers is STRICTLY
+              prohibited and result in an instant ban from our severs. This may
+              also lead to a ban on using the Discord platform. We promote a
+              safe, fun and productive learning environment for our students and
+              teachers and will remove anyone violating this rule immediately.
             </p>
 
             <br />

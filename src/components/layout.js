@@ -7,6 +7,7 @@ import ReactGA from "react-ga"
 // All Components
 import Header from "./header"
 import Footer from "./footer"
+import Imports from "./imports"
 
 // CSS stuff
 import "bootstrap/dist/css/bootstrap.css"
@@ -41,6 +42,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Imports />
       <div>{children}</div>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-NWGL3N3"

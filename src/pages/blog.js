@@ -34,15 +34,12 @@ const Page = () => (
     <BlogLayout>
       <SEO title="Blog" description="" />
 
-      <br />
-      <Container>
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <a href="/">Home</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem active>Blog</BreadcrumbItem>
-        </Breadcrumb>
-      </Container>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <a href="/">Home</a>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>Blog</BreadcrumbItem>
+      </Breadcrumb>
     </BlogLayout>
   </>
 )

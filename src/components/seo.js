@@ -63,14 +63,14 @@ function SEO({ description, lang, meta, title }) {
         { name: `copyright`, content: `CXC Study Guide` },
         {
           name: `author`,
-          content: `Caribbean Study Guide, info@caribbeanstudyguide.com`
+          content: `CXC Study Guide, contact@cxcguide.com`
         },
         { name: `distribution`, content: `Global` },
         { name: `coverage`, content: `Worldwide` },
         { name: `language`, content: `EN` },
-        { name: `reply-to`, content: `info@caribbeanstudyguide.com` },
+        { name: `reply-to`, content: `contact@cxcguide.com` },
         { name: `rating`, content: `General` },
-        { name: `og:email`, content: `info@caribbeanstudyguide.com` },
+        { name: `og:email`, content: `contact@cxcguide.com` },
         { name: `og:country-name`, content: `JAM` },
         { name: `apple-mobile-web-app-capable`, content: `yes` },
         {
@@ -103,37 +103,7 @@ function SEO({ description, lang, meta, title }) {
         { name: ``, content: `` },
         { name: ``, content: `` }
       ].concat(meta)}
-    >
-      <script
-        type="text/javascript"
-        src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-        data-dojo-config="usePlainJson: true, isDebug: false"
-      ></script>
-      <script
-        data-ad-client="ca-pub-7216279079459124"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
-      <script
-        src="https://kit.fontawesome.com/3b83e0293b.js"
-        crossorigin="anonymous"
-      ></script>
-      <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-      <script
-        src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
-        async=""
-      ></script>
-      <meta
-        name="google-site-verification"
-        content="5rLcTvmtCQjDdX7_SylgDyTTz6B5VLf86AW2rp_-g-A"
-      />
-      <script async src="//static.getclicky.com/js"></script>
-      <link
-        href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
-        rel="stylesheet"
-        type="text/css"
-      />
-    </Helmet>
+    />
   )
 }
 

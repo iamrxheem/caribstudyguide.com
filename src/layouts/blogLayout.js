@@ -15,11 +15,16 @@ import {
   InputGroupAddon,
   InputGroupText,
   FormInput,
-  Collapse
+  Collapse,
+  Container,
+  Row,
+  Col
 } from "shards-react"
 import Img from "react-image"
 import LazyLoad from "react-lazyload"
 import ReactGA from "react-ga"
+import Layout from "../components/layout"
+import Ads from "../components/ads"
 
 // React device detect
 import {
@@ -31,135 +36,28 @@ import {
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import SocialMediaIcons from "../components/socialMediaIcons"
-
-// CSS import
-import "bootstrap/dist/css/bootstrap.css"
-import "shards-ui/dist/css/shards.css"
-import "../components/layout.css"
-
-ReactGA.initialize("UA-165932729-1")
-
-if (process.browser) {
-  ReactGA.pageview(window.location.pathname + window.location.search)
-}
-
 class BlogLayout extends React.Component {
   constructor(props) {
     super(props)
 
-    this.toggleDropdown = this.toggleDropdown.bind(this)
-    this.toggleNavbar = this.toggleNavbar.bind(this)
-
-    this.state = {
-      dropdownOpen: false,
-      collapseOpen: false
-    }
-  }
-
-  toggleDropdown() {
-    this.setState({
-      ...this.state,
-      ...{
-        dropdownOpen: !this.state.dropdownOpen
-      }
-    })
-  }
-
-  toggleNavbar() {
-    this.setState({
-      ...this.state,
-      ...{
-        collapseOpen: !this.state.collapseOpen
-      }
-    })
+    this.state = {}
   }
 
   render() {
     return (
       <>
-        <header>
-          <MobileView>
-            <SocialMediaIcons />
-          </MobileView>
-
-          <Navbar
-            type="dark"
-            style={{ backgroundColor: "#01C8EF" }}
-            theme=""
-            expand="md"
-          >
-            <NavbarBrand href="/">
-              <MobileView>
-                <i className="fas fa-long-arrow-alt-left mr-2"></i>
-                Back to Online Study Guide
-              </MobileView>
-              <BrowserView>
-                <i className="fas fa-long-arrow-alt-left mr-2"></i>Back to Study
-                Guide
-              </BrowserView>
-            </NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} />
-
-            <Collapse open={this.state.collapseOpen} navbar>
-              <Nav navbar className="ml-auto">
-                <Dropdown
-                  open={this.state.dropdownOpen}
-                  toggle={this.toggleDropdown}
-                >
-                  <DropdownToggle
-                    style={{ color: "white" }}
-                    nav
-                    caret
-                  ></DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem></DropdownItem>
-                    <DropdownItem></DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-                <NavItem>
-                  <NavLink active href="/">
-                    ...
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink active href="/">
-                    ...
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink active href="/">
-                    ...
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink active href="/">
-                    ...
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink active href="/">
-                    Contact
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </header>
-        <>{this.props.children}</>
-        <footer>
-          <div className="bg-dark">
-            <br />
-
-            <br />
-          </div>
-          <div className="bg-light text-center">
-            <br />
-            <br />
-            <p>&copy; 2020 CXC Study Guide. All rights reserved.</p>
-            <br />
-          </div>
-        </footer>
+        <Layout>
+          <Container>
+            <Row>
+              <Col sm={12} md={8} lg={8}>
+                <>{this.props.children}</>
+              </Col>
+              <Col sm={12} md={4} lg={4}>
+                <Ads />
+              </Col>
+            </Row>
+          </Container>
+        </Layout>
       </>
     )
   }
