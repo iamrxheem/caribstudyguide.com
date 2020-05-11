@@ -31,7 +31,10 @@ import SEO from "../components/seo"
 const Page = () => (
   <>
     <Layout>
-      <SEO title="Tutor Policy" description="" />
+      <SEO
+        title="Tutor Policy"
+        description="This note describes our tutor policy. "
+      />
 
       <br />
       <Container>

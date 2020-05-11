@@ -208,12 +208,21 @@ const Footer = props => {
                 <br />
                 <ul className="ul">
                   <li>
-                    <a className="link-dark" style={{ color: "" }} href="/">
+                    <a
+                      className="link-dark"
+                      style={{ color: "" }}
+                      href="/contact/"
+                    >
                       Contact & Support
                     </a>
                   </li>
                   <li>
-                    <a className="link-dark" style={{ color: "" }} href="/">
+                    <a
+                      target="_blank"
+                      className="link-dark"
+                      style={{ color: "" }}
+                      href="https://tawk.to/chat/5eb4ff8681d25c0e5849efe4/default"
+                    >
                       Live Chat
                     </a>
                   </li>

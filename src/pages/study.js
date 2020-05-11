@@ -35,6 +35,7 @@ import { Zoom, Bounce, Fade, Flip, Rotate, Roll } from "react-reveal"
 import Img from "react-image"
 import axios from "axios"
 import Swal from "sweetalert2"
+import { Helmet } from "react-helmet"
 import {
   BrowserView,
   MobileView,
@@ -48,7 +49,16 @@ import SEO from "../components/seo"
 const Page = () => (
   <>
     <Layout>
-      <SEO title="Start Studying" description="" />
+      <SEO
+        title="Study CSEC and CAPE Online"
+        description="Start studying online today for your CSEC and CAPE exams. Explore online study notes, classes, quizes and exercises."
+      />
+      <Helmet>
+        <meta
+          name="keywords"
+          content="caribbean exams, english a, english b, spanish, mathematics, social studies, french, CAPE exams, mcq, online class , cxc, csec, free cxc past papers, csec study guide, caribbean examination council, cxc guide online, free cxc study notes, cxc exams, csec exams, study, jamaica, caribbean, free cxc past papers, cxc online classes, csec online classes, cxc zoom classes, free cxc lessons, free csec lessons, csec lessons online, cxc Trinidad and tobago, cxc jamaica online classes, cxc jamaica lessons, cxc barbados, cxc textbooks, free csec, textbooks, free cape, cape, cxc cape, csec, cape, cxcstudyguide, Raheem McDonald, rxheem, iamrxheem"
+        />
+      </Helmet>
 
       <br />
       <Container>

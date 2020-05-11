@@ -101,7 +101,10 @@ class Page extends React.Component {
       <>
         <>
           <Helmet>
-            <meta name="keywords" content="your, tags" />
+            <meta
+              name="keywords"
+              content="cxc, sign up, register, cxc online study guide, study guide, csec, cape, cxc"
+            />
           </Helmet>
           <Layout>
             <SEO title="Sign up" description="" />

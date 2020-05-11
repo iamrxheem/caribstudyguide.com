@@ -54,7 +54,10 @@ const liStyle = {
 const Page = () => (
   <>
     <Layout>
-      <SEO title="Discord Guidelines" description="" />
+      <SEO
+        title="Discord Guidelines"
+        description="This note describes the guidelines regulating the use of our Discord servers."
+      />
 
       <br />
       <Container>
@@ -65,16 +68,30 @@ const Page = () => (
           <BreadcrumbItem active>Discord Guidelines</BreadcrumbItem>
         </Breadcrumb>
 
-        <br />
         <Row>
           <Col sm={12} md={8} lg={8}>
-            <img
-              className="card-img"
-              style={{ width: "100%" }}
-              src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Discord-Featured-796x417.jpg"
-            />
-            <br />
-            <br />
+            <BrowserView>
+              <img
+                style={{ width: "50%", height: "100%" }}
+                className="card-img"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Discord-Featured-796x417.jpg"
+              />
+              <br />
+              <br />
+            </BrowserView>
+
+            <MobileView>
+              <Bounce>
+                <img
+                  className="card-img"
+                  style={{ width: "100%" }}
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Discord-Featured-796x417.jpg"
+                />
+              </Bounce>
+              <br />
+              <br />
+            </MobileView>
+
             <small className="text-right ">
               Credit:{" "}
               <a href="https://discord.com/" target="_blank">
@@ -116,6 +133,28 @@ const Page = () => (
             </p>
 
             <br />
+            <h6>DO NOT share or link to copyrighted/ protected content</h6>
+            <p>
+              Sharing copyrighted or protected content will result in deletion
+              and a permanent ban from our Discord servers. Sharing copyrighted
+              content is infringing on a copyright holder’s rights thereby
+              making it illegal and can result in being banned from the Discord
+              platform and incur legal penalties such as fines or imprisonment.{" "}
+            </p>
+
+            <p>Copyrighted content include</p>
+
+            <ul>
+              <li>Textbooks</li>
+              <li>Past papers</li>
+              <li>Original videos</li>
+            </ul>
+
+            <p>
+              You may post links to a legitimate website where one can purchase
+              the material. Links to YouTube videos are allowed.
+            </p>
+
             <br />
             <h6>DO NOT share your personal information </h6>
             <p>
@@ -146,7 +185,6 @@ const Page = () => (
             </p>
 
             <br />
-            <br />
             <h6>DO NOT harass or bully anyone</h6>
             <p>
               Targeting, harassing or bulling on our Discord servers is STRICTLY
@@ -157,24 +195,12 @@ const Page = () => (
             </p>
 
             <br />
-            <br />
-            <h6>Title</h6>
-            <p>Description</p>
-
-            <br />
-            <br />
-            <h6>Title</h6>
-            <p>Description</p>
-
-            <br />
-            <br />
-            <h6>Title</h6>
-            <p>Description</p>
-
-            <br />
-            <br />
-            <h6>Title</h6>
-            <p>Description</p>
+            <h6>DO NOT post or share links to pornographic content</h6>
+            <p>
+              Posting pornographic content or linking to pornographic material
+              will result in a permanent ban from our Discord servers. Do not
+              post or share links to pornographic content.{" "}
+            </p>
           </Col>
           <Col sm={12} md={4} lg={4}></Col>
         </Row>

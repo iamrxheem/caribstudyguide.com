@@ -56,7 +56,7 @@ class Page extends React.Component {
         <Layout>
           <SEO
             title="Our Policies"
-            description="Log in to your account or sign up to get started."
+            description="Explore our policies to expect how to use our website and the polocies that givern it. "
           />
 
           <Container>

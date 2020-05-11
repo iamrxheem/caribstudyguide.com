@@ -6,7 +6,6 @@ const Imports = props => {
     <>
       <>
         <Helmet>
-          <meta name="keywords" content="rxheem, iamrxheem, Raheem McDonald" />
           <script
             type="text/javascript"
             src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"

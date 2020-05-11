@@ -32,7 +32,10 @@ import SEO from "../components/seo"
 const Page = () => (
   <>
     <BlogLayout>
-      <SEO title="Blog" description="" />
+      <SEO
+        title="Blog"
+        description="Explore campus life, student employment opportunities and much more in our blogs."
+      />
 
       <Breadcrumb>
         <BreadcrumbItem>
