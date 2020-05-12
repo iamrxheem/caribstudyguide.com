@@ -237,6 +237,15 @@ const Footer = props => {
                     </a>
                   </li>
                   <li>
+                    <a
+                      className="link-dark"
+                      style={{ color: "" }}
+                      href="/mailing-list/"
+                    >
+                      Mailing List
+                    </a>
+                  </li>
+                  <li>
                     <a className="link-dark" style={{ color: "" }} href="/">
                       Press & Notices
                     </a>

@@ -201,11 +201,12 @@ class Header extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-
-          <Alert theme="warning" className="text-center">
+          <div
+            className="text-center alert alert-warning fade show"
+            role="alert"
+          >
             Our site is still in development. We're launching in September!
-          </Alert>
-
+          </div>
           <MobileView>
             <br />
             <SocialMediaIcons />

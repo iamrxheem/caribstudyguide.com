@@ -116,7 +116,7 @@ const Page = () => (
                     <p>
                       The CSEC Spanish syllabus is design to allow students to
                       develop the competence to listen, speak, read and write in
-                      Spanish and interpret aspects of the culture
+                      Spanish and interpret aspects of the culture.
                     </p>
                   </p>
                   <Button

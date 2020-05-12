@@ -191,6 +191,38 @@ class Page extends React.Component {
                             style={{ color: "#F07966" }}
                             className="fas fa-caret-right mr-3"
                           ></i>
+                          <a href="">
+                            I joined the mailing list but I'm not receiving
+                            emails.
+                          </a>
+                        </>
+                      }
+                    >
+                      <br />
+                      <p>
+                        If you haven't been receiving emails from us then check
+                        your spam or junk mail. Be sure to add us add us to your{" "}
+                        <a
+                          href="_blank"
+                          href="https://support.google.com/mail/thread/2928386?hl=en"
+                        >
+                          safe senders list
+                        </a>
+                        .
+                      </p>
+                    </Collapsible>
+                  </li>
+
+                  {/* Question */}
+                  <li>
+                    <Collapsible
+                      open
+                      trigger={
+                        <>
+                          <i
+                            style={{ color: "#F07966" }}
+                            className="fas fa-caret-right mr-3"
+                          ></i>
                           <a href="">Whare are we based?</a>
                         </>
                       }

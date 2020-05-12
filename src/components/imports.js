@@ -35,6 +35,10 @@ const Imports = props => {
             rel="stylesheet"
             type="text/css"
           />
+          <meta
+            name="msvalidate.01"
+            content="31F1DDC9C4BA2ECA7EDBAFE824702996"
+          />
         </Helmet>
       </>
     </>

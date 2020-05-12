@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.cxcguide.com`,
-    title: `CXC Online Study Guide`,
+    title: `CXC Study Guide`,
     description: `The perfect free online study guide for Caribbean CSEC and CAPE students including past papers, study notes quizzes and exercises.`,
     author: `cxcstudyguide`
   },
@@ -25,13 +25,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `CXC Study Guide`,
+        short_name: `Study CXC`,
         start_url: `/`,
+        description: `The perfect free online study guide for Caribbean CSEC and CAPE students including past papers, study notes quizzes and exercises.`,
         background_color: `#663399`,
         theme_color: `#01C8EF`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png` // This path is relative to the root of the site.
+        icon: `src/images/logo.png`
       }
     },
     {

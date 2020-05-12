@@ -76,9 +76,7 @@ class Page extends React.Component {
           <br />
           <SpanishLayout active="overview">
             <Breadcrumb>
-              <BreadcrumbItem>
-                <a href="/">Home</a>
-              </BreadcrumbItem>
+              <BreadcrumbItem>Home</BreadcrumbItem>
               <BreadcrumbItem>
                 <a href="/study/">Study</a>
               </BreadcrumbItem>
