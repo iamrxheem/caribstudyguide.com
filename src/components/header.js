@@ -101,6 +101,11 @@ class Header extends React.Component {
                     Home
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink active href="/quiz/">
+                    Quiz
+                  </NavLink>
+                </NavItem>
                 <Dropdown
                   open={this.state.dropdownOpen}
                   toggle={this.toggleDropdown}
@@ -201,12 +206,7 @@ class Header extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-          <div
-            className="text-center alert alert-danger fade show"
-            role="alert"
-          >
-            Our site is still in development. We're launching in September!
-          </div>
+
           <MobileView>
             <br />
             <SocialMediaIcons />

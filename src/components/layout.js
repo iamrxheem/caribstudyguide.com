@@ -21,6 +21,12 @@ import "../assets/js/mailchimp.js"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
 import "../assets/js/onesignal.js"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
 
 ReactGA.initialize("UA-165932729-1")
 
@@ -43,6 +49,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Imports />
+      <BrowserView>
+        <br />
+      </BrowserView>
       <div>{children}</div>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-NWGL3N3"

@@ -318,6 +318,7 @@ const Page = () => (
         </Row>
       </Container>
 
+      <br />
       <PastPaperSlider />
     </Layout>
   </>

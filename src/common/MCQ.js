@@ -1,19 +1,104 @@
 import React from "react"
+import MCQItem from "./MCQItem"
+import Ads from "../components/ads"
+import {
+  Alert,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  CardTitle,
+  Card,
+  CardBody,
+  Form,
+  FormGroup,
+  NavItem,
+  NavLink,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  FormInput,
+  Collapse,
+  Breadcrumb,
+  BreadcrumbItem,
+  Row,
+  Col,
+  Container,
+  CardFooter,
+  Button,
+  CardImg
+} from "shards-react"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect"
 
-class MCQ extends React.Component {
-  constructor(props) {
-    super(props)
+const CustomRightArrow = ({ onClick, ...rest }) => {
+  const {
+    onMove,
+    carouselState: { currentSlide, deviceType }
+  } = rest
+  // onMove means if dragging or swiping in progress.
+  return (
+    <>
+      <Button onClick={() => onClick()}>Next</Button>
+    </>
+  )
+}
 
-    this.state = {}
+const MCQ = props => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
   }
 
-  render() {
-    return (
-      <>
-        <></>
-      </>
-    )
-  }
+  return (
+    <>
+      <Row>
+        <Col sm={12} md={8} lg={8}>
+          <Carousel
+            customLeftArrow={<CustomRightArrow />}
+            ssr={true}
+            responsive={responsive}
+            infinite={true}
+            arrows={true}
+            partialVisible={true}
+            swipeable={true}
+            dots={true}
+            showDots={false}
+          >
+            {props.children}
+          </Carousel>
+        </Col>
+        <Col sm={12} md={4} lg={4}>
+          <Ads />
+        </Col>
+      </Row>
+    </>
+  )
 }
 
 export default MCQ
