@@ -347,6 +347,136 @@ class Page extends React.Component {
                 optionFour="x / 2"
                 correctOption="b"
               />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="How much time will it take for an amount of 450 to yield 81 as interest at 4.5% per annum of simple interest?"
+                optionOne="3.5 years"
+                optionTwo="4 years"
+                optionThree="5 years"
+                optionFour="4.5 years"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="A sum of money at simple interest amounts to 815 in 3 years and to 854 in 4 years. The sum is:"
+                optionOne="650"
+                optionTwo="690"
+                optionThree="698"
+                optionFour="700"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="(-3)2 + (-2)2 is equal to"
+                optionOne="-13"
+                optionTwo="-10"
+                optionThree="13"
+                optionFour="25"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="A Ross University employee received a monthly salary and spends the following: 1/12 on entertainment; 1/6 on food; 5/8 on rent. The employee is left with $350 after these expenses. What is the employee salary?"
+                optionOne="$650"
+                optionTwo="$2700"
+                optionThree="$2800"
+                optionFour="$700"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="5 1/2 + 3 2/3 + 1 4/5"
+                optionOne="11 4/30"
+                optionTwo="10 19/30"
+                optionThree="32/45"
+                optionFour="10 48/50"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="If a piece of wood is 5 meters long, then how long will be 20 percent of this wood in cm."
+                optionOne="10"
+                optionTwo="100"
+                optionThree="1"
+                optionFour="1000"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="49 * 17 + 49 * 3"
+                optionOne="66 + 52"
+                optionTwo="49 * 20"
+                optionThree="52 * 66"
+                optionFour="98 * 20"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="In a triangle ABC,angle A = x° and angle B = 2x°. What the size of the angle C?"
+                optionOne="60°"
+                optionTwo="45°"
+                optionThree="(180 / 3x)°"
+                optionFour="(180 - 3x)°"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="The area of a triangle is 30cm and its base is 10cm. What is the height, in cm, of the triangle"
+                optionOne="6"
+                optionTwo="12"
+                optionThree="13"
+                optionFour="17"
+                correctOption=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Factorise ABC + MAC"
+                optionOne="A (b + m)"
+                optionTwo="AC (B + M)"
+                optionThree="C (m + B)"
+                optionFour="B (B + M)"
+                correctOption=""
+              />
             </MCQ>
           </Container>
         </Layout>

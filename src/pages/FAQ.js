@@ -36,7 +36,6 @@ import Img from "react-image"
 import axios from "axios"
 import Swal from "sweetalert2"
 import Collapsible from "react-collapsible"
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react"
 
 // React device detect
 import {

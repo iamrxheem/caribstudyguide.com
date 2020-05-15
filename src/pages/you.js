@@ -33,7 +33,6 @@ import {
 } from "shards-react"
 import { Zoom, Bounce, Fade, Flip, Rotate, Roll } from "react-reveal"
 import Img from "react-image"
-import feather from "feather-icons"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

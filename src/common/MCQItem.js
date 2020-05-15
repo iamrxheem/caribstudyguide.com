@@ -66,10 +66,6 @@ class MCQItem extends React.Component {
 
   onSelect(event) {
     if (this.state.selectedAnswer === this.props.correctOption) {
-      $("." + this.props.id).attr("disabled", true)
-      $(this.props.id).prop("disabled", true)
-      $("." + this.props.id).prop("disabled", true)
-
       Swal.fire({
         icon: "success",
         title: "Correct",
@@ -94,10 +90,7 @@ class MCQItem extends React.Component {
           <p>{this.props.question}</p>
 
           <CustomView condition={this.props.hasImg}>
-            <img
-              style={{ width: "100%" }}
-              src="https://www.swedishnomad.com/wp-content/images/2019/08/Spanish-Words-2.jpg"
-            />
+            <img alt="" style={{ width: "100%" }} src={this.props.imgSrc} />
             <br />
             <br />
           </CustomView>
@@ -109,49 +102,87 @@ class MCQItem extends React.Component {
           </CustomView>
 
           <Form>
-            {/* Option A*/}
-            <FormRadio
-              name=""
-              checked={this.state.selectedAnswer === "a"}
-              onChange={() => {
-                this.changeAnswer("a")
-              }}
-            >
-              {this.props.optionOne}
-            </FormRadio>
+            <CustomView condition={!this.props.isTrueFalse}>
+              {/* Option A*/}
+              <FormGroup>
+                <FormRadio
+                  name=""
+                  checked={this.state.selectedAnswer === "a"}
+                  onChange={() => {
+                    this.changeAnswer("a")
+                  }}
+                >
+                  {this.props.optionOne}
+                </FormRadio>
+              </FormGroup>
 
-            {/* Option A*/}
-            <FormRadio
-              name=""
-              checked={this.state.selectedAnswer === "b"}
-              onChange={() => {
-                this.changeAnswer("b")
-              }}
-            >
-              {this.props.optionTwo}
-            </FormRadio>
+              {/* Option B */}
+              <FormGroup>
+                <FormRadio
+                  name=""
+                  checked={this.state.selectedAnswer === "b"}
+                  onChange={() => {
+                    this.changeAnswer("b")
+                  }}
+                >
+                  {this.props.optionTwo}
+                </FormRadio>
+              </FormGroup>
 
-            {/* Option C */}
-            <FormRadio
-              name=""
-              checked={this.state.selectedAnswer === "c"}
-              onChange={() => {
-                this.changeAnswer("c")
-              }}
-            >
-              {this.props.optionThree}
-            </FormRadio>
+              {/* Option C */}
+              <FormGroup>
+                <FormRadio
+                  name=""
+                  checked={this.state.selectedAnswer === "c"}
+                  onChange={() => {
+                    this.changeAnswer("c")
+                  }}
+                >
+                  {this.props.optionThree}
+                </FormRadio>
+              </FormGroup>
 
-            {/* Option D*/}
-            <FormRadio
-              name=""
-              checked={this.state.selectedAnswer === "d"}
-              onChange={() => {
-                this.changeAnswer("d")
-              }}
-            >
-              {this.props.optionFour}
-            </FormRadio>
+              {/* Option D */}
+              <FormGroup>
+                <FormRadio
+                  name=""
+                  checked={this.state.selectedAnswer === "d"}
+                  onChange={() => {
+                    this.changeAnswer("d")
+                  }}
+                >
+                  {this.props.optionFour}
+                </FormRadio>
+              </FormGroup>
+            </CustomView>
+
+            <CustomView condition={this.props.isTrueFalse}>
+              {/* True */}
+              <FormGroup>
+                <FormRadio
+                  name=""
+                  checked={this.state.selectedAnswer === "T"}
+                  onChange={() => {
+                    this.changeAnswer("T")
+                  }}
+                >
+                  TRUE
+                </FormRadio>
+              </FormGroup>
+
+              {/* False */}
+              <FormGroup>
+                <FormRadio
+                  name=""
+                  checked={this.state.selectedAnswer === "F"}
+                  onChange={() => {
+                    this.changeAnswer("F")
+                  }}
+                >
+                  FALSE
+                </FormRadio>
+              </FormGroup>
+            </CustomView>
           </Form>
 
           <br />

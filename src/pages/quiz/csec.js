@@ -106,6 +106,14 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
+                    <a href="/quiz/csec/economics/">Economics</a>
+                  </li>
+
+                  <li>
+                    <i
+                      style={{ color: "#FF08D7" }}
+                      className="fas fa-angle-right mr-2"
+                    ></i>
                     <a href="/quiz/csec/mathematics/">Mathematics</a>
                   </li>
 

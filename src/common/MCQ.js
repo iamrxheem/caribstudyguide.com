@@ -49,7 +49,9 @@ const CustomRightArrow = ({ onClick, ...rest }) => {
   // onMove means if dragging or swiping in progress.
   return (
     <>
-      <Button onClick={() => onClick()}>Next</Button>
+      <Button id="next-button" onClick={() => onClick()}>
+        Next
+      </Button>
     </>
   )
 }
@@ -81,7 +83,7 @@ const MCQ = props => {
         <Col sm={12} md={8} lg={8}>
           <Carousel
             customLeftArrow={<CustomRightArrow />}
-            ssr={true}
+            ssr={false}
             responsive={responsive}
             infinite={true}
             arrows={true}

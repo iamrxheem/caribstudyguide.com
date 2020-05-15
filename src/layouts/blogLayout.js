@@ -21,7 +21,6 @@ import {
   Col
 } from "shards-react"
 import Img from "react-image"
-import LazyLoad from "react-lazyload"
 import ReactGA from "react-ga"
 import Layout from "../components/layout"
 import Ads from "../components/ads"

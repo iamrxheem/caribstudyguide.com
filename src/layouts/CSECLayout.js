@@ -1,5 +1,5 @@
 import React from "react"
-import SlideMenu from "react-slide-menu"
+
 import {
   Alert,
   Navbar,
