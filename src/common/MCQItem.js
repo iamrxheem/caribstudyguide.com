@@ -69,14 +69,17 @@ class MCQItem extends React.Component {
       Swal.fire({
         icon: "success",
         title: "Correct",
-        text: "That's right. Congrats!"
+        text: "That's right. Congrats!",
+        footer: this.props.note
+      }).then(() => {
+        $("#next-button").click()
       })
     } else {
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "That answer isn't correct. Try again!",
-        footer: "<a href>More on this topic here</a>"
+        footer: ""
       })
     }
 
@@ -85,8 +88,14 @@ class MCQItem extends React.Component {
 
   render() {
     return (
-      <div style={{ margin: "5px" }}>
+      <div style={{ margin: "5px", width: "auto" }}>
         <Bounce>
+          <CustomView condition={this.props.hasText}>
+            <h6>Read the following passage</h6>
+
+            <p>{this.props.text}</p>
+          </CustomView>
+
           <p>{this.props.question}</p>
 
           <CustomView condition={this.props.hasImg}>
@@ -98,6 +107,16 @@ class MCQItem extends React.Component {
           <CustomView condition={this.props.hasAudio}>
             <Audio src={this.props.audioSrc} />
             <br />
+            <br />
+          </CustomView>
+
+          <CustomView condition={this.props.hasListOption}>
+            <ul style={{ listStyleType: "lower-roman" }}>
+              <li>{this.props.listOptionOne}</li>
+              <li>{this.props.listOptionTwo}</li>
+              <li>{this.props.listOptionThree}</li>
+              <li>{this.props.listOptionOFour}</li>
+            </ul>
             <br />
           </CustomView>
 

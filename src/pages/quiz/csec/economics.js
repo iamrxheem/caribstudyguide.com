@@ -235,7 +235,7 @@ class Page extends React.Component {
                 optionTwo="Buyers spend all their money"
                 optionThree="Quantity demanded equals quantity supplied"
                 optionFour="Excess demand is zero E)	c and d"
-                correctOption=""
+                correctOption="c"
               />
 
               {/* Question */}
@@ -405,7 +405,7 @@ class Page extends React.Component {
                 optionTwo="the relationship between different sectors of the economy"
                 optionThree="household purchase decisions"
                 optionFour="the economy as a whole"
-                correctOption=""
+                correctOption="d"
               />
 
               {/* Question */}
@@ -643,7 +643,7 @@ class Page extends React.Component {
                 optionTwo="the consumer price index"
                 optionThree="the government's budget position"
                 optionFour="d"
-                correctOption=""
+                correctOption="a"
               />
 
               {/* Question */}

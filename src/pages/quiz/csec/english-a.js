@@ -108,12 +108,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="What is the meaning of DISCOMBOBULATED?"
+                optionOne="shy"
+                optionTwo="weird out"
+                optionThree="confused and disconcerted."
+                optionFour="enlighten"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -121,12 +121,13 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The opposite meaning of the word meticulous"
+                optionOne="Scant"
+                optionTwo="Careful"
+                optionThree="Detailed"
+                optionFour="Cautious"
+                correctOption="a"
+                note="Hint: can't explains"
               />
 
               {/* Question */}
@@ -134,12 +135,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The opposite meaning of the word meticulous "
+                optionOne="Scant"
+                optionTwo="Careful"
+                optionThree="Detailed"
+                optionFour="Cautious"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -147,12 +148,13 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Select the correctly spelt word: The concellor gave me ............."
+                optionOne="Advse"
+                optionTwo="Advice"
+                optionThree="Advise"
+                optionFour="Advese"
+                correctOption="b"
+                note="B is spelt correctly"
               />
 
               {/* Question */}
@@ -160,12 +162,13 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="In which one of the sentences below is the question sign use properly"
+                optionOne="I love you?"
+                optionTwo="Talk to me?"
+                optionThree="Do you love me?"
+                optionFour="I hate you?"
+                correctOption="c"
+                note="'C' is the correct answer because it's asking a question"
               />
 
               {/* Question */}
@@ -173,12 +176,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Please select the correct punctuation"
+                optionOne="A text book can be a 'wall' between teacher and class"
+                optionTwo="A text book can be a wall 'between' teacher and class"
+                optionThree="A text book can be a wall between teacher and 'class'"
+                optionFour="between 'book/ can be a wall between teacher and class"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -186,12 +189,27 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      We found it hard to put up with his{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        belligerent
+                      </span>{" "}
+                      attitude.
+                    </p>
+                  </>
+                }
+                optionOne="prying"
+                optionTwo="destructive"
+                optionThree="uncharitable"
+                optionFour="quarrelsome"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -199,12 +217,27 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      Mr. Brown did everything to{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        thwart
+                      </span>{" "}
+                      the efforts of the relatives.
+                    </p>
+                  </>
+                }
+                optionOne="abuse"
+                optionTwo="obstruct"
+                optionThree="change"
+                optionFour="threaten"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -212,12 +245,27 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      The children were scared by the{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        grotesque
+                      </span>{" "}
+                      designs on the costumes.
+                    </p>
+                  </>
+                }
+                optionOne="hideous"
+                optionTwo="elaborate"
+                optionThree="elaborate"
+                optionFour="intricate"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -225,12 +273,27 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      During the rainstorm yesterday,{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        incessantly
+                      </span>{" "}
+                      across the island.
+                    </p>
+                  </>
+                }
+                optionOne="noisily"
+                optionTwo="furiously"
+                optionThree="constantly"
+                optionFour="occasionally"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -238,12 +301,28 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      During the final stages of the trial, a new witness was
+                      called to{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        corroborate
+                      </span>{" "}
+                      the testimony of the accused.
+                    </p>
+                  </>
+                }
+                optionOne="clarify"
+                optionTwo="confirm"
+                optionThree="conclude"
+                optionFour="d"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -251,12 +330,25 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      In some advertisements for jobs, relevant experience is
+                      asked for.{" "}
+                      <span style={{ textDecoration: "underline" }}></span>{" "}
+                    </p>
+                  </>
+                }
+                optionOne="suitable"
+                optionTwo="lengthy"
+                optionThree="technical"
+                optionFour="satisfactory"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -264,12 +356,27 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      After we failed to win, we left with our opponents’{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        taunting
+                      </span>{" "}
+                      voice following us to school.
+                    </p>
+                  </>
+                }
+                optionOne="annoying"
+                optionTwo="screaming"
+                optionThree="laughing"
+                optionFour="mocking"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -277,12 +384,25 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
+
+                    <p>
+                      In his speech, the psychologist gave{" "}
+                      <span style={{ textDecoration: "underline" }}>tacit</span>{" "}
+                      approval to corporal punishment.
+                    </p>
+                  </>
+                }
+                optionOne="direct"
+                optionTwo="cautious"
+                optionThree="clear"
+                optionFour="unspoken"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -290,623 +410,27 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
+                question={
+                  <>
+                    <p>
+                      Choose the suggested answer which is nearest in meaning{" "}
+                      <b>(SYNONYMS)</b> to the underlined word.
+                    </p>
 
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                    <p>
+                      In times of{" "}
+                      <span style={{ textDecoration: "underline" }}>
+                        calamity
+                      </span>{" "}
+                      one must strive to remain calm and rational.
+                    </p>
+                  </>
+                }
+                optionOne="fortune"
+                optionTwo="disaster"
+                optionThree="conflict"
+                optionFour="attack"
+                correctOption="b"
               />
             </MCQ>
           </Container>

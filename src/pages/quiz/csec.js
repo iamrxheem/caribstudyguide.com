@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import {
   Alert,
+  Badge,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -54,7 +55,27 @@ class Page extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      triedUnavailableQuiz: false
+    }
+
+    this.onSelect = this.onSelect.bind(this)
+  }
+
+  onSelect(event) {
+    event.preventDefault()
+
+    if (this.state.triedUnavailableQuiz) {
+      Swal.fire("I'm pretty sure you can read.")
+    } else {
+      Swal.fire(
+        "Hmm ..",
+        "This quiz isn't available yet. You can check back later.",
+        "question"
+      )
+
+      this.setState({ triedUnavailableQuiz: true })
+    }
   }
 
   render() {
@@ -101,6 +122,24 @@ class Page extends React.Component {
 
                 <br />
                 <ul className="ul">
+                  {/* Subject */}
+                  <li>
+                    <i
+                      style={{ color: "#FF08D7" }}
+                      className="fas fa-angle-right mr-2"
+                    ></i>
+                    <a href="/quiz/csec/biology/">Biology</a>
+                  </li>
+
+                  {/* Subject */}
+                  <li>
+                    <i
+                      style={{ color: "#FF08D7" }}
+                      className="fas fa-angle-right mr-2"
+                    ></i>
+                    <a href="/quiz/csec/pob/">Principles of Business</a>
+                  </li>
+
                   <li>
                     <i
                       style={{ color: "#FF08D7" }}
@@ -124,6 +163,9 @@ class Page extends React.Component {
                       className="fas fa-angle-right mr-2"
                     ></i>
                     <a href="/quiz/csec/english-a/">English A</a>
+                    <Badge pill theme="warning" className="ml-2">
+                      Incomplete
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -132,7 +174,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/english-b/">English B</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/english-b/">
+                      English B
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -141,7 +188,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/spanish/">Spanish</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/spanish/">
+                      Spanish
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -150,7 +202,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/french/">French</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/french/">
+                      French
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -159,9 +216,15 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/information-technology/">
+                    <a
+                      onClick={this.onSelect}
+                      href="/quiz/csec/information-technology/"
+                    >
                       Information Technology
                     </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -170,7 +233,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/biology/">Biology</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/chemistry/">
+                      Chemistry
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -179,7 +247,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/chemistry/">Chemistry</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/physics/">
+                      Physics
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -188,7 +261,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/physics/">Physics</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/poa/">
+                      Principles of Accounts
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -197,7 +275,15 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/poa/">Principles of Accounts</a>
+                    <a
+                      onClick={this.onSelect}
+                      href="/quiz/csec/social-studies/"
+                    >
+                      Social Studies
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -206,27 +292,15 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/pob/">Principles of Business</a>
-                  </li>
-
-                  {/* Subject */}
-                  <li>
-                    <i
-                      style={{ color: "#FF08D7" }}
-                      className="fas fa-angle-right mr-2"
-                    ></i>
-                    <a href="/quiz/csec/social-studies/">Social Studies</a>
-                  </li>
-
-                  {/* Subject */}
-                  <li>
-                    <i
-                      style={{ color: "#FF08D7" }}
-                      className="fas fa-angle-right mr-2"
-                    ></i>
-                    <a href="/quiz/csec/caribbean-hiistory/">
+                    <a
+                      onClick={this.onSelect}
+                      href="/quiz/csec/caribbean-hiistory/"
+                    >
                       Caribbean History
                     </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -235,7 +309,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/geography/">Geography</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/geography/">
+                      Geography
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -244,7 +323,12 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/hsb/">Human and Social Biology</a>
+                    <a onClick={this.onSelect} href="/quiz/csec/hsb/">
+                      Human and Social Biology
+                    </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -253,9 +337,15 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/integrated-science/">
+                    <a
+                      onClick={this.onSelect}
+                      href="/quiz/csec/integrated-science/"
+                    >
                       Integrated Science
                     </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -264,9 +354,15 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
-                    <a href="/quiz/csec/official-administration/">
+                    <a
+                      onClick={this.onSelect}
+                      href="/quiz/csec/official-administration/"
+                    >
                       Office Administration
                     </a>
+                    <Badge pill theme="danger" className="ml-3">
+                      Not available
+                    </Badge>
                   </li>
                 </ul>
               </Col>

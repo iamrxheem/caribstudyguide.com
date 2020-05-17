@@ -40,6 +40,7 @@ import {
   isBrowser,
   isMobile
 } from "react-device-detect"
+import LazyLoad from "react-lazyload"
 
 const CustomRightArrow = ({ onClick, ...rest }) => {
   const {
@@ -81,19 +82,22 @@ const MCQ = props => {
     <>
       <Row>
         <Col sm={12} md={8} lg={8}>
-          <Carousel
-            customLeftArrow={<CustomRightArrow />}
-            ssr={false}
-            responsive={responsive}
-            infinite={true}
-            arrows={true}
-            partialVisible={true}
-            swipeable={true}
-            dots={true}
-            showDots={false}
-          >
-            {props.children}
-          </Carousel>
+          <LazyLoad>
+            <Carousel
+              customLeftArrow={<CustomRightArrow />}
+              ssr={false}
+              responsive={responsive}
+              infinite={true}
+              arrows={true}
+              partialVisible={true}
+              swipeable={true}
+              dots={true}
+              showDots={false}
+              style={{ height: "auto" }}
+            >
+              {props.children}
+            </Carousel>
+          </LazyLoad>
         </Col>
         <Col sm={12} md={4} lg={4}>
           <Ads />

@@ -38,6 +38,21 @@
   clear: both;
 }
 
+.react-multi-carousel-list  {
+  height: auto!important;
+  max-height: auto!important;
+}
+
+.react-multi-carousel-track  {
+  height: auto!important;
+  max-height: auto!important;
+}
+
+.react-multi-carousel-item   {
+  height: auto!important;
+  max-height: auto!important;
+}
+
 /* For desktop devices */
 @media (min-width: 1281px) {
 

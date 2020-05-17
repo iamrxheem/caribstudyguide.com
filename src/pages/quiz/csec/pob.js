@@ -108,12 +108,17 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which of the institutions form part of the money market?"
+                optionOne="(i) and (ii) only"
+                optionTwo="(iii) and (iv) only"
+                optionThree="(ii) and (iii) only"
+                optionFour="(ii) and (iv) only"
+                correctOption="b"
+                hasListOption
+                listOptionOne="Building societies"
+                listOptionTwo="Development banks"
+                listOptionThree="Commercial banks"
+                listOptionOFour="Credit unions"
               />
 
               {/* Question */}
@@ -121,12 +126,13 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="When a seller offers, '33 1/3 off on all items', this can be termed"
+                optionOne="Advertising"
+                optionTwo="Branding"
+                optionThree="Sales promotion"
+                optionFour="Industrialization"
+                correctOption="c"
+                note="C is the Correct answer because the seller wants to encourage customers to buy his/her goods. This usually means that (the seller) wants to get rid of old stock before placing new stock on the shelves."
               />
 
               {/* Question */}
@@ -134,12 +140,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="What is marketing?"
+                optionOne="The action of business promting or selling products"
+                optionTwo="Buying goods from a shop"
+                optionThree="Trading goods"
+                optionFour="Bartering"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -147,12 +153,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Setting objectives and the procedures for achieving goals are referred to as "
+                optionOne="Planning"
+                optionTwo="Motivating"
+                optionThree="Controlling"
+                optionFour="Organizing"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -160,12 +166,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Barter can be described as the"
+                optionOne="Credit sale and purchase of goods"
+                optionTwo="Exchange of goods for money"
+                optionThree="Barganinig for quality goods at a cheaper prices"
+                optionFour="Exchange of goods for goods"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -173,12 +179,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="In a public limited company, the losses are borne by the"
+                optionOne="Sharehoulders"
+                optionTwo="Directors"
+                optionThree="Community"
+                optionFour="Staff"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -186,12 +192,13 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="What does the latin phrase ‘Ceteris Paribus Principle’ mean?"
+                optionOne="All other things are not equal"
+                optionTwo="The less the prices the more we are willing to demand"
+                optionThree="all other things remain equal"
+                optionFour="There is a change in demand and supply"
+                correctOption="c"
+                note="The Latin phrase ‘ceteris paribus principle’ means that all other things remain equal, that is, all other things remain unchanged or constant and there are no other factors or assumptions to take into account"
               />
 
               {/* Question */}
@@ -199,12 +206,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which one of these is NOT a factor of production"
+                optionOne="Land"
+                optionTwo="Capital"
+                optionThree="Enterprise"
+                optionFour="Labour"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -212,12 +219,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which of the following is NOT a current asset"
+                optionOne="government bonds"
+                optionTwo="account receivable"
+                optionThree="cash"
+                optionFour="inventory"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -225,12 +232,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Contractual capacity means that:"
+                optionOne="There is the ability or capacity to perform obligations."
+                optionTwo="There is a legally binding contract."
+                optionThree="The contract can be void or voidable."
+                optionFour="None of the above"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -238,12 +245,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="An article in a shop window without a price tag, which is there as a means of advertising, can be said to be"
+                optionOne="An offer for sale."
+                optionTwo="An invitation to treat."
+                optionThree="A window decoration by the shopkeeper."
+                optionFour="An acceptance by the shopkeeper to accept offers from the public."
+                correctOption="b"
               />
 
               {/* Question */}
@@ -251,12 +258,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A legally binding contract does not exist if"
+                optionOne="There is an offer and an acceptance."
+                optionTwo="Both parties do what they promised."
+                optionThree="There is some form of consideration."
+                optionFour="There are two offers."
+                correctOption="d"
               />
 
               {/* Question */}
@@ -264,12 +271,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Terminating a contract can be achieved by all of the following ways, except by"
+                optionOne="Mutual agreement by both parties."
+                optionTwo="Completing performance."
+                optionThree="Taking unilateral action."
+                optionFour="The death of one party."
+                correctOption="c"
               />
 
               {/* Question */}
@@ -277,12 +284,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A specialty contract can best be described as one which "
+                optionOne="Is written out very clearly."
+                optionTwo="Is signed, sealed and delivered."
+                optionThree="Has a lot of conditions attached to it."
+                optionFour="Is typed out only in capital letters."
+                correctOption="b"
               />
 
               {/* Question */}
@@ -290,12 +297,17 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which of the above institutions is part of the capital market"
+                optionOne="(i) and (ii) only"
+                optionTwo="(ii) and (iii) only"
+                optionThree="(iii) and (iv) only"
+                optionFour="(i), (ii), (iii) and (iv)"
+                correctOption="d"
+                hasListOption
+                listOptionOne="Building societies"
+                listOptionTwo="Development banks"
+                listOptionThree="Commercial banks"
+                listOptionOFour="Credit unions"
               />
 
               {/* Question */}
@@ -303,12 +315,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The primary focus of attention of the Caribbean Development Bank is to: "
+                optionOne="Help the entire region"
+                optionTwo="Promote individuality and self-reliance"
+                optionThree="Help finance the needs of the smaller Caribbean countries"
+                optionFour="Promote employment opportunities in the larger countries of the region"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -316,12 +328,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The highest rate of interest at a commercial bank is obtained from a"
+                optionOne="Current or cheque account"
+                optionTwo="Savings or deposit account"
+                optionThree="Longer-term fixed deposits"
+                optionFour="Short-term fixed deposits"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -329,12 +341,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Of the following, which is not accepted for collateral security?"
+                optionOne="Life assurance policies"
+                optionTwo="Titles to land or property"
+                optionThree="Stocks and shares"
+                optionFour="Money lent out or invested"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -342,12 +354,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Savings take place when you:"
+                optionOne="Buy goods and services for daily use"
+                optionTwo="Refrain from consuming a part or whole of your income"
+                optionThree="Use money to pay debts"
+                optionFour="Borrow money"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -355,12 +367,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The stock exchange is a market place where:"
+                optionOne="Stocks are exchanged for shares"
+                optionTwo="Second-hand securities are bought and sold"
+                optionThree="Brokers buy and sell goods"
+                optionFour="All companies raise financial capital"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -368,12 +380,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A credit union is founded or based mainly on: "
+                optionOne="A common bond of all employees"
+                optionTwo="The company’s integrity"
+                optionThree="Profits of members"
+                optionFour="The credit worthiness of the union"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -381,12 +393,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The main purpose of a merchant bank is to:"
+                optionOne="Finance traders and their trade"
+                optionTwo="Lend money to the public at large"
+                optionThree="Act as a security"
+                optionFour="Provide night safe facilities"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -394,12 +406,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A sou-sou is another form of:"
+                optionOne="Saving money through a common bond"
+                optionTwo="Spending money"
+                optionThree="Paying dues to a trade union"
+                optionFour="Belonging to a social institution"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -407,12 +419,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The primary purpose or function of the commercial bank is to: "
+                optionOne="Lend money"
+                optionTwo="Borrow money from other banks"
+                optionThree="Accept money deposits and personal valuables"
+                optionFour="Invest deposits"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -420,12 +432,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="One of the most important functions of the central bank is to:"
+                optionOne="Borrow money from individuals"
+                optionTwo="Keep deposits from commercial banks"
+                optionThree="Lend money for building houses"
+                optionFour="Keep deposits put through the night safe"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -433,12 +445,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The only bank which can claim to be the lender of last resort is the:"
+                optionOne="Central bank"
+                optionTwo="Commercial bank"
+                optionThree="Merchant bank"
+                optionFour="Trustee savings bank"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -446,12 +458,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which ONE of the following is NOT a function of a trade union?"
+                optionOne="Assisting in the settlement of industrial disputes"
+                optionTwo="Bargaining for the rights and privileges of employers"
+                optionThree="Bargaining for improvements in workers' wages and working conditions"
+                optionFour="Seeking educational, social and legal benefits for its members"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -459,12 +471,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="In a partnership the sleeping partner is one who"
+                optionOne="contributes not less than three-quarters of the share capital of the business"
+                optionTwo="sleeps on the premises as a watchman and is paid a salary"
+                optionThree="takes no active part in the affairs of the business but shares in its profits"
+                optionFour="undertakes the task of implementing the policy decisions of the partnership"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -472,12 +484,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="In which type of system does the state own and control all of the country's productive resources?"
+                optionOne="capitalistic"
+                optionTwo="mixed"
+                optionThree="planned"
+                optionFour="socialist"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -485,12 +497,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A group of professional engineers wishing to enter into a business enterprise would most likely operate:"
+                optionOne="a co-operative"
+                optionTwo="a partnership"
+                optionThree="a joint stock company"
+                optionFour="a proprietorship"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -498,12 +510,17 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="The private sector is composed of the following sections:"
+                optionOne="i and ii"
+                optionTwo="i, ii and iv"
+                optionThree="i and iii"
+                optionFour="ii, iii and iv"
+                correctOption="b"
+                hasListOption
+                listOptionOne="household;"
+                listOptionTwo="business;"
+                listOptionThree="government;"
+                listOptionOFour="the market place"
               />
 
               {/* Question */}
@@ -511,12 +528,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="consumers are free to make their choices in the market place"
+                optionOne="manufacturing"
+                optionTwo="commercial banking"
+                optionThree="utilities"
+                optionFour="constuction"
+                correctOption="v"
               />
 
               {/* Question */}
@@ -524,12 +541,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="In a free enterprise system, all of the following conditions exist EXCEPT:"
+                optionOne="decisions about prices are made in the market place"
+                optionTwo="there is greater ownership of the factors of production by the government than by the private sector"
+                optionThree="consumers are free to make their choices in the market place"
+                optionFour="consumers are free to make their choices in the market place"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -537,12 +554,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which of the following statements about the planned economy is INCORRECT?"
+                optionOne="Consumers have a choice in the market place"
+                optionTwo="Wages can be negotiated between workers and employers"
+                optionThree="The government owns and operates the major national operations"
+                optionFour="The means of production are owned by the government"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -550,12 +567,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Select the best option for each of the questions which follow. When Trinidad exchanges its oil for cement from Jamaica, the form of trade is best  described as:"
+                optionOne="barter"
+                optionTwo="barter"
+                optionThree="counter trade"
+                optionFour="international trade"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -563,12 +580,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="What is the designation of company A if it owns the majority of the shares of company B"
+                optionOne="conglomerate"
+                optionTwo="partnership"
+                optionThree="holding company"
+                optionFour="joint-stock company"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -576,12 +593,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A company owns a varity of businesses: insurance company, supermarket, car rental agency, shoe factory. This company can be referred to as a:"
+                optionOne="conglomerate"
+                optionTwo="multinational"
+                optionThree="private limited company"
+                optionFour="partnership"
+                correctOption="a"
               />
 
               {/* Question */}
@@ -589,12 +606,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="What is the main function of a co-operative retail society:"
+                optionOne="make a profit from its shareholders"
+                optionTwo="buy and sell goods retail."
+                optionThree="buy products wholesale and sell them cheaply to its members."
+                optionFour="organise and plan the running of the society."
+                correctOption="c"
               />
 
               {/* Question */}
@@ -602,12 +619,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="_____ kind of business only allows friends, relatives and coworkers to purchase shares and to be a part of the company"
+                optionOne="partnership"
+                optionTwo="private limited company"
+                optionThree="public limited company"
+                optionFour="multinational company"
+                correctOption="b"
               />
 
               {/* Question */}
@@ -615,12 +632,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Those partners who, when their business goes bankrupt, stand to lose all their personal possessions as well as their investments are known as: "
+                optionOne="Dormant partners"
+                optionTwo="limited liability partners"
+                optionThree="ordinary partners"
+                optionFour="unlimited liability partners"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -628,12 +645,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="When registering a private limited company two important documents should be provided. They are:"
+                optionOne="a bylaws and a certificate of origin."
+                optionTwo="a memorandum of association and articles of association."
+                optionThree="a shareholders agreement and tax file number."
+                optionFour="a share certificate and a debenture certificate."
+                correctOption="b"
               />
 
               {/* Question */}
@@ -641,12 +658,17 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="Which of the following are NOT advantages of a private limited company?"
+                optionOne="(i) and (ii) only"
+                optionTwo="(ii) and (iii) only"
+                optionThree="(i) and (iv) only"
+                optionFour="(iii) and (iv) only"
+                correctOption="b"
+                hasListOption
+                listOptionOne="It has an independent legal status."
+                listOptionTwo="The company can't go public on the stock exchange."
+                listOptionThree="The company can't have more than 50 shareholders."
+                listOptionOFour="The company taxes are high than usual."
               />
 
               {/* Question */}
@@ -654,12 +676,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="A sleeping partner can be referred to as a:"
+                optionOne="careless partner"
+                optionTwo="active partner"
+                optionThree="dormant partner"
+                optionFour="general partner"
+                correctOption="c"
               />
 
               {/* Question */}
@@ -667,246 +689,12 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
-              />
-
-              {/* Question */}
-              <MCQItem
-                id={uuidv4()}
-                imgSrc=""
-                topic=""
-                question=""
-                optionOne=""
-                optionTwo=""
-                optionThree=""
-                optionFour=""
-                correctOption=""
+                question="In a partnership, an investor is a partner. What is the investor referred to in a LARGE company"
+                optionOne="sole trader or only owner"
+                optionTwo="manager or worker"
+                optionThree="director or board member"
+                optionFour="shareholder or partial owner"
+                correctOption="d"
               />
             </MCQ>
           </Container>

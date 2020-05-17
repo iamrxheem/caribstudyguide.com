@@ -82,11 +82,26 @@ class Page extends React.Component {
               <BreadcrumbItem>
                 <a href="/quiz/">Quiz</a>
               </BreadcrumbItem>
-              <BreadcrumbItem active>CSEC</BreadcrumbItem>
+              <BreadcrumbItem active>CAPE</BreadcrumbItem>
             </Breadcrumb>
-          </Container>
 
-          <Container></Container>
+            <Row>
+              <Col sm={12} md={8} lg={8}>
+                <img
+                  src="https://d1klenmqvfdv9g.cloudfront.net/wp-content/uploads/2018/11/Create-Quizzes-Easily-with-a-WordPress-Form-Plugin.jpg"
+                  className="card-img"
+                  style={{ width: "100%" }}
+                />
+
+                <br />
+                <br />
+                <h5>CAPE Quizzes</h5>
+
+                <p>Quizzes not yet available.</p>
+              </Col>
+              <Col sm={12} md={8} lg={8}></Col>
+            </Row>
+          </Container>
         </Layout>
       </>
     )
