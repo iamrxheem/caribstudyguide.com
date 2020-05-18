@@ -206,7 +206,18 @@ class Header extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-
+          <Alert theme="warning" className="text-center">
+            Our website it still in development. You will only be able to access
+            the{" "}
+            <a
+              style={{ textDecoration: "underline" }}
+              className="alert-link"
+              href="/quiz/"
+            >
+              quizzes
+            </a>
+            .
+          </Alert>
           <MobileView>
             <br />
             <SocialMediaIcons />

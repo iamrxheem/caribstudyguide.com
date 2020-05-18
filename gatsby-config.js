@@ -41,6 +41,7 @@ module.exports = {
         siteId: "101253680"
       }
     },
+
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -48,6 +49,7 @@ module.exports = {
         stripQueryString: true
       }
     },
+
     {
       resolve: `gatsby-source-instagram`,
       options: {

@@ -106,6 +106,101 @@ class Page extends React.Component {
               {/* Question */}
               <MCQItem
                 id={uuidv4()}
+                hasText
+                text="Mr. Llyod, manager of LM Ltd, holds regular staff meetings to listen to ideas from employees before making decision that would affect the future of the company"
+                question="What leadership style does Mr. Llyod employ?"
+                optionOne="Autocratic"
+                optionTwo="Democratic"
+                optionThree="Charismatic"
+                optionFour="Laissez-faire"
+                correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Labour is BEST defined as"
+                optionOne="physical and mental abilities to perform tasks"
+                optionTwo="ability to perform management functions effectively"
+                optionThree="level of skills training received by individuals who are working"
+                optionFour="total number of persons who hold jobs in government ministries"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following are NOT trading instruments?"
+                optionOne="Cheques"
+                optionTwo="Credit cards"
+                optionThree="Bills of exchange"
+                optionFour="Money remittances"
+                correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="A policy of a company is formunlated by the "
+                optionOne="auditors"
+                optionTwo="directors"
+                optionThree="managers"
+                optionFour="shareholders"
+                correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following are the features of a planned economy?"
+                optionOne="i and ii only"
+                optionTwo="i and iii only"
+                optionThree="ii and iii only"
+                optionFour="i, ii and iii only"
+                correctOption="a"
+                hasListOption
+                listOptionOne="Centralized production"
+                listOptionTwo="Citizens' welfare is primary"
+                listOptionThree="Little government interference"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following types of economic systems does the government makes all the decisions?"
+                optionOne="Mixed"
+                optionTwo="Capitalist"
+                optionThree="Command"
+                optionFour="Substinence"
+                correctOption="c"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="The main purpose of installing a suggestion box is to get workers' views on"
+                optionOne="each other"
+                optionTwo="other companies"
+                optionThree="ways of improving the workplace"
+                optionFour="ways of improving economic conditions"
+                correctOption="c"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
                 imgSrc=""
                 topic=""
                 question="Which of the institutions form part of the money market?"
@@ -695,6 +790,232 @@ class Page extends React.Component {
                 optionThree="director or board member"
                 optionFour="shareholder or partial owner"
                 correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following is NOT a function of management?"
+                optionOne="Providing accomodation for employees"
+                optionTwo="Coordinating the work of employees"
+                optionThree="Delegating work to subordinates"
+                optionFour="Controlling the use of funds"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="The condensed version of business of business plan is contained in the "
+                optionOne="executive summary"
+                optionTwo="keynote summary"
+                optionThree="marketing plan"
+                optionFour="feasability plan"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="A 'purchase order' is a"
+                optionOne="request for additional goods"
+                optionTwo="notificatio of goods received"
+                optionThree="statement of outstanding debts"
+                optionFour="document offering to but goods"
+                correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following is a regulatory issue for the entrepreneur?"
+                optionOne="Using a credit card to transact business"
+                optionTwo="Offering hire purchase options to customers"
+                optionThree="Paying national insurance to the government"
+                optionFour="Advertising the business locally and regionally"
+                correctOption="c"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="A firm may change its main objectives from profil to market share if there is an increase in "
+                optionOne="government regualations"
+                optionTwo="competition in the market"
+                optionThree="the cost of utilities and overheads"
+                optionFour="the use of technology in the organization"
+                correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="A contract may be discharged by "
+                optionOne="breach"
+                optionTwo="change of mind"
+                optionThree="inconsideration"
+                optionFour="misappropriation"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following is NOT an example of unethical business practice?"
+                optionOne="Money laundering"
+                optionTwo="Nonpayment of taxes"
+                optionThree="Misleading advertisments"
+                optionFour="Retrenching inefficient workers"
+                correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following types of of cheques allows an individual to receive cash on demand?"
+                optionOne="Open"
+                optionTwo="Crossed"
+                optionThree="Certified"
+                optionFour="Banker's"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                question="Which of the following factors prevents an agreement from being considered a valid contact?"
+                optionOne="Consideration"
+                optionTwo="Legal purpose"
+                optionThree="Misrepresentation"
+                optionFour="Office and acceptance"
+                correctOption="c"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following are examples of secondary sources of data?"
+                optionOne="i and ii only"
+                optionTwo="i and iii only"
+                optionThree="ii and iii only"
+                optionFour="i, ii and ii only"
+                correctOption="c"
+                hasListOption
+                listOptionOne="Company records"
+                listOptionTwo="Former employees"
+                listOptionThree="Government cencus"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="The term 'human resources' refers to"
+                optionOne="materials and goods made by human beings"
+                optionTwo="capital invested by shareholders in a company"
+                optionThree="raw materials used in the manufacture of goodss"
+                optionFour="persons available for productive and professional sevices"
+                correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Joseph has decided to leave his homeland of Jamaica and go to the USA in search of a better life. The movement is referred to as"
+                optionOne="'brain drain'"
+                optionTwo="early migration"
+                optionThree="internal migration"
+                optionFour="external migration"
+                correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following commodities is a prduct of the manufaturing indistry?"
+                optionOne="A car"
+                optionTwo="Gold"
+                optionThree="Lumber"
+                optionFour="A house"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="In Trinidad, Mrs. Brown woould be referred to as"
+                optionOne="a refugee"
+                optionTwo="an emigrant"
+                optionThree="an immigrant"
+                optionFour="a travelling officer"
+                correctOption="b"
+                hasText
+                text="Mrs. Brown receives a job offer from a company in Barbados. In order to take up this job, she decides to leave her home country of Trinidad and move permanently to Barbodos."
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                imgSrc=""
+                topic=""
+                question="Which of the following are examples of fixed capital?"
+                optionOne="Cash balances"
+                optionTwo="Bank balances"
+                optionThree="Plant and machinery"
+                optionFour="Stocks of raw material"
+                correctOption="c"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Which of the following departments is LIKELY to use its management information systems (MIS) to manage information about customers and their response to the products it sells?"
+                optionOne="Finance"
+                optionTwo="Marketing"
+                optionThree="Production"
+                optionFour="Human resource"
+                correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Which of the following demonstrates the characteristics of a good leader?"
+                optionOne="i and ii"
+                optionTwo="i and iii"
+                optionThree="ii and iii"
+                optionFour="i, ii and iii"
+                correctOption="b"
+                hasListOption
+                listOptionOne="Inspires workers"
+                listOptionTwo="Delegates responsibilities"
+                listOptionThree="Makes intelligent decisions"
               />
             </MCQ>
           </Container>

@@ -29,6 +29,7 @@ const Imports = props => {
             name="google-site-verification"
             content="5rLcTvmtCQjDdX7_SylgDyTTz6B5VLf86AW2rp_-g-A"
           />
+          <script src="https://cxcguide.pushengage.com/service-worker.js?ver=2.2.0" ></script>
           <script async src="//static.getclicky.com/js"></script>
           <link
             href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
@@ -39,6 +40,7 @@ const Imports = props => {
             name="msvalidate.01"
             content="31F1DDC9C4BA2ECA7EDBAFE824702996"
           />
+          <script src="https://clientcdn.pushengage.com/core/37727c5d-77dc-444e-9ca2-fe6fe6d6.js" async></script>
         </Helmet>
       </>
     </>

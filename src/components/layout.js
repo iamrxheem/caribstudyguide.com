@@ -21,6 +21,10 @@ import "../assets/js/mailchimp.js"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
 import "../assets/js/onesignal.js"
+import "../assets/js/disqus.js"
+import "../assets/js/pushengage.js"
+
+
 import {
   BrowserView,
   MobileView,
@@ -61,6 +65,11 @@ const Layout = ({ children }) => {
       ></iframe>
       <br />
       <Footer />
+      <script
+        id="dsq-count-scr"
+        src="//cxcguide.disqus.com/count.js"
+        async
+      ></script>
     </>
   )
 }

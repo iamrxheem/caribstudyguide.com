@@ -65,17 +65,11 @@ class Page extends React.Component {
   onSelect(event) {
     event.preventDefault()
 
-    if (this.state.triedUnavailableQuiz) {
-      Swal.fire("I'm pretty sure you can read.")
-    } else {
-      Swal.fire(
-        "Hmm ..",
-        "This quiz isn't available yet. You can check back later.",
-        "question"
-      )
-
-      this.setState({ triedUnavailableQuiz: true })
-    }
+    Swal.fire(
+      "Hmm ..",
+      "This quiz isn't available yet. You can check back later.",
+      "question"
+    )
   }
 
   render() {
