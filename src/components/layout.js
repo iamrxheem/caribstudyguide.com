@@ -20,10 +20,8 @@ import "./layout.css"
 import "../assets/js/mailchimp.js"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
-import "../assets/js/onesignal.js"
 import "../assets/js/disqus.js"
 import "../assets/js/pushengage.js"
-
 
 import {
   BrowserView,
@@ -56,7 +54,7 @@ const Layout = ({ children }) => {
       <BrowserView>
         <br />
       </BrowserView>
-      <div>{children}</div>
+      <main>{children}</main>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-NWGL3N3"
         height="0"

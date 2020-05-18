@@ -41,8 +41,6 @@ class Ads extends React.Component {
   render() {
     return (
       <>
-        <div id="disqus_thread"></div>
-        <br />
         <div className="ads" id="ads" name="ads"></div>
       </>
     )

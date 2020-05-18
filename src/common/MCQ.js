@@ -81,7 +81,11 @@ const MCQ = props => {
   return (
     <>
       <Row>
-        <Col sm={12} md={8} lg={8}>
+        <Col sm={12} md={3} lg={3}>
+          <br />
+          <Ads />
+        </Col>
+        <Col sm={12} md={6} lg={6}>
           <LazyLoad>
             <Carousel
               customLeftArrow={<CustomRightArrow />}
@@ -98,8 +102,11 @@ const MCQ = props => {
               {props.children}
             </Carousel>
           </LazyLoad>
+          <br />
         </Col>
-        <Col sm={12} md={4} lg={4}>
+        <Col sm={12} md={3} lg={3}>
+          <div id="disqus_thread"></div>
+          <br />
           <Ads />
         </Col>
       </Row>

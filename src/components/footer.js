@@ -22,6 +22,7 @@ import {
   Container,
   Button
 } from "shards-react"
+import Obfuscate from "react-obfuscate"
 
 // React device detect
 import {
@@ -385,6 +386,18 @@ const Footer = props => {
             <br />
             <br />
             <p>&copy; 2020 CXC Study Guide. All rights reserved.</p>
+
+            <Obfuscate
+              email="contact@cxcguide.com"
+              headers={{
+                cc: "",
+                bcc: "",
+                subject: "Inquiry",
+                body: ""
+              }}
+            />
+            <br />
+            <br />
             <br />
           </Container>
         </div>
