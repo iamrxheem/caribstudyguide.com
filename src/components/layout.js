@@ -17,7 +17,6 @@ import "../assets/css/bulma-tabs.css"
 import "../assets/css/bulma-menu.css"
 import "./layout.css"
 
-import "../assets/js/mailchimp.js"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
 import "../assets/js/disqus.js"
@@ -29,7 +28,7 @@ import {
   isBrowser,
   isMobile
 } from "react-device-detect"
-
+import QuickNav from "./quickNav"
 ReactGA.initialize("UA-165932729-1")
 
 if (process.browser) {
@@ -54,6 +53,11 @@ const Layout = ({ children }) => {
       <BrowserView>
         <br />
       </BrowserView>
+
+      <MobileView>
+        <QuickNav />
+      </MobileView>
+
       <main>{children}</main>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-NWGL3N3"

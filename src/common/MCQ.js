@@ -83,7 +83,6 @@ const MCQ = props => {
       <Row>
         <Col sm={12} md={3} lg={3}>
           <br />
-          <Ads />
         </Col>
         <Col sm={12} md={6} lg={6}>
           <LazyLoad>
@@ -102,10 +101,12 @@ const MCQ = props => {
               {props.children}
             </Carousel>
           </LazyLoad>
+
+          <br />
+          <div id="disqus_thread"></div>
           <br />
         </Col>
         <Col sm={12} md={3} lg={3}>
-          <div id="disqus_thread"></div>
           <br />
           <Ads />
         </Col>

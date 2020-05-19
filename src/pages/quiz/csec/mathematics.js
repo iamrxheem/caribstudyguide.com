@@ -63,22 +63,6 @@ class Page extends React.Component {
     }
   }
 
-  componentWillMount() {
-    this.getQuestions()
-  }
-
-  async getQuestions() {
-    await axios
-      .get("https://api.npoint.io/27d9083118b83c0be4d1")
-      .then(function(response) {
-        data = response.data
-      })
-      .catch(function(error) {
-        // handle error
-        alert(error)
-      })
-  }
-
   render() {
     return (
       <>

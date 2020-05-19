@@ -39,19 +39,23 @@
 }
 
 .react-multi-carousel-list  {
-  height: auto!important;
-  max-height: auto!important;
+  height: auto;
+  max-height: auto;
 }
 
 .react-multi-carousel-track  {
-  height: auto!important;
-  max-height: auto!important;
+  height: auto;
+  display: flex!important;
+  align-items: flex-start!important; 
 }
 
 .react-multi-carousel-item   {
-  height: auto!important;
-  max-height: auto!important;
+  height: auto;
+  max-height: auto;
+  display: flex!important;
+  align-items: flex-start!important;
 }
+
 
 /* For desktop devices */
 @media (min-width: 1281px) {

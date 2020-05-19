@@ -101,7 +101,6 @@ class Page extends React.Component {
               you need to see the previous question.
             </p>
 
-            <br />
             <MCQ>
               {/* Question */}
               <MCQItem
@@ -114,6 +113,102 @@ class Page extends React.Component {
                 optionThree="Charismatic"
                 optionFour="Laissez-faire"
                 correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Which of the following entities can have their shares traded on the stock market?"
+                optionOne="Partnetships"
+                optionTwo="Public companies"
+                optionThree="Private companies"
+                optionFour="Co-operative societies"
+                correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="A situation whereby a business gains editorial space without having to pay for it is called a "
+                optionOne="publicity"
+                optionTwo="marketing"
+                optionThree="advertising"
+                optionFour="discounting"
+                correctOption="a"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Which of the following is a characteristic of the stock market?"
+                optionOne="Costs and prices"
+                optionTwo="Ricks and benefits"
+                optionThree="Rent and investment"
+                optionFour="Premium award"
+                correctOption="b"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Tom invests his savings by buying shares in a company. For the investment, Tom expects to receive"
+                optionOne="dividends"
+                optionTwo="revenue"
+                optionThree="interest"
+                optionFour="profits"
+                correctOption="a"
+                listOptionOne=""
+                listOptionTwo=""
+                listOptionThree=""
+                listOptionOFour=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Governments offer subsidaries to businesses to "
+                optionOne="force them to pay corporation tax"
+                optionTwo="reduce cost and untimately price"
+                optionThree="increase cost and untimately price"
+                optionFour="increase price of imported goods"
+                correctOption="b"
+                listOptionOne=""
+                listOptionTwo=""
+                listOptionThree=""
+                listOptionOFour=""
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="A 'price control' may be defined as a"
+                optionOne="tax on goods and services"
+                optionTwo="government ban on imports"
+                optionThree="grant given to producers to reduce their prices"
+                optionFour="government limit on the price of goods and services"
+                correctOption="d"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="Which of the following groups stand(s) to benefit MORE from a stable level of prices"
+                optionOne="Consumers"
+                optionTwo="Workers"
+                optionThree="Society"
+                optionFour="Firms"
+                correctOption="c"
+              />
+
+              {/* Question */}
+              <MCQItem
+                id={uuidv4()}
+                question="A limit on the quantity of goods that citizens of a country are allowed to buy from overseas is called an"
+                optionOne="import duty"
+                optionTwo="export duty"
+                optionThree="export quota"
+                optionFour="import quota"
+                correctOption="d"
               />
 
               {/* Question */}
@@ -956,7 +1051,7 @@ class Page extends React.Component {
                 id={uuidv4()}
                 imgSrc=""
                 topic=""
-                question="Which of the following commodities is a prduct of the manufaturing indistry?"
+                question="Which of the following commodities is a product of the manufaturing indistry?"
                 optionOne="A car"
                 optionTwo="Gold"
                 optionThree="Lumber"

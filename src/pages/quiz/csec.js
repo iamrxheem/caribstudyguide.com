@@ -122,6 +122,20 @@ class Page extends React.Component {
                       style={{ color: "#FF08D7" }}
                       className="fas fa-angle-right mr-2"
                     ></i>
+                    <a href="/quiz/csec/information-technology/">
+                      Information Technology
+                    </a>
+                    <Badge pill theme="success" className="ml-1">
+                      new
+                    </Badge>
+                  </li>
+
+                  {/* Subject */}
+                  <li>
+                    <i
+                      style={{ color: "#FF08D7" }}
+                      className="fas fa-angle-right mr-2"
+                    ></i>
                     <a href="/quiz/csec/biology/">Biology</a>
                   </li>
 
@@ -148,6 +162,9 @@ class Page extends React.Component {
                       className="fas fa-angle-right mr-2"
                     ></i>
                     <a href="/quiz/csec/mathematics/">Mathematics</a>
+                    <Badge pill theme="warning" className="ml-1">
+                      incomplete
+                    </Badge>
                   </li>
 
                   {/* Subject */}
@@ -198,23 +215,6 @@ class Page extends React.Component {
                     ></i>
                     <a onClick={this.onSelect} href="/quiz/csec/french/">
                       French
-                    </a>
-                    <Badge pill theme="danger" className="ml-3">
-                      Not available
-                    </Badge>
-                  </li>
-
-                  {/* Subject */}
-                  <li>
-                    <i
-                      style={{ color: "#FF08D7" }}
-                      className="fas fa-angle-right mr-2"
-                    ></i>
-                    <a
-                      onClick={this.onSelect}
-                      href="/quiz/csec/information-technology/"
-                    >
-                      Information Technology
                     </a>
                     <Badge pill theme="danger" className="ml-3">
                       Not available
