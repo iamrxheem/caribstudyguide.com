@@ -251,6 +251,15 @@ const Footer = props => {
                       Press & Notices
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="link-dark"
+                      style={{ color: "" }}
+                      href="/feedback/"
+                    >
+                      Feedback
+                    </a>
+                  </li>
                 </ul>
               </Col>
               <Col sm={12} md={4} lg={4}>
