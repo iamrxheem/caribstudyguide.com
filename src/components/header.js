@@ -26,7 +26,9 @@ import {
   InputGroupAddon,
   InputGroupText,
   FormInput,
-  Collapse
+  Collapse,
+  Form,
+  Container
 } from "shards-react"
 import Img from "react-image"
 import LazyLoad from "react-lazyload"
@@ -168,11 +170,6 @@ class Header extends React.Component {
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-                <NavItem>
-                  <NavLink active href="/teachers/">
-                    Teachers
-                  </NavLink>
-                </NavItem>
               </Nav>
 
               <Nav navbar className="ml-auto">

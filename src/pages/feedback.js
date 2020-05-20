@@ -54,6 +54,7 @@ const Page = () => (
             ]}
           />
           <br />
+          <br />
           <div id="disqus_thread"></div>
         </Col>
         <Col sm={12} md={4} lg={4}></Col>

@@ -4,6 +4,27 @@ import { useStaticQuery, graphql } from "gatsby"
 import DeviceInfo from "./deviceInfo"
 import ReactGA from "react-ga"
 
+import {
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  Alert,
+  NavItem,
+  NavLink,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  FormInput,
+  Collapse,
+  Form,
+  Container
+} from "shards-react"
+
 // All Components
 import Header from "./header"
 import Footer from "./footer"
@@ -20,6 +41,7 @@ import "./layout.css"
 import "../assets/js/g-tag-manager.js"
 import "../assets/js/tawkto.js"
 import "../assets/js/disqus.js"
+import "../assets/js/search.js"
 import "../assets/js/pushengage.js"
 
 import {

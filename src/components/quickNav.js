@@ -46,7 +46,7 @@ const QuickNav = props => {
             <NavLink href="/FAQ/">FAQ</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="mailto:contact@cxcguide.com">Email us</NavLink>
+            <NavLink href="/resources/">Resources</NavLink>
           </NavItem>
         </Nav>
       </div>

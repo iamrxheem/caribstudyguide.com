@@ -97,7 +97,26 @@ class Page extends React.Component {
                 <br />
                 <h5>CAPE Quizzes</h5>
 
-                <p>Quizzes not yet available.</p>
+                <br />
+                <ul className="ul">
+                  {/* Subject */}
+                  <li>
+                    <i
+                      style={{ color: "#FF08D7" }}
+                      className="fas fa-angle-right mr-2"
+                    ></i>
+                    <a href="/quiz/cape/unit-1/">Unit 1</a>
+                  </li>
+
+                  {/* Subject */}
+                  <li>
+                    <i
+                      style={{ color: "#FF08D7" }}
+                      className="fas fa-angle-right mr-2"
+                    ></i>
+                    <a href="/quiz/cape/unit-2/">Unit 2</a>
+                  </li>
+                </ul>
               </Col>
               <Col sm={12} md={8} lg={8}></Col>
             </Row>

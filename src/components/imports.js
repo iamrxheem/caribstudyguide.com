@@ -51,6 +51,10 @@ const Imports = props => {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <script
+            src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js"
+            async
+          ></script>
         </Helmet>
       </>
     </>
