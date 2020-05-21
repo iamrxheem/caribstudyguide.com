@@ -173,9 +173,22 @@ class Header extends React.Component {
               </Nav>
 
               <Nav navbar className="ml-auto">
+                <Container>
+                  <Form>
+                    <section role="search" data-ss360="true">
+                      <FormInput
+                        placeholder="Search ..."
+                        type="search"
+                        id="searchBox"
+                      />
+                      <button hidden id="searchButton"></button>
+                    </section>
+                  </Form>
+                </Container>
+
                 <NavItem>
                   <NavLink active href="/blog/">
-                    Online Classes
+                    Classes
                   </NavLink>
                 </NavItem>
 
